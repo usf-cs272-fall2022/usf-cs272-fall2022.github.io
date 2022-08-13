@@ -25,54 +25,57 @@
         {%- if section.items %}
         <ul class="icons">
           {%- for found in section.items %}
+
+          {%- assign icon_class = site.data.icons.pending.class %}
+          {%- assign item_label = site.data.icons.pending.label %}
+          {%- assign item_text = 'Pending' %}
+          {%- assign item_link = false %}
+          {%- assign item_more = false %}
+          {%- assign item_show = false %}
+          {%- assign item_date = false %}
+          {%- assign item_save = false %}
+          {%- assign item_tube = false %}
+          
           {%- if found.file %}
           {%- assign item = site.data[found.file][found.name] %}
-          {%- else %}
-          {%- assign item = found %}
+          {%- if item.icon %}{% assign icon_class = site.data.icons[item.icon].class %}{% endif %}
+          {%- if item.icon %}{% assign icon_label = site.data.icons[item.icon].label %}{% endif %}
+          {%- if item.text %}{% assign item_text = item.text %}{% endif %}
+          {%- if item.link %}{% assign item_link = item.link %}{% endif %}
+          {%- if item.more %}{% assign item_more = item.more %}{% endif %}
+          {%- if item.show %}{% assign item_show = item.show %}{% endif %}
+          {%- if item.date %}{% assign item_date = item.date %}{% endif %}
+          {%- if item.save %}{% assign item_save = item.save %}{% endif %}
+          {%- if item.tube %}{% assign item_tube = item.tube %}{% endif %}
           {%- endif %}
-          {%- assign icon_class = site.data.icons.pending.class %}
-          {%- assign icon_label = site.data.icons.pending.label %}
-          {%- if item.zoom %}
-          {%- assign icon_class = site.data.icons.stream.class %}
-          {%- assign icon_label = site.data.icons.stream.label %}
-          {%- elsif found.icon %}
-          {%- assign icon_class = site.data.icons[found.icon].class %}
-          {%- assign icon_label = site.data.icons[found.icon].label %}
-          {%- elsif item.icon %}
-          {%- assign icon_class = site.data.icons[item.icon].class %}
-          {%- assign icon_label = site.data.icons[item.icon].label %}
-          {%- endif %}
-          {%- assign text = "Pending" %}
-          {%- if found.text %}
-          {%- assign text = found.text %}
-          {%- elsif item.text %}
-          {%- assign text = item.text %}
-          {%- endif %}
+
+          {%- if found.icon %}{% assign icon_class = site.data.icons[found.icon].class %}{% endif %}
+          {%- if found.icon %}{% assign icon_label = site.data.icons[found.icon].label %}{% endif %}
+          {%- if found.text %}{% assign item_text = found.text %}{% endif %}
+          {%- if found.link %}{% assign item_link = found.link %}{% endif %}
+          {%- if found.more %}{% assign item_more = found.more %}{% endif %}
+          {%- if found.show %}{% assign item_show = found.show %}{% endif %}
+          {%- if found.date %}{% assign item_date = found.date %}{% endif %}
+          {%- if found.save %}{% assign item_save = found.save %}{% endif %}
+          {%- if found.tube %}{% assign item_tube = found.tube %}{% endif %}
+
           <li class="{{ item.type | join: " " }} {{ found.type | join: " " }}">
             <i class="{{ icon_class }}" title="{{ icon_label }}"></i>
-            {%- if item.show or section.dates == true and item.date %}
-            {%- if item.date == day.date and item.show != true %}
+            {%- if item_show or section.dates == true and item_date %}
+            {%- if item_date == day.date and item_show != true %}
             <strong>Due: </strong>
             {%- else %}
-            <strong>{{ item.date | date: "%m/%d" }}: </strong>
+            <strong>{{ item_date | date: "%m/%d" }}: </strong>
             {%- endif %}
             {%- endif %}
-            {%- if item.zoom %}
-            <a href="{{ site.data.info.streams[item.zoom].link }}">{{ site.data.info.streams[item.zoom].name }}</a>
-            {%- elsif item.link %}
-            <a href="{{ item.link }}">{{ text }}</a>
+            {%- if item_link %}
+            <a href="{{ item_link }}">{{ item_text }}</a>
             {%- else %}
-            <span>{{ text }}</span>
+            <span>{{ item_text }}</span>
             {%- endif %}
-            {%- if item.more %}
-            {{ item.more }}
-            {%- endif -%}
-            {%- if item.save %}
-            <a href="/files/{{ item.text }}.pdf"><i class="fas fa-download" title="PDF Download"></i></a>
-            {%- endif %}
-            {%- if item.tube %}
-            <a href="{{ item.tube }}"><i class="fab fa-youtube" title="Archived Video Recording"></i></a>
-            {%- endif %}
+            {%- if item_more %} {{ item_more }}{% endif %}
+            {%- if item_save %} <a href="/files/{{ item_text }}.pdf"><i class="fas fa-download" title="PDF Download"></i></a>{% endif %}
+            {%- if item_tube %} <a href="{{ item_tube }}"><i class="fab fa-youtube" title="Archived Video Recording"></i></a>{% endif %}
           </li>
           {%- endfor %}
         </ul>
