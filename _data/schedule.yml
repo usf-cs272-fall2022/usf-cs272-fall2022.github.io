@@ -142,6 +142,12 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *assignments
+            items:
+              - file: projects
+                name: project1_tests
+                text: 'Project 1 Inverted Index'
+
       - date: 2022-09-01
         sections:
           - <<: *lectures
@@ -167,6 +173,7 @@ weeks:
                 date: 2022-09-05
                 icon: 'date'
                 type: [*pending, 'bump']
+
   - week: 3
     days:
       - date: 2022-09-06
@@ -230,6 +237,17 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *assignments
+            items:
+              - file: projects
+                name: project2_tests
+                text: 'Project 2 Partial Search'
+
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project1_tests
+
       - date: 2022-09-22
         sections:
           - <<: *lectures
@@ -255,6 +273,11 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project1_review1
+                
       - date: 2022-09-29
         sections:
           - <<: *lectures
@@ -280,6 +303,11 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project1_review2
+                
       - date: 2022-10-06
         sections:
           - <<: *lectures
@@ -307,6 +335,11 @@ weeks:
               - text: 'Exam 1'
                 icon: 'exam'
                 type: ['has-text-danger']
+
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project1_design
 
       - date: 2022-10-13
         sections:
@@ -366,6 +399,17 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *assignments
+            items:
+              - file: projects
+                name: project3_tests
+                text: 'Project 3 Multithreading'
+
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project2_tests
+
       - date: 2022-10-27
         sections:
           - <<: *lectures
@@ -390,6 +434,11 @@ weeks:
         sections:
           - <<: *lectures
             items:
+
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project2_review1
 
       - date: 2022-11-03
         sections:
@@ -416,6 +465,11 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project2_review2
+
       - date: 2022-11-10
         sections:
           - <<: *lectures
@@ -441,6 +495,20 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *assignments
+            items:
+              - file: projects
+                name: project4_tests
+                text: 'Project 4 Web Crawler'
+
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project2_design
+
+              - file: projects
+                name: project3_tests
+
       - date: 2022-11-17
         sections:
           - <<: *lectures
@@ -465,6 +533,17 @@ weeks:
         sections:
           - <<: *lectures
             items:
+
+          - <<: *assignments
+            items:
+              - file: projects
+                name: project4_review
+                text: 'Project 4 Search Engine'
+
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project3_review1
 
       - date: 2022-11-24
         sections:
@@ -492,6 +571,11 @@ weeks:
                 icon: 'exam'
                 type: ['has-text-danger']
 
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project3_review2
+
       - date: 2022-12-01
         sections:
           - <<: *lectures
@@ -512,6 +596,14 @@ weeks:
         sections:
           - <<: *lectures
             items:
+
+          - <<: *deadlines
+            items:
+              - file: projects
+                name: project3_design
+              
+              - file: projects
+                name: project4_tests
 
       - date: 2022-12-08
         sections:
@@ -543,7 +635,7 @@ weeks:
             items:
               - text: 'Final Code Reviews'
                 icon: 'project'
-                
+
 rows:
   - false # top row (usually lecture items)
   - true  # bottom row (usually deadlines)

@@ -1,53 +1,97 @@
 project1_tests: &default
   text: 'Project 1 Tests'
-  link: '/guides/projects/project-1.html'
+  # link: '/guides/projects/project-1.html'
   date: 2022-09-20
   icon: 'project'
   type: 'has-text-usf-plum'
 
-# project1r:
-#   <<: *default
-#   text: 'Project 1 Review 1'
-#   link: '/guides/projects/project-1.html'
-#   icon: 'review'
-#   date: 2022-03-08
+project1_review1: &default
+  text: 'Project 1 Review 1'
+  # link: '/guides/projects/project-1.html'
+  date: 2022-09-27
+  icon: 'review'
+  type: 'has-text-usf-plum'
 
-# project2t:
-#   <<: *default
-#   text: 'Project 2 Tests'
-#   link: '/guides/projects/project-2.html'
-#   date: 2022-03-29
+project1_review2: &default
+  text: 'Project 1 Review 2'
+  # link: '/guides/projects/project-1.html'
+  date: 2022-10-04
+  icon: 'review'
+  type: 'has-text-usf-plum'
 
-# project2r:
-#   <<: *default
-#   text: 'Project 2 Review 1'
-#   link: '/guides/projects/project-2.html'
-#   icon: 'review'
-#   date: 2022-04-05
+project1_design: &default
+  text: 'Project 1 Design'
+  # link: '/guides/projects/project-1.html'
+  date: 2022-10-11
+  icon: 'project'
+  type: 'has-text-usf-plum'
 
-# project3t:
-#   <<: *default
-#   text: 'Project 3 Tests'
-#   link: '/guides/projects/project-3.html'
-#   date: 2022-04-19
+project2_tests: &default
+  text: 'Project 2 Tests'
+  # link: '/guides/projects/project-2.html'
+  date: 2022-10-25
+  icon: 'project'
+  type: 'has-text-usf-plum'
 
-# project3r:
-#   <<: *default
-#   text: 'Project 3 Review 1'
-#   link: '/guides/projects/project-3.html'
-#   icon: 'review'
-#   date: 2022-04-26
+project2_review1: &default
+  text: 'Project 2 Review 1'
+  # link: '/guides/projects/project-2.html'
+  date: 2022-11-01
+  icon: 'review'
+  type: 'has-text-usf-plum'
 
-# project4t:
-#   <<: *default
-#   text: 'Project 4 Tests'
-#   link: '/guides/projects/project-4a.html'
-#   date: 2022-05-10
+project2_review2: &default
+  text: 'Project 2 Review 2'
+  # link: '/guides/projects/project-2.html'
+  date: 2022-11-08
+  icon: 'review'
+  type: 'has-text-usf-plum'
 
-# project4r:
-#   <<: *default
-#   text: 'Project 4 Review'
-#   link: '/guides/projects/project-4b.html'
-#   icon: 'review'
-#   show: true
-#   date: 'Finals'
+project2_design: &default
+  text: 'Project 2 Design'
+  # link: '/guides/projects/project-2.html'
+  date: 2022-11-15
+  icon: 'project'
+  type: 'has-text-usf-plum'
+
+project3_tests: &default
+  text: 'Project 3 Tests'
+  # link: '/guides/projects/project-3.html'
+  date: 2022-11-15
+  icon: 'project'
+  type: 'has-text-usf-plum'
+
+project3_review1: &default
+  text: 'Project 3 Review 1'
+  # link: '/guides/projects/project-3.html'
+  date: 2022-11-22
+  icon: 'review'
+  type: 'has-text-usf-plum'
+
+project3_review2: &default
+  text: 'Project 3 Review 2'
+  # link: '/guides/projects/project-3.html'
+  date: 2022-11-29
+  icon: 'review'
+  type: 'has-text-usf-plum'
+
+project3_design: &default
+  text: 'Project 3 Design'
+  # link: '/guides/projects/project-3.html'
+  date: 2022-12-06
+  icon: 'project'
+  type: 'has-text-usf-plum'
+
+project4_tests: &default
+  text: 'Project 4 Tests'
+  # link: '/guides/projects/project-4a.html'
+  date: 2022-12-06
+  icon: 'project'
+  type: 'has-text-usf-plum'
+
+project4_review: &default
+  text: 'Project 4 Review'
+  # link: '/guides/projects/project-4b.html'
+  date: 2022-12-12
+  icon: 'review'
+  type: 'has-text-usf-plum'
