@@ -1,0 +1,92 @@
+argumentparser: &default
+  text: 'ArgumentParser'
+  date: 2022-09-02
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223887'
+  type: ''
+  show: 'false'
+  icon: 'homework'
+  tags: ['objects', 'data']
+
+# textfilestemmer:
+#   <<: *default
+#   text: 'TextFileStemmer'
+#   date: 2022-02-25
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
+#   tags: ['files', 'data']
+
+# simplejsonwriter:
+#   <<: *default
+#   text: 'SimpleJsonWriter'
+#   date: 2022-02-25
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
+#   tags: ['files', 'data']
+
+# textfileindex:
+#   <<: *default
+#   text: 'TextFileIndex'
+#   date: 2022-02-25
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166818'
+#   tags: ['objects', 'inheritance']
+
+# textfilefinder:
+#   <<: *default
+#   text: 'TextFileFinder'
+#   date: 2022-03-25
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
+#   tags: ['lambdas', 'streams']
+
+# textfilesorter:
+#   <<: *default
+#   text: 'TextFileSorter'
+#   date: 2022-03-25
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
+#   tags: ['inheritance']
+
+# loggersetup:
+#   <<: *default
+#   text: 'LoggerSetup'
+#   date: 2022-04-08
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
+#   tags: ['debugging']
+
+# readwritelock:
+#   <<: *default
+#   text: 'ReadWriteLock'
+#   date: 2022-04-08
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
+#   tags: ['threads']
+
+# primefinder:
+#   <<: *default
+#   text: 'PrimeFinder'
+#   date: 2022-04-08
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166823'
+#   tags: ['threads']
+
+# linkparser:
+#   <<: *default
+#   text: 'LinkParser'
+#   date: 2022-04-29
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166824'
+#   tags: ['web', 'regexes']
+
+# htmlcleaner:
+#   <<: *default
+#   text: 'HtmlCleaner'
+#   date: 2022-04-29
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166826'
+#   tags: ['web', 'regexes']
+
+# htmlfetcher:
+#   <<: *default
+#   text: 'HtmlFetcher'
+#   date: 2022-04-29
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166825'
+#   tags: ['web']
+
+# headerserver:
+#   <<: *default
+#   text: 'HeaderServer (Optional)'
+#   date: 2022-05-06
+#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166827'
+#   tags: ['web', 'servlets']
