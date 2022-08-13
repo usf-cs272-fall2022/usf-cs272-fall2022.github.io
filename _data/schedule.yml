@@ -346,6 +346,13 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *assignments
+            items:
+              - text: 'Exam 1 Retake'
+                icon: 'exam'
+                date: 2022-10-20
+                type: ['has-text-danger']
+
       - date: 2022-10-14
         sections:
           - <<: *labs
@@ -378,6 +385,13 @@ weeks:
         sections:
           - <<: *lectures
             items:
+
+          - <<: *deadlines
+            items:
+              - text: 'Exam 1 Retake'
+                icon: 'exam'
+                date: 2022-10-20
+                type: ['has-text-danger']
 
       - date: 2022-10-21
         sections:
@@ -581,6 +595,13 @@ weeks:
           - <<: *lectures
             items:
 
+          - <<: *assignments
+            items:
+              - text: 'Exam 2 Retake'
+                icon: 'exam'
+                date: 2022-12-08
+                type: ['has-text-danger']
+
       - date: 2022-12-02
         sections:
           - <<: *labs
@@ -612,6 +633,13 @@ weeks:
               - text: 'Study Day'
                 icon: 'date'
                 type: [*pending]
+
+          - <<: *deadlines
+            items:
+              - text: 'Exam 2 Retake'
+                icon: 'exam'
+                date: 2022-12-08
+                type: ['has-text-danger']
 
       - date: 2022-12-09
         sections:
