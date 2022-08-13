@@ -21,6 +21,8 @@ defaults:
     label: 'Dates and Deadlines <i class="fas fa-info-circle has-text-grey-light" title="Deadlines that fall on that day and other nearby dates (such as holidays)."></i>'
     dates: true
 
+start: 2022-08-23
+
 weeks:
   - week: 1
     days:
@@ -32,18 +34,17 @@ weeks:
                 icon: 'website'
                 link: 'https://usfca.simplesyllabus.com/doc/bkntdvkfc/Fall-2022-CS-272-01-Software-Development?mode=view'
 
-              # - file: 'slides'
-              #   name: 'course_intro'
+              - text: 'Course Introduction'
 
-          - <<: *content
-            items:
-              - text: 'Getting Started'
-                icon: 'website'
-                link: '/guides/general/getting-started.html'
+          # - <<: *content
+          #   items:
+          #     - text: 'Getting Started'
+          #       icon: 'website'
+          #       link: '/guides/general/getting-started.html'
 
-              - text: 'Java and Eclipse Setup'
-                icon: 'website'
-                link: '/guides/eclipse/java-and-eclipse-setup.html'
+          #     - text: 'Java and Eclipse Setup'
+          #       icon: 'website'
+          #       link: '/guides/eclipse/java-and-eclipse-setup.html'
 
           - <<: *assignments
             items:
@@ -52,9 +53,6 @@ weeks:
 
               - file: 'participation'
                 name: 'introduction_post'
-
-              - file: 'participation'
-                name: 'introduction_reply'
 
               - file: 'participation'
                 name: 'forum_setup'
@@ -66,30 +64,16 @@ weeks:
                 icon: 'date'
                 type: [*pending]
 
-      - date: 2022-01-27
+      - date: 2022-08-25
         sections:
           - <<: *lectures
             items:
-              - text: 'Pending'
-              # - text: 'Project Euler'
-              #   icon: 'code'
-              #   link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ProjectEuler'
+            - text: 'Exception Handling'
 
-              # - text: 'Exception Handling'
-              #   icon: 'code'
-              #   link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ExceptionHandling'
-
-          # - <<: *content
-          #   items:
-          #     - file: 'slides'
-          #       name: 'exceptions'
-
-      - date: 2022-01-28
+      - date: 2022-08-26
         sections:
           - <<: *labs
             items:
-              - text: 'Pending'
-
               # - text: 'Java and Eclipse Setup'
               #   icon: 'website'
               #   link: '/guides/eclipse/java-and-eclipse-setup.html'
@@ -102,10 +86,9 @@ weeks:
               #   icon: 'website'
               #   link: '/guides/homework/setup-homework.html'
 
-              # - text: 'ArgumentParser'
-              #   more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template">Template</a>)'
-              #   icon: 'homework'
-              #   type: 'bump'
+              - file: 'homework'
+                name: 'argumentparser'
+                type: 'bump'
 
           # - <<: *content
           #   items:
@@ -121,16 +104,19 @@ weeks:
           #       icon: 'website'
           #       link: '/guides/homework/test-homework.html'
 
-          # - <<: *assignments
-          #   items:
-          #     - file: 'participation'
-          #       name: 'assistants_reply'
+          - <<: *assignments
+            items:
+              - file: 'participation'
+                name: 'introduction_reply'
 
-          #     - file: 'participation'
-          #       name: 'homework_setup'
+              # - file: 'participation'
+              #   name: 'assistants_reply'
 
-          #     - file: 'homework'
-          #       name: 'argumentparser'
+              # - file: 'participation'
+              #   name: 'homework_setup'
+
+              - file: 'homework'
+                name: 'argumentparser'
 
           - <<: *deadlines
             items:
@@ -149,2029 +135,415 @@ weeks:
                 show: true
                 type: [*pending, 'bump']
 
-  # - week: 2
-  #   days:
-  #     - date: 2022-02-01
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'paths'
-
-  #             - text: 'File IO'
-  #               type: ['bump']
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/FileIO'
-
-  #             - text: '– EliteFileConverter'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/EliteFileConverter.java'
-
-  #             - text: '– DirectoryStreamDemo'
-  #               icon: 'nothing'
-  #               tube: 'https://drive.google.com/file/d/1sAML7el7txCn53kIMccCgEPgOSDDzeCm/view?usp=sharing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/DirectoryStreamDemo.java'
-
-  #             - text: '– PathDemo'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/PathDemo.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'paths'
-
-  #             - file: 'participation'
-  #               name: 'piazza_post'
-  #               type: ['bump']
-
-  #             - file: 'participation'
-  #               name: 'piazza_reply'
-
-  #             - file: 'participation'
-  #               name: 'cs_event'
-
-  #     - date: 2022-02-03
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'data'
-
-  #             - file: 'slides'
-  #               name: 'collections'
-
-  #             - text: 'Data Structures'
-  #               icon: 'code'
-  #               type: ['bump']
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/DataStructures'
-
-  #             - text: '– CollectionDemo'
-  #               icon: 'nothing'
-  #               tube: 'https://drive.google.com/file/d/1UbVnpLnFL1v0AKH6pazLRH0jKh1OkTF1/view?usp=sharing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/CollectionDemo.java'
-
-  #             - text: '– MapDemo'
-  #               icon: 'nothing'
-  #               tube: 'https://drive.google.com/file/d/1byBtkaRo7WkY3cBfPXJNkvEi3D7UhoJD/view?usp=sharing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MapDemo.java'
-
-  #             - text: '– NestedMapDemo'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/NestedMapDemo.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'data'
-
-  #             - file: 'quizzes'
-  #               name: 'maps'
-
-  #     - date: 2022-02-04
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Configuring Eclipse'
-  #               icon: 'website'
-  #               link: '/guides/eclipse/configuring-eclipse.html'
-
-  #             - text: 'Importing Lectures'
-  #               icon: 'website'
-  #               link: '/guides/eclipse/importing-eclipse-projects-from-github.html'
-
-  #             - text: 'Homework Guides'
-  #               icon: 'website'
-  #               link: '/guides/homework/'
-
-  #             - text: 'ArgumentParser'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166815'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template">Template</a>)'
-  #               icon: 'homework'
-  #               type: 'bump'
-
-  #             - text: 'TextFileStemmer'
-  #               icon: 'homework'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'participation'
-  #               name: 'lecture_setup'
-
-  #             - file: 'homework'
-  #               name: 'textfilestemmer'
-  #               type: ['bump']
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'participation'
-  #               name: 'introduction_reply'
-
-  #             - file: 'participation'
-  #               name: 'assistants_reply'
-
-  #             - file: 'participation'
-  #               name: 'homework_setup'
-
-  #             - text: 'Homework Bundle 0'
-  #               icon: 'homework'
-  #               date: 2022-02-04
-  #               type: ['has-text-weight-bold', 'bump']
-
-  #             - file: 'homework'
-  #               name: 'argumentparser'
-
-  # - week: 3
-  #   days:
-  #     - date: 2022-02-08
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Project Overview'
-  #               link: 'https://docs.google.com/presentation/d/e/2PACX-1vRXnJZ7OcwkHCW4kTj9U_Qc8K_FX-H_hIdRoyUkVQ7jl6JGSiIBX9HC5AEHj4CvmK9dhcEWSGQ4L_ZR/pub?start=false&loop=false&delayms=3000'
-  #               save: true
-  #               icon: 'slides'
-
-  #             - text: 'Project 1 Inverted Index'
-  #               icon: 'website'
-  #               link: '/guides/projects/project-1.html'
-
-  #             - text: 'Data Structures'
-  #               icon: 'code'
-  #               type: ['bump']
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/DataStructures'
-
-  #             - text: '– NestedMapDemo'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/NestedMapDemo.java'
-  #               info: ' (Revisited)'
-
-  #             - text: '– IterationDemo'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/IterationDemo.java'
-
-  #             - text: '– RemoveDemo'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/RemoveDemo.java'
-
-  #             - text: '– MutableSetDemo'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MutableSetDemo.java'
-
-  #         - <<: *content
-  #           items:
-  #             - text: 'FindDemo'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/FindDemo.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project1t'
-  #               text: 'Project 1 Inverted Index'
-
-  #             - file: 'participation'
-  #               name: 'intake_review'
-
-  #     - date: 2022-02-10
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Getting Help'
-  #               link: 'https://docs.google.com/presentation/d/e/2PACX-1vSSa230GPB0k3US0k4H5Zl20lvVSSIDrG3RlXDFIJk3g5NkZLcPJSxuwqLm4U32HIh6aqBPxQRsknIE/pub?start=false&loop=false&delayms=3000'
-  #               save: true
-  #               icon: 'slides'
-
-  #             - text: 'MutableSetDemo'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MutableSetDemo.java'
-  #               type: ['bump']
-
-  #             - file: 'slides'
-  #               name: 'oop'
-  #               type: ['bump']
-
-  #             - text: 'Object Oriented Programming'
-  #               icon: 'code'
-  #               type: 'bump'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ObjectOrientedProgramming'
-
-  #             - text: '– StaticDemo.java'
-  #               icon: 'none'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/StaticDemo.java'
-  #               tube: 'https://drive.google.com/file/d/13OATz6xNyiRGQXX_ZzSHPWSwt8mEaLji/view?usp=sharing'
-
-  #             - text: '– ObjectDemo.java'
-  #               icon: 'none'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/ObjectDemo.java'
-  #               tube: 'https://drive.google.com/file/d/1U0uVHUPp1-zZK-J5rVn0X-pP2CdxF3el/view?usp=sharing'
-
-  #             - text: '– StringDemo.java'
-  #               icon: 'none'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/StringDemo.java'
-  #               tube: 'https://drive.google.com/file/d/1Gncwuj-YnyaPivB3vQLLyWVM-8ZnFjeT/view?usp=sharing'
-
-  #     - date: 2022-02-11
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Project Setup'
-  #               icon: 'website'
-  #               link: '/guides/projects/setup.html'
-
-  #             - text: 'Project Testing'
-  #               icon: 'website'
-  #               link: '/guides/projects/testing.html'
-
-  #             - text: 'Comparing Output'
-  #               icon: 'website'
-  #               link: '/guides/eclipse/comparing-output.html'
-
-  #             - text: 'TextFileStemmer'
-  #               icon: 'homework'
-  #               type: ['bump']
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
-
-  #             - text: 'SimpleJsonWriter'
-  #               icon: 'homework'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'participation'
-  #               name: 'intake_review'
-
-  #             - file: 'participation'
-  #               name: 'project_setup'
-
-  #             - file: 'homework'
-  #               name: 'simplejsonwriter'
-  #               type: ['bump']
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'paths'
-
-  #             - file: 'quizzes'
-  #               name: 'data'
-
-  #             - file: 'quizzes'
-  #               name: 'maps'
-
-  #             - file: 'participation'
-  #               name: 'lecture_setup'
-  #               type: ['bump']
-
-  #             - text: 'Drop Deadline (Census)'
-  #               date: 2022-02-11
-  #               icon: 'date'
-  #               show: true
-  #               type: [*pending, 'bump']
-
-  # - week: 4
-  #   days:
-  #     - date: 2022-02-15
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Object Oriented Programming'
-  #               icon: 'code'
-  #               type: 'bump'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ObjectOrientedProgramming'
-
-  #             - text: '– HashCodeDemo.java'
-  #               icon: 'none'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/HashCodeDemo.java'
-
-  #             - text: '– MutabilityDemo.java'
-  #               icon: 'none'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/MutabilityDemo.java'
-
-  #             - text: '– MapMutabilityDemo.java'
-  #               icon: 'none'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/MapMutabilityDemo.java'
-
-  #             - text: '– ConcatenationDemo.java'
-  #               icon: 'none'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/MapMutabilityDemo.java'
-
-  #         - <<: *content
-  #           items:
-  #             - text: 'Widget.java'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/Widget.java'
-  #               tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
-  #               more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/WidgetDemo.java">WidgetDemo.java</a>'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'static'
-
-  #             - file: 'quizzes'
-  #               name: 'identifier'
-
-  #             - file: 'quizzes'
-  #               name: 'mutability1'
-  #               type: ['bump']
-
-  #             - file: 'quizzes'
-  #               name: 'mutability2'
-
-  #     - date: 2022-02-17
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Object Oriented Programming'
-  #               icon: 'code'
-  #               type: 'bump'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ObjectOrientedProgramming'
-
-  #             - text: '– PrefixMap.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/PrefixMap.java'
-
-  #             - text: '– PrefixMap.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/PrefixDemo.java'
-
-  #             - file: 'slides'
-  #               name: 'inheritance'
-  #               type: ['bump']
-
-  #             - file: 'slides'
-  #               name: 'abstract'
-
-  #             - file: 'slides'
-  #               name: 'final'
-
-  #             - file: 'slides'
-  #               name: 'generics'
-  #               type: ['bump']
-
-  #         - <<: *content
-  #           items:
-  #             - file: 'slides'
-  #               name: 'object'
-
-  #             - file: 'slides'
-  #               name: 'revisited'
-
-  #             - text: 'Generic Types Demo'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/GenericTypesDemo.java'
-  #               tube: 'https://drive.google.com/file/d/1Haj475bCoHuTN3TZBAuYgsafkeka8WNA/view?usp=sharing'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'inheritance'
-
-  #             - file: 'quizzes'
-  #               name: 'collections'
-
-  #     - date: 2022-02-18
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Project Grading'
-  #               icon: 'website'
-  #               link: '/guides/projects/grading.html'
-
-  #             - text: 'SimpleJsonWriter'
-  #               icon: 'homework'
-  #               type: ['bump']
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
-
-  #             - text: 'TextFileIndex'
-  #               icon: 'homework'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166818'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileIndex-template">Template</a>)'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'textfileindex'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'participation'
-  #               name: 'project_setup'
-
-  #             - file: 'quizzes'
-  #               name: 'static'
-  #               type: ['bump']
-
-  #             - file: 'quizzes'
-  #               name: 'identifier'
-
-  # - week: 5
-  #   days:
-  #     - date: 2022-02-22
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'casting'
-
-  #             - file: 'slides'
-  #               name: 'nested'
-
-  #             - text: 'Inheritance'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Inheritance'
-  #               type: ['bump']
-
-  #             - text: '– CastDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/CastDemo.java'
-
-  #             - text: 'Shape Demo'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Inheritance'
-  #               type: ['bump']
-
-  #             - text: '–'
-  #               icon: 'nothing'
-  #               more: '<a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Shape.java">Shape.java</a>, <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Rectangle.java">Rectangle.java</a>, and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Square.java">Square.java</a>'
-
-  #             - text: '– ShapeDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/ShapeDemo.java'
-
-  #             - text: 'Gadget Sort Demo'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Inheritance'
-  #               tube: 'https://drive.google.com/file/d/1LLItjwK8SwopHXJdZ7o1vffT1nNvoaEa/view?usp=sharing'
-  #               type: ['bump']
-
-  #             - text: '– Gadget.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Gadget.java'
-
-  #             - text: '– GadgetComparator.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/GadgetComparator.java'
-
-  #             - text: '– GadgetSortDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/GadgetSortDemo.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'casting'
-
-  #             - file: 'quizzes'
-  #               name: 'nesting'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - text: "Presidents' Day"
-  #               date: 2022-02-21
-  #               icon: 'date'
-  #               show: true
-  #               type: [*pending]
-
-  #     - date: 2022-02-24
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'java'
-
-  #             - file: 'slides'
-  #               name: 'lambdas'
-
-  #             - text: 'Lambda Expressions'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/LambdaExpressions'
-  #               icon: 'code'
-  #               type: ['bump']
-
-  #             - text: '– StringSorterDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/StringSorter.java'
-
-  #             - text: '– PathMatcherDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/PathMatcherDemo.java'
-
-  #             - text: '– LambdaDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'java'
-
-  #             - file: 'quizzes'
-  #               name: 'lambdas'
-
-  #     - date: 2022-02-25
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Homework Bundle 1 Help'
-  #               icon: 'homework'
-
-  #             - text: '– TextFileStemmer'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
-
-  #             - text: '– SimpleJsonWriter'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
-
-  #             - text: '– TextFileIndex'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166818'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileIndex-template">Template</a>)'
-
-  #             - text: 'Homework Bundle 2 Help'
-  #               icon: 'homework'
-  #               type: 'bump'
-
-  #             - text: '– TextFileSorter'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project Grading'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/grading.html'
-
-  #             - text: '– Project 1 Inverted Index'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-1.html'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'textfilesorter'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'mutability1'
-  #               type: ['bump']
-
-  #             - file: 'quizzes'
-  #               name: 'mutability2'
-
-  #             - file: 'quizzes'
-  #               name: 'inheritance'
-
-  #             - file: 'quizzes'
-  #               name: 'collections'
-
-  #             - file: 'participation'
-  #               name: 'intake_review'
-  #               type: ['bump']
-
-  #             - text: 'Homework Bundle 1'
-  #               icon: 'homework'
-  #               date: 2022-02-25
-  #               type: ['has-text-weight-bold', 'bump']
-
-  #             - file: 'homework'
-  #               name: 'textfilestemmer'
-
-  #             - file: 'homework'
-  #               name: 'simplejsonwriter'
-
-  #             - file: 'homework'
-  #               name: 'textfileindex'
-
-  # - week: 6
-  #   days:
-  #     - date: 2022-03-01
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'LambdaDemo.java'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
-
-  #             - file: 'slides'
-  #               name: 'streams'
-  #               type: ['bump']
-
-  #             - text: 'Stream Pipelines'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/StreamPipelines'
-  #               type: ['bump']
-
-  #             - text: '– StreamDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/StreamDemo.java'
-  #               tube: 'https://drive.google.com/file/d/18RKTIjJmH1ovGVIwbVzfCIiDBq1BhmbP/view?usp=sharing'
-
-  #             - text: '– ParallelStreamBenchmark.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/ParallelStreamBenchmark.java'
-
-  #             - text: '– InfiniteStreamDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/InfiniteStreamDemo.java'
-  #               tube: 'https://drive.google.com/file/d/1AbBKj-JiQYLNACw3GXGPkHlInBmVzg3X/view?usp=sharing'
-
-  #         - <<: *content
-  #           items:
-  #             - file: 'slides'
-  #               name: 'pipelines'
-
-  #             - text: 'Problem1Revisited.java'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/Problem1Revisited.java'
-  #               tube: 'https://drive.google.com/file/d/1gTjlMdvnCHs_E3yEL_DNsvkswG0zSg96/view?usp=sharing'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'streams'
-
-  #             - file: 'quizzes'
-  #               name: 'project2'
-
-  #             - file: 'projects'
-  #               name: 'project2t'
-  #               text: 'Project 2 Partial Search'
-  #               type: 'bump'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project1t'
-
-  #     - date: 2022-03-03
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Exam Logistics'
-  #               link: '/guides/exams/'
-  #               icon: 'exam'
-
-  #             - text: 'Exam Review'
-  #               link: '/guides/exams/exam-1.html'
-  #               icon: 'exam'
-
-  #             - file: 'slides'
-  #               name: 'pipelines'
-  #               type: ['bump']
-
-  #             - text: 'TextFileParser.java'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/TextFileParser.java'
-  #               icon: 'code'
-  #               tube: 'https://drive.google.com/file/d/1x07LOgjD-N431tK_2sk2_kdboovJouCu/view?usp=sharing'
-  #               type: ['bump']
-
-  #             - text: 'TextFileStreamer.java'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/TextFileStreamer.java'
-  #               icon: 'code'
-  #               tube: 'https://drive.google.com/file/d/1H-FYMCrXlyx5xZ-M-wAIx5xtj9aieN8U/view?usp=sharing'
-
-  #     - date: 2022-03-04
-  #       sections:
-  #         - <<: *labs
-  #           row: false
-  #           items:
-  #             - text: 'Homework Bundle 2 Help'
-  #               icon: 'homework'
-
-  #             - text: '– TextFileSorter'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
-
-  #             - text: '– TextFileFinder'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileFinder-template">Template</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project 1 Inverted Index'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-1.html'
-
-  #             - text: '– Project 2 Partial Search'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-2.html'
-
-  #         - <<: *assignments
-  #           row: false
-  #           items:
-  #             - file: 'homework'
-  #               name: 'textfilefinder'
-  #               type: ['bump']
-
-  #         - <<: *deadlines
-  #           row: false
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'casting'
-
-  #             - file: 'quizzes'
-  #               name: 'nesting'
-
-  #             - file: 'quizzes'
-  #               name: 'java'
-
-  #             - file: 'quizzes'
-  #               name: 'lambdas'
-
-  #             - file: 'quizzes'
-  #               name: 'streams'
-
-  # - week: 7
-  #   days:
-  #     - date: 2022-03-08
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Exam 1'
-  #               icon: 'exam'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7188663'
-  #               type: ['has-text-danger']
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project1r'
-
-  #     - date: 2022-03-10
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'logging'
-
-  #             - text: 'Logging'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Logging'
-  #               type: ['bump']
-
-  #             - text: '– log4j2.xml'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/resources/log4j2.xml'
-
-  #             - text: '– Log4j2Demo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/Log4jDemo.java'
-
-  #             - text: '– CharacterCounter.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterCounter.java'
-
-  #             - text: 'CharacterFinder Example'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Logging'
-  #               type: ['bump']
-
-  #             - text: '– CharacterFinder.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterFinder.java'
-
-  #             - text: '– CharacterCompare.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterCompare.java'
-
-  #             - text: '– CharacterBenchmark.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterBenchmark.java'
-
-  #         - <<: *content
-  #           items:
-  #             - file: 'slides'
-  #               name: 'assertions'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'participation'
-  #               name: 'midterm_survey'
-
-  #             - file: 'quizzes'
-  #               name: 'asserts'
-
-  #             - file: 'quizzes'
-  #               name: 'logging'
-
-  #             - text: 'Exam 1 Retake'
-  #               icon: 'exam'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7189028'
-  #               type: ['has-text-danger', 'bump']
-
-  #     - date: 2022-03-11
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Homework Bundle 2 Help'
-  #               icon: 'homework'
-
-  #             - text: '– TextFileSorter'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
-
-  #             - text: '– TextFileFinder'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileFinder-template">Template</a>)'
-
-  #             - text: 'Homework Bundle 3 Help'
-  #               icon: 'homework'
-  #               type: 'bump'
-
-  #             - text: '– LoggerSetup'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project 1 Inverted Index'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-1.html'
-
-  #             - text: '– Project 2 Partial Search'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-2.html'
-
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'participation'
-  #               name: 'midterm_survey'
-
-  #             - file: 'homework'
-  #               name: 'loggersetup'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'participation'
-  #               name: 'piazza_post'
-
-  #             - file: 'quizzes'
-  #               name: 'project2'
-
-  # - week: 8
-  #   days:
-  #     - date: 2022-03-15
-  #       sections:
-  #         - label: 'No Class'
-  #           items:
-  #             - text: 'Spring Break'
-  #               icon: 'spring'
-  #               type: [*pending]
-
-  #     - date: 2022-03-17
-  #       sections:
-  #         - label: 'No Class'
-  #           items:
-  #             - text: 'Spring Break'
-  #               icon: 'spring'
-  #               type: [*pending]
-
-  #     - date: 2022-03-18
-  #       sections:
-  #         - label: 'No Class'
-  #           items:
-  #             - text: 'Spring Break'
-  #               icon: 'spring'
-  #               type: [*pending]
-
-  # - week: 9
-  #   days:
-  #     - date: 2022-03-22
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'multithreading'
-
-  #             - file: 'slides'
-  #               name: 'threads'
-
-  #             - text: 'Multithreading'
-  #               type: 'bump'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Multithreading'
-
-  #             - text: '– RandomArrayDemo.java'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/RandomArrayTotal.java'
-  #               tube: 'https://drive.google.com/file/d/12aYTi2LQW3W-8GYG-G1A-Febu9Wlof7c/view?usp=sharing'
-  #               icon: 'nothing'
-
-  #             - text: '– ThreadStateDemo.java'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/ThreadStateDemo.java'
-  #               tube: 'https://drive.google.com/file/d/1ddBJ9YG-xYORgvGbVIKz3z0tj-89n1T6/view?usp=sharing'
-  #               icon: 'nothing'
-
-  #             - file: 'slides'
-  #               name: 'consistency'
-  #               type: 'bump'
-
-  #         - <<: *content
-  #           items:
-  #             - file: 'slides'
-  #               name: 'liveness'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'threads'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - text: 'Exam 1 Retake'
-  #               icon: 'exam'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7189028'
-  #               type: ['has-text-danger']
-  #               date: 2022-03-22
-
-  #     - date: 2022-03-24
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'synchronization'
-
-  #             - text: 'Synchronization'
-  #               type: 'bump'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Synchronization'
-
-  #             - text: '– IndexedSet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/IndexedSet.java'
-  #               tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
-
-  #             - text: '– SynchronizedSet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SynchronizedSet.java'
-  #               tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
-
-  #             - text: '– LockDemo.java'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/LockDemo.java'
-  #               type: 'bump'
-  #               icon: 'nothing'
-
-  #             - file: 'slides'
-  #               name: 'coordination'
-  #               type: 'bump'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'synchronization'
-
-  #     - date: 2022-03-25
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Homework Bundle 2 Help'
-  #               icon: 'homework'
-
-  #             - text: '– TextFileSorter'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
-
-  #             - text: '– TextFileFinder'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileFinder-template">Template</a>)'
-
-  #             - text: 'Homework Bundle 3 Help'
-  #               icon: 'homework'
-  #               type: 'bump'
-
-  #             - text: '– LoggerSetup'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
-
-  #             - text: '– ReadWriteLock'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ReadWriteLock-template">Template</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project 1 Inverted Index'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-1.html'
-
-  #             - text: '– Project 2 Partial Search'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-2.html'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'readwritelock'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'participation'
-  #               name: 'midterm_survey'
-
-  #             - file: 'quizzes'
-  #               name: 'asserts'
-
-  #             - file: 'quizzes'
-  #               name: 'logging'
-
-  #             - text: 'Homework Bundle 2'
-  #               icon: 'homework'
-  #               date: 2022-03-25
-  #               type: ['has-text-weight-bold', 'bump']
-
-  #             - file: 'homework'
-  #               name: 'textfilesorter'
-
-  #             - file: 'homework'
-  #               name: 'textfilefinder'
-
-  # - week: 10
-  #   days:
-  #     - date: 2022-03-29
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Multithreading'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/'
-  #               type: 'bump'
-  #               icon: 'code'
-
-  #             - text: '– BoundedBuffer.java'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/BoundedBuffer.java'
-  #               icon: 'nothing'
-  #               tube: 'https://drive.google.com/file/d/1e20Tr6fUSVmxRe6O4B_l7Ynx3uEBigXC/view?usp=sharing'
-
-  #             - file: 'slides'
-  #               name: 'locks'
-  #               type: 'bump'
-
-  #             - text: 'Synchronization'
-  #               type: 'bump'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Synchronization'
-
-  #             - text: '– IndexedSet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/IndexedSet.java'
-  #               tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
-
-  #             - text: '– SynchronizedSet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SynchronizedSet.java'
-  #               tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
-
-  #             - text: '– ConcurrentSet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/ConcurrentSet.java'
-  #               tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
-
-  #             - text: '– SetDemo.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SetDemo.java'
-  #               tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project3t'
-  #               text: 'Project 3 Multithreading'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project2t'
-
-  #     - date: 2022-03-31
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'pools'
-
-  #             - text: 'Work Queue'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/WorkQueue.java'
-  #               tube: 'https://drive.google.com/file/d/1IQIU3GxPRiF8YY4VS_lv_M0yfcLAMmnQ/view?usp=sharing'
-  #               type: 'bump'
-
-  #             - text: 'Directory Listing Demos'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/WorkQueues'
-  #               tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing'
-  #               type: 'bump'
-
-  #             - text: '– SerialDirectoryListing.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/SerialDirectoryListing.java'
-
-  #             - text: '– SlowDirectoryListing.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/SlowDirectoryListing.java'
-
-  #             - text: '– ThreadDirectoryListing.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ThreadDirectoryListing.java'
-
-  #             - text: '– FastDirectoryListing.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/FastDirectoryListing.java'
-
-  #         - <<: *content
-  #           items:
-  #             - file: 'slides'
-  #               name: 'volatile'
-
-  #             - text: 'Directory Listing Demos'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/WorkQueues'
-  #               tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view'
-  #               type: 'bump'
-
-  #             - text: '– ConcurrentWorkQueue.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java'
-
-  #             - text: '– ExecutorDirectoryListing.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'workers'
-
-  #     - date: 2022-04-01
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Homework Bundle 3 Help'
-  #               icon: 'homework'
-
-  #             - text: '– LoggerSetup'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
-
-  #             - text: '– ReadWriteLock'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ReadWriteLock-template">Template</a>)'
-
-  #             - text: '– PrimeFinder'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166823'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-PrimeFinder-template">Template</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project 2 Partial Search'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-2.html'
-
-  #             - text: '– Project 3 Multithreading'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-3.html'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'primefinder'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'threads'
-
-  #             - file: 'quizzes'
-  #               name: 'synchronization'
-
-  # - week: 11
-  #   days:
-  #     - date: 2022-04-05
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'HyperText Markup'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/HyperText'
-
-  #             - file: 'slides'
-  #               name: 'regex'
-  #               type: 'bump'
-
-  #             - text: 'Regular Expressions'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/RegularExpressions'
-
-  #             - text: '– RegexClasses.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexClasses.java'
-  #               tube: 'https://drive.google.com/file/d/1TFSN35nVHQlhAqptWLbApR_3hg89v1yF/view?usp=sharing'
-
-  #             - text: '– RegexQuantifiers.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexQuantifiers.java'
-  #               tube: 'https://drive.google.com/file/d/1OwNQ72SGStcDEFZBvw40bQW2ldjEfiUg/view?usp=sharing'
-
-  #         - <<: *content
-  #           items:
-  #             - file: 'slides'
-  #               name: 'web'
-
-  #             - file: 'slides'
-  #               name: 'url'
-
-  #             - text: 'Introduction to HTML'
-  #               link: 'https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'
-  #               icon: 'website'
-  #               type: 'bump'
-
-  #             - text: 'HTML Essential Training'
-  #               link: 'https://www.linkedin.com/learning/html-essential-training-4/'
-  #               icon: 'linkedin'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'project3'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project2r'
-
-  #     - date: 2022-04-07
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Regular Expressions'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/RegularExpressions'
-
-  #             - text: '– RegexWordParsing.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
-  #               tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
-
-  #             - text: '– RegexBoundaries.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexBoundaries.java'
-
-  #             - text: '– RegexGroups.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexGroups.java'
-
-  #             - text: '– RegexChallenge.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexChallenge.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'regex'
-
-  #         - <<: *content
-  #           items:
-  #             - text: 'Learning Regular Expressions'
-  #               link: 'https://www.linkedin.com/learning/learning-regular-expressions-2/'
-  #               icon: 'linkedin'
-
-  #             - text: 'RegexStreams.java'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexStreams.java'
-
-
-  #     - date: 2022-04-08
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Homework Bundle 3 Help'
-  #               icon: 'homework'
-
-  #             - text: '– LoggerSetup'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
-
-  #             - text: '– ReadWriteLock'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ReadWriteLock-template">Template</a>)'
-
-  #             - text: '– PrimeFinder'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166823'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-PrimeFinder-template">Template</a>)'
-
-  #             - text: 'Homework Bundle 4 Help'
-  #               icon: 'homework'
-  #               type: 'bump'
-
-  #             - text: '– LinkParser'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166824'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LinkParser-template">LinkParser</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project 2 Partial Search'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-2.html'
-
-  #             - text: '– Project 3 Multithreading'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-3.html'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'linkparser'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'workers'
-
-  #             - text: 'Homework Bundle 3'
-  #               icon: 'homework'
-  #               date: 2022-04-08
-  #               type: ['has-text-weight-bold', 'bump']
-
-  #             - file: 'homework'
-  #               name: 'loggersetup'
-
-  #             - file: 'homework'
-  #               name: 'readwritelock'
-
-  #             - file: 'homework'
-  #               name: 'primefinder'
-
-  #             - text: 'Project Pass Requirement'
-  #               date: 2022-04-08
-  #               icon: 'project'
-  #               type: ['has-text-danger', 'bump']
-
-  # - week: 12
-  #   days:
-  #     - date: 2022-04-12
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Sockets'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Sockets'
-
-  #             - text: '– SimpleServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/SimpleServer.java'
-  #               more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/SimpleClient.java">SimpleClient.java</a>'
-  #               tube: 'https://drive.google.com/file/d/1V02GkA2pUAmoUtFgdXl12VGVMJkw2pMy/view?usp=sharing'
-
-  #             - file: 'slides'
-  #               name: 'http'
-  #               type: 'bump'
-
-  #             - text: 'UrlFetcher.java'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/UrlFetcher.java'
-
-  #             - text: 'HttpFetcher.java'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/HttpsFetcher.java'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'http'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - text: 'Withdraw Deadline'
-  #               date: 2022-04-11
-  #               icon: 'date'
-  #               type: ['has-text-danger']
-
-  #     - date: 2022-04-14
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'jetty'
-
-  #             - text: 'Servlet Basics'
-  #               icon: 'code'
-  #               type: 'bump'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ServletBasics'
-
-  #             - text: '– TodayServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/TodayServer.java'
-
-  #             - text: '– HelloServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/HelloServer.java'
-
-  #             - text: '– VisitServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/VisitServer.java'
-
-  #             - text: '– SimpleFileServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/SimpleFileServer.java'
-  #               tube: 'https://drive.google.com/file/d/17AUSBRl0c_n7eJ56cSHIbd1al7P9YylG/view?usp=sharing'
-
-  #             - text: '– GalleryServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/GalleryServer.java'
-  #               tube: 'https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing'
-
-  #         - <<: *content
-  #           items:
-  #             - file: 'slides'
-  #               name: 'dynamic'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'dynamic'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - text: 'Easter Holiday @ 4pm'
-  #               date: 2022-04-14
-  #               icon: 'easter'
-  #               show: true
-  #               type: [*pending]
-
-  #     - date: 2022-04-15
-  #       sections:
-  #         - label: 'No Class'
-  #           items:
-  #             - text: 'Easter Holiday'
-  #               icon: 'easter'
-  #               type: [*pending]
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'htmlcleaner'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'regex'
-
-  #             - file: 'quizzes'
-  #               name: 'project3'
-
-  # - week: 13
-  #   days:
-  #     - date: 2022-04-19
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Servlet Data'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ServletData'
-
-  #             - text: '– ReverseServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/ReverseServer.java'
-
-  #             - text: '– MessageServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/MessageServer.java'
-  #               tube: 'https://drive.google.com/file/d/1AhKibA6CMpro8BI7IsmTnRPCmj_kkube/view?usp=sharing'
-  #               type: 'bump'
-
-  #             - text: '– MessageServlet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/MessageServlet.java'
-  #               tube: 'https://drive.google.com/file/d/19NR1YdmY1MWH8OH3A0zRypiCSPnBSfCg/view?usp=sharing'
-
-  #             - text: '– BulmaServlet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/BulmaMessageServlet.java'
-  #               tube: 'https://drive.google.com/file/d/1Tg5XcUStSyEAuzaEQ1Da6C66ExpxA2Lc/view?usp=sharing'
-
-  #         - <<: *content
-  #           items:
-  #             - text: 'ContextServer.java'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ContextServer.java'
-  #               tube: 'https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'servlets'
-
-  #             - file: 'quizzes'
-  #               name: 'project4'
-
-  #             - file: 'projects'
-  #               name: 'project4t'
-  #               text: 'Project 4 Web Crawler'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project3t'
-
-  #     - date: 2022-04-21
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Sessions'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Sessions'
-
-  #             - text: '– CookieServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieServer.java'
-
-  #             - text: '– CookieLandingServlet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieLandingServlet.java'
-
-  #             - text: '– CookieVisitServlet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieVisitServlet.java'
-
-  #             - text: '– AdventureServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureServer.java'
-  #               tube: 'https://drive.google.com/file/d/1b5TwbM5J1Y1hBmh7ErV72E8WGcmyMu-L/view?usp=sharing'
-  #               type: 'bump'
-
-  #             - text: '– AdventureRoom.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureRoom.java'
-  #               tube: 'https://drive.google.com/file/d/1ousizKV83c3vlSEObTdwuiyPcga2AhH4/view?usp=sharing'
-
-  #             - text: '– AdventureServlet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureRoom.java'
-  #               tube: 'https://drive.google.com/file/d/1VUXAIoeiG6Qkya1OkkbyutjKktyRkKEo/view?usp=sharing'
-
-  #     - date: 2022-04-22
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Homework Bundle 4 Help'
-  #               icon: 'homework'
-
-  #             - text: '– LinkParser'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166824'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LinkParser-template">LinkParser</a>)'
-
-  #             - text: '– HtmlCleaner'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166826'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-HtmlCleaner-template">HtmlCleaner</a>)'
-
-  #             - text: '– HtmlFetcher'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166825'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-HtmlFetcher-template">HtmlFetcher</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project 2 Partial Search'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-2.html'
-
-  #             - text: '– Project 3 Multithreading'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-3.html'
-
-  #             - text: '– Project 4 Web Crawler'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-4a.html'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'htmlfetcher'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'http'
-
-  #             - file: 'quizzes'
-  #               name: 'dynamic'
-
-  # - week: 14
-  #   days:
-  #     - date: 2022-04-26
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'relational'
-
-  #             - file: 'slides'
-  #               name: 'sql'
-
-  #             - text: 'Database Accounts'
-  #               icon: 'website'
-  #               link: '/guides/sql/database-accounts.html'
-  #               type: ['bump']
-
-  #             - text: 'SQL Introduction'
-  #               icon: 'website'
-  #               link: '/guides/sql/sql-intro-started.html'
-  #               type: ['bump']
-
-  #             - text: '– Getting Started'
-  #               icon: 'nothing'
-  #               link: '/guides/sql/sql-intro-started.html'
-
-  #             - text: '– Creating Tables'
-  #               icon: 'nothing'
-  #               link: '/guides/sql/sql-intro-creating.html'
-  #               tube: 'https://drive.google.com/file/d/1W5pneWmLOXVkDrvxL9YWhRsZ8PwjM4vZ/view?usp=sharing'
-
-  #             - text: '– Joining Data'
-  #               icon: 'nothing'
-  #               link: '/guides/sql/sql-intro-joining.html'
-  #               tube: 'https://drive.google.com/file/d/1auHLPbiHxJq8tr_78HtNrKELu2Wi_zk4/view?usp=sharing'
-
-  #             - text: '– Enforcing Relationships'
-  #               icon: 'nothing'
-  #               link: '/guides/sql/sql-intro-enforcing.html'
-  #               tube: 'https://drive.google.com/file/d/1MOokzFUB8FXT2msoxU65PcqMlxYOsd0B/view?usp=sharing'
-
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'joins'
-
-  #             - file: 'quizzes'
-  #               name: 'groups'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project3r'
-
-  #     - date: 2022-04-28
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Exam Review'
-  #               link: '/guides/exams/exam-2.html'
-  #               icon: 'exam'
-
-  #             - text: 'SQL Faculty Demo'
-  #               icon: 'website'
-  #               link: '/guides/sql/sql-intro-started.html'
-  #               type: 'bump'
-
-  #             - text: '– Getting Started'
-  #               icon: 'nothing'
-  #               link: '/guides/sql/sql-demo-intro.html'
-
-  #             - text: '– Creating Tables'
-  #               icon: 'nothing'
-  #               link: '/guides/sql/sql-demo-creating.html'
-
-  #             - text: '– Selecting Data'
-  #               icon: 'nothing'
-  #               link: '/guides/sql/sql-demo-selecting.html'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project4r'
-  #               text: 'Project 4 Search Engine'
-
-  #             - text: 'Final Code Review'
-  #               link: '/guides/projects/final-review.html'
-  #               icon: 'review'
-  #               show: true
-  #               date: 'Finals'
-  #               type: ['has-text-usf-plum']
-
-  #     - date: 2022-04-29
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Homework Bundle 4 Help'
-  #               icon: 'homework'
-
-  #             - text: '– LinkParser'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166824'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LinkParser-template">LinkParser</a>)'
-
-  #             - text: '– HtmlCleaner'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166826'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-HtmlCleaner-template">HtmlCleaner</a>)'
-
-  #             - text: '– HtmlFetcher'
-  #               icon: 'nothing'
-  #               link: 'https://usfca.instructure.com/courses/1605147/assignments/7166825'
-  #               more: '(<a href="https://github.com/usf-cs272-spring2022/homework-HtmlFetcher-template">HtmlFetcher</a>)'
-
-  #             - text: 'Project Help'
-  #               icon: 'project'
-  #               type: 'bump'
-
-  #             - text: '– Project 3 Multithreading'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-3.html'
-
-  #             - text: '– Project 4 Web Crawler'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-4a.html'
-
-  #         - <<: *assignments
-  #           items:
-  #             - file: 'homework'
-  #               name: 'headerserver'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'servlets'
-
-  #             - file: 'quizzes'
-  #               name: 'project4'
-
-  #             - text: 'Homework Bundle 4'
-  #               icon: 'homework'
-  #               date: 2022-04-29
-  #               type: ['has-text-weight-bold', 'bump']
-
-  #             - file: 'homework'
-  #               name: 'linkparser'
-
-  #             - file: 'homework'
-  #               name: 'htmlcleaner'
-
-  #             - file: 'homework'
-  #               name: 'htmlfetcher'
-
-  # - week: 15
-  #   days:
-  #     - date: 2022-05-03
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Exam 2'
-  #               icon: 'exam'
-  #               type: ['has-text-danger']
-
-  #     - date: 2022-05-05
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'testing_bugs'
-
-  #             - file: 'slides'
-  #               name: 'testing_intro'
-
-  #             - file: 'slides'
-  #               name: 'testing_unit'
-  #               type: 'bump'
-
-  #             - text: 'Unit Testing'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/UnitTesting'
-
-  #         - <<: *assignments
-  #           items:
-  #             - text: 'Exam 2 Retake'
-  #               icon: 'exam'
-  #               date: 2022-05-12
-  #               type: ['has-text-danger']
-
-  #             - file: 'participation'
-  #               name: 'whatif'
-  #               type: 'bump'
-
-  #             - file: 'participation'
-  #               name: 'final_survey'
-
-  #             - text: 'Official Evaluations'
-  #               date: 2022-05-18
-  #               icon: 'evals'
-
-  #     - date: 2022-05-06
-  #       sections:
-  #         - <<: *labs
-  #           items:
-  #             - text: 'Project Help'
-  #               icon: 'project'
-
-  #             - text: '– Project 3 Multithreading'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-3.html'
-
-  #             - text: '– Project 4 Web Crawler'
-  #               icon: 'nothing'
-  #               link: '/guides/projects/project-4a.html'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'quizzes'
-  #               name: 'joins'
-
-  #             - file: 'quizzes'
-  #               name: 'groups'
-
-  #             - text: 'Homework Bundle 5'
-  #               icon: 'homework'
-  #               date: 2022-05-06
-  #               type: ['has-text-weight-bold', 'bump']
-
-  #             - file: 'homework'
-  #               name: 'headerserver'
-
-  # - week: 16
-  #   days:
-  #     - date: 2022-05-10
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - file: 'slides'
-  #               name: 'jdbc'
-
-  #             - text: 'Faculty Contact Server'
-  #               icon: 'code'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/JDBC'
-  #               type: 'bump'
-
-  #             - text: '– Introduction'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/JDBC/src/main/resources'
-  #               tube: 'https://drive.google.com/file/d/1Q8jyBIsugwjbzk-JGJJZT5QF4EvAs-xN/view?usp=sharing'
-
-  #             - text: '– DatabaseConnector.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/DatabaseConnector.java'
-  #               tube: 'https://drive.google.com/file/d/1nJ17EatO7ZeureUORtqDLfTaw6MXyIZj/view?usp=sharing'
-
-  #             - text: '– FacultyServer.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/FacultyServer.java'
-  #               tube: 'https://drive.google.com/file/d/1yqeeCTD2j3qKz6Q_7sWn94SYkAV18_lt/view?usp=sharing'
-
-  #             - text: '– FacultyServlet.java'
-  #               icon: 'nothing'
-  #               link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/FacultyServlet.java'
-  #               tube: 'https://drive.google.com/file/d/1J-buaf3BIVp4QYYm6u8M6-fzN_tXT3as/view?usp=sharing'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project4t'
-
-  #             - text: 'Review Requests'
-  #               link: '/guides/projects/final-review.html#deadlines'
-  #               icon: 'project'
-  #               type: ['has-text-usf-plum']
-  #               date: 2022-05-10
-
-  #     - date: 2022-05-12
-  #       sections:
-  #         - <<: *lectures
-  #           items:
-  #             - text: 'Search Engine'
-  #               link: '/guides/projects/project-4b.html'
-  #               icon: 'project'
-
-  #             - text: 'Search Engine Demo'
-  #               icon: 'code'
-
-  #             - text: 'Course Recap'
-  #               icon: 'slides'
-  #               save: true
-  #               type: 'bump'
-
-  #         - <<: *deadlines
-  #           items:
-  #             - text: 'Exam 2 Retake'
-  #               icon: 'exam'
-  #               date: 2022-05-12
-  #               type: ['has-text-danger']
-
-  #             - text: 'Classes End'
-  #               date: 2022-05-12
-  #               icon: 'date'
-  #               show: true
-  #               type: [*pending, 'bump']
-
-  #     - date: 2022-05-13
-  #       sections:
-  #         - label: 'No Class'
-  #           items:
-  #             - text: 'Study Day'
-  #               icon: 'date'
-  #               type: [*pending]
-
-  #             - text: 'CS Picnic'
-  #               icon: 'picnic'
-  #               type: [*pending]
-
-  #         - label: 'End of Semester Deadlines'
-  #           dates: true
-  #           items:
-  #             - file: 'participation'
-  #               name: 'cs_event'
-  #               type: 'bump'
-
-  #             - file: 'participation'
-  #               name: 'piazza_reply'
-
-  #             - file: 'participation'
-  #               name: 'whatif'
-
-  #             - file: 'participation'
-  #               name: 'final_survey'
-
-  #             - text: 'Review Cutoff'
-  #               link: '/guides/projects/final-review.html#deadlines'
-  #               icon: 'project'
-  #               type: ['has-text-usf-plum', 'bump']
-  #               date: 2022-05-13
-  #               show: true
-
-  #             - text: 'Project Cutoff'
-  #               link: '/guides/projects/final-review.html#deadlines'
-  #               icon: 'project'
-  #               type: ['has-text-usf-plum']
-  #               date: 2022-05-15
-  #               show: true
-
-  #             - text: 'Official Evaluations'
-  #               date: 2022-05-18
-  #               show: true
-  #               icon: 'evals'
-  #               type: 'bump'
-
-  # - text: 'Finals'
-  #   days:
-  #     - date: ''
-  #       sections:
-  #         - label: 'Sat 05/14 to Thu 05/19'
-  #           dates: false
-  #           items:
-  #             - text: 'Final Code Reviews'
-  #               icon: 'project'
-  #               link: '/guides/projects/final-review.html'
-
-  #     - date: ''
-  #       sections:
-  #         - label: 'Final Project Deadlines'
-  #           dates: false
-  #           items:
-  #             - file: 'projects'
-  #               name: 'project4r'
-
-  #     - date: ''
-  #       sections: false
-
-
+  - week: 2
+    days:
+      - date: 2022-08-30
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-01
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-02
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: wordcleaner
+
+          - <<: *deadlines
+            items:
+              - file: 'participation'
+                name: 'introduction_reply'
+
+              - file: homework
+                name: argumentparser
+
+              - text: 'Labor Day Holiday'
+                date: 2022-09-05
+                icon: 'date'
+                type: [*pending, 'bump']
+  - week: 3
+    days:
+      - date: 2022-09-06
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-08
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-09
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: wordindex
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: wordcleaner
+
+              - text: 'Drop Deadline (Census)'
+                date: 2022-09-09
+                icon: 'date'
+                show: true
+                type: [*pending, 'bump']
+
+  - week: 4
+    days:
+      - date: 2022-09-13
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-15
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-16
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: prettyjsonwriter
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: wordindex
+
+  - week: 5
+    days:
+      - date: 2022-09-20
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-22
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-23
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: filesorter
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: prettyjsonwriter
+
+  - week: 6
+    days:
+      - date: 2022-09-27
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-29
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-09-30
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: filefinder
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: filesorter
+
+  - week: 7
+    days:
+      - date: 2022-10-04
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-10-06
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-10-07
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: linkfinder
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: filefinder
+
+  - week: 8
+    days:
+      - date: 2022-10-11
+        sections:
+          - <<: *lectures
+            items:
+              - text: 'Exam 1'
+                icon: 'exam'
+                type: ['has-text-danger']
+
+      - date: 2022-10-13
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-10-14
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: htmlcleaner
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: linkfinder
+
+              - text: 'Fall Break'
+                icon: 'date'
+                date: 2022-10-17
+                type: [*pending, 'bump']
+
+  - week: 9
+    days:
+      - date: 2022-10-18
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Fall Break'
+                icon: 'fall'
+                type: [*pending]
+
+      - date: 2022-10-20
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-10-21
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: loggersetup
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: htmlcleaner
+
+  - week: 10
+    days:
+      - date: 2022-10-25
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-10-27
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-10-28
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: readwritelock
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: loggersetup
+
+  - week: 11
+    days:
+      - date: 2022-11-01
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-11-03
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-11-04
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: primefinder
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: readwritelock
+
+  - week: 12
+    days:
+      - date: 2022-11-08
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-11-10
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-11-11
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: htmlfetcher
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: primefinder
+
+  - week: 13
+    days:
+      - date: 2022-11-15
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-11-17
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-11-18
+        sections:
+          - <<: *labs
+          - <<: *assignments
+            items:
+              - file: homework
+                name: headerfetcher
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: htmlfetcher
+
+  - week: 14
+    days:
+      - date: 2022-11-22
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-11-24
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Thanksgiving Recess'
+                icon: 'thanksgiving'
+                type: [*pending]
+
+      - date: 2022-11-25
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Thanksgiving Recess'
+                icon: 'thanksgiving'
+                type: [*pending]
+
+  - week: 15
+    days:
+      - date: 2022-11-29
+        sections:
+          - <<: *lectures
+            items:
+              - text: 'Exam 2'
+                icon: 'exam'
+                type: ['has-text-danger']
+
+      - date: 2022-12-01
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-12-02
+        sections:
+          - <<: *labs
+
+          - <<: *deadlines
+            items:
+              - file: homework
+                name: headerfetcher
+
+  - week: 16
+    days:
+      - date: 2022-12-06
+        sections:
+          - <<: *lectures
+            items:
+
+      - date: 2022-12-08
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Study Day'
+                icon: 'date'
+                type: [*pending]
+
+      - date: 2022-12-09
+        sections:
+          - label: 'Deadlines'
+            items:
+              - text: 'Pending'
+          
+          - label: 'Upcoming Deadlines'
+            dates: true
+            items:
+              - text: 'Finals Begin'
+                icon: 'date'
+                type: [*pending]
+
+  - text: 'Finals'
+    days:
+      - date: ''
+        sections:
+          - label: 'Mon 12/12 to Thu 12/15'
+            dates: false
+            items:
+              - text: 'Final Code Reviews'
+                icon: 'project'
+                
 rows:
   - false # top row (usually lecture items)
   - true  # bottom row (usually deadlines)
