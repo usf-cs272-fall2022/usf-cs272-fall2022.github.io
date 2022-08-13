@@ -96,6 +96,8 @@ time:
   label: 'Time'
   class: 'far fa-alarm-clock'
 
+# holidays and breaks
+
 spring:
   label: 'Spring Break'
   class: 'far fa-flower-tulip'
@@ -111,3 +113,11 @@ linkedin:
 picnic:
   label: 'CS Picnic'
   class: 'far fa-kite'
+
+fall:
+  label: 'Fall Break'
+  class: 'fas fa-wheat'
+
+thanksgiving:
+  label: 'Thanksgiving Recess'
+  class: 'far fa-pie'
