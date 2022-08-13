@@ -176,6 +176,10 @@ img.is-400, img.is-600, img.is-800, img.is-size {
   background-color: #4a4a4a;
 }
 
+.icons li[class="has-text-"] a {
+  color: inherit;
+}
+
 /* syntax highlighter styles */
 div.highlight {
   margin-bottom: 1em;
