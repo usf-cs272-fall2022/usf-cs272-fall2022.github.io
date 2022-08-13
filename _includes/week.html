@@ -28,7 +28,8 @@
 
           {%- assign icon_class = site.data.icons.pending.class %}
           {%- assign item_label = site.data.icons.pending.label %}
-          {%- assign item_text = 'Pending' %}
+          {%- assign item_text = "Pending" %}
+          {%- assign item_type = "" %}
           {%- assign item_link = false %}
           {%- assign item_more = false %}
           {%- assign item_show = false %}
@@ -40,6 +41,7 @@
           {%- assign item = site.data[found.file][found.name] %}
           {%- if item.icon %}{% assign icon_class = site.data.icons[item.icon].class %}{% endif %}
           {%- if item.icon %}{% assign icon_label = site.data.icons[item.icon].label %}{% endif %}
+          {%- if item.type %}{% assign item_type = item.type | join: " " %}{% endif %}
           {%- if item.text %}{% assign item_text = item.text %}{% endif %}
           {%- if item.link %}{% assign item_link = item.link %}{% endif %}
           {%- if item.more %}{% assign item_more = item.more %}{% endif %}
@@ -59,7 +61,7 @@
           {%- if found.save %}{% assign item_save = found.save %}{% endif %}
           {%- if found.tube %}{% assign item_tube = found.tube %}{% endif %}
 
-          <li class="{{ item.type | join: " " }} {{ found.type | join: " " }}">
+          <li class="{{ item_type }} {{ found.type | join: " " }}">
             <i class="{{ icon_class }}" title="{{ icon_label }}"></i>
             {%- if item_show or section.dates == true and item_date %}
             {%- if item_date == day.date and item_show != true %}
