@@ -2,91 +2,104 @@ argumentparser: &default
   text: 'ArgumentParser'
   date: 2022-09-02
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223887'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template">Template</a>)'
   type: ''
-  show: 'false'
+  show: false
   icon: 'homework'
   tags: ['objects', 'data']
 
-# textfilestemmer:
-#   <<: *default
-#   text: 'TextFileStemmer'
-#   date: 2022-02-25
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
-#   tags: ['files', 'data']
+wordcleaner:
+  <<: *default
+  text: 'WordCleaner'
+  date: 2022-09-09
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223925'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-WordCleaner-template">Template</a>)'
+  tags: ['files', 'data']
 
-# simplejsonwriter:
-#   <<: *default
-#   text: 'SimpleJsonWriter'
-#   date: 2022-02-25
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
-#   tags: ['files', 'data']
+wordindex:
+  <<: *default
+  text: 'WordIndex'
+  date: 2022-09-16
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223921'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-WordIndex-template">Template</a>)'
+  tags: ['objects', 'data', 'inheritance']
 
-# textfileindex:
-#   <<: *default
-#   text: 'TextFileIndex'
-#   date: 2022-02-25
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166818'
-#   tags: ['objects', 'inheritance']
+prettyjsonwriter:
+  <<: *default
+  text: 'PrettyJsonWriter'
+  date: 2022-09-23
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223923'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-PrettyJsonWriter-template">Template</a>)'
+  tags: ['files', 'data', 'inheritance']
 
-# textfilefinder:
-#   <<: *default
-#   text: 'TextFileFinder'
-#   date: 2022-03-25
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
-#   tags: ['lambdas', 'streams']
+filesorter:
+  <<: *default
+  text: 'FileSorter'
+  date: 2022-09-30
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223922'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-FileSorter-template">Template</a>)'
+  tags: ['inheritance', 'lambdas']
 
-# textfilesorter:
-#   <<: *default
-#   text: 'TextFileSorter'
-#   date: 2022-03-25
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
-#   tags: ['inheritance']
+filefinder:
+  <<: *default
+  text: 'FileFinder'
+  date: 2022-10-07
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223924'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-FileFinder-template">Template</a>)'
+  tags: ['lambdas', 'streams']
 
-# loggersetup:
-#   <<: *default
-#   text: 'LoggerSetup'
-#   date: 2022-04-08
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
-#   tags: ['debugging']
+linkfinder:
+  <<: *default
+  text: 'LinkFinder'
+  date: 2022-10-14
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223899'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-LinkFinder-template">Template</a>)'
+  tags: ['web', 'regexes']
 
-# readwritelock:
-#   <<: *default
-#   text: 'ReadWriteLock'
-#   date: 2022-04-08
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
-#   tags: ['threads']
+htmlcleaner:
+  <<: *default
+  text: 'HtmlCleaner'
+  date: 2022-10-21
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223895'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-HtmlCleaner-template">Template</a>)'
+  tags: ['web', 'regexes']
 
-# primefinder:
-#   <<: *default
-#   text: 'PrimeFinder'
-#   date: 2022-04-08
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166823'
-#   tags: ['threads']
+loggersetup:
+  <<: *default
+  text: 'LoggerSetup'
+  date: 2022-10-28
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223900'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-LoggerSetup-template">Template</a>)'
+  tags: ['debugging']
 
-# linkparser:
-#   <<: *default
-#   text: 'LinkParser'
-#   date: 2022-04-29
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166824'
-#   tags: ['web', 'regexes']
+readwritelock:
+  <<: *default
+  text: 'ReadWriteLock'
+  date: 2022-11-04
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223920'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-ReadWriteLock-template">Template</a>)'
+  tags: ['threads']
 
-# htmlcleaner:
-#   <<: *default
-#   text: 'HtmlCleaner'
-#   date: 2022-04-29
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166826'
-#   tags: ['web', 'regexes']
+primefinder:
+  <<: *default
+  text: 'PrimeFinder'
+  date: 2022-11-11
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223903'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-PrimeFinder-template">Template</a>)'
+  tags: ['threads']
 
-# htmlfetcher:
-#   <<: *default
-#   text: 'HtmlFetcher'
-#   date: 2022-04-29
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166825'
-#   tags: ['web']
+htmlfetcher:
+  <<: *default
+  text: 'HtmlFetcher'
+  date: 2022-11-18
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223896'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-HtmlFetcher-template">Template</a>)'
+  tags: ['web']
 
-# headerserver:
-#   <<: *default
-#   text: 'HeaderServer (Optional)'
-#   date: 2022-05-06
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7166827'
-#   tags: ['web', 'servlets']
+headerfetcher:
+  <<: *default
+  text: 'HeaderFetcher'
+  date: 2022-12-02
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223893'
+  more: '(<a href="https://github.com/usf-cs272-fall2022/homework-HeaderFetcher-template">Optional</a>)'
+  tags: ['web', 'servlets']
