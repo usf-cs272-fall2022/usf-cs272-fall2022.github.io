@@ -8,41 +8,43 @@ blurb: |
 
 ---
 
-Pending
-
-{% comment %}
 ## Lecture Sections
 
-Lectures will be conducted in-person by the instructor. The lectures will be recorded via Zoom, and students may attend remotely via Zoom as a backup option if temporarily unable to make it to class in person. The same Zoom meeting will be used for both lecture sections:
+Lectures will be conducted in-person by the instructor. The lectures will be recorded and may be viewed asynchronously by students within 48 hours. Students may also attend synchronously via Zoom as a non-interactive backup option if temporarily unable to make it to class in person. The lecture sections and details are:
 
-| Section | Date/Time | Zoom Meeting |
+| Section | Date/Time | Location | Zoom Meeting |
 |:--------|:----------|:-------------|
-| CS 272-01 Lecture | Tue/Thu 12:45-2:30p | [{{ site.data.info.streams.lectures.room }}]({{ site.data.info.streams.lectures.link }}) |
-| CS 272-02 Lecture | Tue/Thu 04:35-6:20p | [{{ site.data.info.streams.lectures.room }}]({{ site.data.info.streams.lectures.link }}) |
+| CS 272-01 Lecture | Tue/Thu 12:45-2:30p | Lo Schiavo G12 | [{{ site.data.info.streams.lectures.room }}]({{ site.data.info.streams.lectures.link }}) |
+| CS 272-02 Lecture | Tue/Thu 04:35-6:20p | Lo Schiavo G12 | [{{ site.data.info.streams.lectures.room }}]({{ site.data.info.streams.lectures.link }}) |
 {: class="table is-hoverable" style="width: auto;" }
 
-Students are encouraged to attend lectures in person when possible. However, lectures will be recorded and may be viewed asynchronously by students unable to attend live for any reason. Instructor permission is not required. However, students should expect less engagement and interactivity for remote or asynchronous attendance.
+Students must attend their enrolled lecture section for exams, unless otherwise approved  by the instructor. Room permitting, students may attend either lecture section (offered by the same instructor) on non-exam days.
 
-Students may attend either lecture section remotely via Zoom, unless there is a scheduled exam. Students must get instructor approval to attend a different lecture section in person or take the exam at a different time than scheduled.
+Students must attend a lecture section offered by the same instructor as their lab section.
+{: class="notification is-warning is-light is-small"}
 
 ## Lab Sessions
 
-Labs will be conducted in-person by the instructor during the first several weeks of class. During this time, students may attend lab sessions in-person or remotely via Zoom. The same Zoom meeting will be used for both lab sections:
+Labs will be conducted in-person by the instructor during the first several weeks of class. During this time, students must attend their enrolled section in-person; labs are not always recorded or available via Zoom. 
 
-| Section | Date/Time | Zoom Meeting |
+| Section | Date/Time | Location |
 |:--------|:----------|:-------------|
-| CS 272L-01 Lab    | Fri 12:45-2:30p | [{{ site.data.info.streams.labs.room }}]({{ site.data.info.streams.labs.link }}) |
-| CS 272L-02 Lab    | Fri 3:30-4:35p | [{{ site.data.info.streams.labs.room }}]({{ site.data.info.streams.labs.link }}) |
+| CS 272L-01 Lab    | Fri 12:45-1:50p | Lo Schiavo G12 |
+| CS 272L-02 Lab    | Fri 2:00-3:05p | Lo Schiavo G12 |
 {: class="table is-hoverable" style="width: auto;" }
 
-Students are strongly encouraged to attend labs synchronously. Since much of lab time will be spent in breakout rooms, labs will not be regularly recorded. Students should attend their enrolled lab session until code reviews begin.
+After several weeks, the lab sessions transition to one-on-one code reviews with the instructor and optional help sessions led by the teacher assistants. Students may attend either lab section (or both) at that time.
 
-Once code reviews with instructor begin, labs will convert to remote-only teacher assistant office hours. Students may attend either or both lab sections at that time.
+Students must enroll in and attend a lab section taught by the same instructor as their lecture section.
+{: class="notification is-warning is-light is-small"}
 
 ## Office Hours
 
-Office hours are first-come first-serve. Office hours will be held primarily remotely via Zoom, using the [same Zoom meeting]({{ site.data.info.streams.lectures.link }}) as lectures and labs. See the pinned "Weekly Schedule" post on [Piazza]({{ site.data.info.links.forums.link }}) for details.
-{% endcomment %}
+Office hours are first-come first-serve. 
+
+The instructor's office hours will be held in person in Harney 412B, or via Zoom by request. The teacher assistant's office hours will be held in person in Harney 413 or 415, or via Zoom by request. 
+
+Requests for Zoom availability must be posted on [Piazza]({{ site.data.info.links.forums.link }}) in advance. See the pinned "Weekly Schedule" post on [Piazza]({{ site.data.info.links.forums.link }}) for details.
 
 ## Subscribe to Calendar
 
