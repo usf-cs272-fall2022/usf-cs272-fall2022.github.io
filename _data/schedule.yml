@@ -21,8 +21,6 @@ defaults:
     label: 'Dates and Deadlines <i class="fas fa-info-circle has-text-grey-light" title="Deadlines that fall on that day and other nearby dates (such as holidays)."></i>'
     dates: true
 
-start: 2022-08-23
-
 weeks:
   - week: 1
     days:
@@ -36,15 +34,15 @@ weeks:
 
               - text: 'Course Introduction'
 
-          # - <<: *content
-          #   items:
-          #     - text: 'Getting Started'
-          #       icon: 'website'
-          #       link: '/guides/general/getting-started.html'
+          - <<: *content
+            items:
+              - text: 'Getting Started'
+                icon: 'website'
+                link: '/guides/general/getting-started.html'
 
-          #     - text: 'Java and Eclipse Setup'
-          #       icon: 'website'
-          #       link: '/guides/eclipse/java-and-eclipse-setup.html'
+              - text: 'Java and Eclipse Setup'
+                icon: 'website'
+                link: '/guides/eclipse/java-and-eclipse-setup.html'
 
           - <<: *assignments
             items:
