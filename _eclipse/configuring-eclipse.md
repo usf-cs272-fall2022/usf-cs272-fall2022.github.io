@@ -13,7 +13,7 @@ Eclipse is a free, powerful, open-source, and configurable IDE. I recommend you 
 The homework and project code should not have warnings, including Javadoc warnings. If you want your Eclipse to have *similar* compiler settings, import this configuration into your Eclipse workspace:
 
 <figure>
-<iframe src="https://gist.github.com/sjengle/c7d572a4d0eaf0be618f95d761d49a08.pibb?scroll=tue" style="max-width: 100%; width: 100%; height: 300px;"></iframe>
+<script src="https://gist.github.com/sjengle/c7d572a4d0eaf0be618f95d761d49a08.js"></script>
 <caption><a href="https://gist.github.com/sjengle/c7d572a4d0eaf0be618f95d761d49a08">https://gist.github.com/sjengle/c7d572a4d0eaf0be618f95d761d49a08</a></caption>
 </figure>
 
@@ -27,7 +27,7 @@ Note that it is not *exactly* the same---the autograding feature uses the `javac
 
 Your code should have proper Javadoc comments for *all* members and methods before requesting a code review. To receive warnings when you are missing something (or something is out of date) with your Javadoc comments, use these settings:
 
-![Javadoc]({{ "/images/eclipse-java-compiler-javadoc.png" | relative_url }}){: .is-600 }
+![Javadoc]({{ "/images/eclipse/java-compiler-javadoc.png" | relative_url }}){: .is-600 }
 
 If you imported the compiler settings from before, this should already be configured for you!
 
@@ -45,7 +45,7 @@ However, these conventions are no longer maintained and major features have been
 
 You can also [customize the formatter](https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/reference/preferences/java/codestyle/ref-preferences-formatter.htm) to your own preferences. You can use these settings to change the brace style, where newlines and spaces are used, and fix how Eclipse formats try-with-resources code blocks. For example:
 
-![Java Code Formatter]({{ "/images/eclipse-java-editor-code-style.png" | relative_url }}){: .is-600 }
+![Java Code Formatter]({{ "/images/eclipse/java-editor-code-style.png" | relative_url }}){: .is-600 }
 
 You can further customize Eclipse to re-format your code every time you save. See below for details.
 
@@ -55,7 +55,7 @@ I recommend you customize other features in Eclipse as well. For example:
 
   - Change the fonts used in the editor ([reference](https://help.eclipse.org/latest/topic/org.eclipse.platform.doc.user/tasks/tasks-20.htm)). You can find several options on [Google Fonts](https://fonts.google.com/?category=Monospace). My favorites are [Fira Code](https://fonts.google.com/specimen/Fira+Code) (not Fira Mono), [Source Code Pro Light](https://fonts.google.com/specimen/Source+Code+Pro), [Roboto Mono Light](https://fonts.google.com/specimen/Roboto+Mono), [Anonymous Pro](https://fonts.google.com/specimen/Anonymous+Pro), and [Incosolata](https://fonts.google.com/specimen/Inconsolata). There are many fans of the customizable [Input](http://input.fontbureau.com/) font as well.
 
-    ![Colors and Fonts]({{ "/images/eclipse-appearance-colors-and-fonts.png" | relative_url }}){: .is-600 }
+    ![Colors and Fonts]({{ "/images/eclipse/appearance-colors-and-fonts.png" | relative_url }}){: .is-600 }
 
     <i class="fas fa-info-circle"></i>
     Fonts like **Fira Code** have some fancy ligatures so the combination of characters like `<` and `=` turn into `<=` when viewed. If you copy and paste `<=` elsewhere, you'll see that it is stored as the two separate characters `<` and `=` (just displayed as if they were one).
@@ -63,25 +63,27 @@ I recommend you customize other features in Eclipse as well. For example:
 
   - Change your save actions ([reference](https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/reference/preferences/java/editor/ref-preferences-save-actions.htm)). I usually remove unused imports and fix indentation at least.
 
-      ![Save Actions]({{ "/images/eclipse-java-editor-save-actions.png" | relative_url }}){: .is-600 }
+      ![Save Actions]({{ "/images/eclipse/java-editor-save-actions.png" | relative_url }}){: .is-600 }
 
   - Customize the autocomplete code templates ([reference](https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/reference/preferences/java/codestyle/ref-preferences-code-templates.htm), [examples](https://stackoverflow.com/questions/1028858/useful-eclipse-java-code-templates)). I usually create one for `printf` myself. You can download the templates I use and import them into your Eclipse workspace:
 
       <script src="https://gist.github.com/sjengle/32b18311714dc62124cb2154339288b2.js"></script>
 
+      ![Templates]({{ "/images/eclipse/java-templates.png" | relative_url }}){: .is-600 }
+
   - Change the layout and add [different views](https://help.eclipse.org/latest/topic/org.eclipse.platform.doc.user/tasks/tasks-3.htm). I usually add the Tasks view, which shows me all of my `TODO` comments. I also prefer to add the Git views to my Java perspective rather than switching to the Git perspective.
 
-      ![Views]({{ "/images/eclipse-views.png" | relative_url }}){: .is-600 }
+      ![Views]({{ "/images/eclipse/eclipse-views.png" | relative_url }}){: .is-600 }
 
   - Customize the visibility of whitespaces in the text editor ([reference](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-texteditorprefs.htm&cp%3D0_4_1_50)). This can be helpful to detect when a mix of tabs and spaces are used for indentation.
 
-      ![Whitespace]({{ "/images/eclipse-general-editors-text.png" | relative_url }}){: .is-600 }
+      ![Whitespace]({{ "/images/eclipse/general-editors-text.png" | relative_url }}){: .is-600 }
 
-      ![Whitespace]({{ "/images/eclipse-general-editors-text-whitespace.png" | relative_url }}){: .is-400 }
+      ![Whitespace]({{ "/images/eclipse/general-editors-text-whitespace.png" | relative_url }}){: .is-400 }
 
   - Change how content assist works for the Java editor ([reference](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Feditor%2Fref-preferences-content-assist.htm)). If you find Eclipse inserting code automatically when you do *NOT* want it to, you might consider changing the "Disable insertion triggers" setting:
 
-      ![Content Assist]({{ "/images/eclipse-java-editor-content-assist.png" | relative_url }}){: .is-600 }
+      ![Content Assist]({{ "/images/eclipse/java-editor-content-assist.png" | relative_url }}){: .is-600 }
 
 The official guides for Eclipse are located at:
 
