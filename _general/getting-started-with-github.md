@@ -3,11 +3,11 @@ title: Getting Started with GitHub
 navbar: Guides
 layout: guides
 key: 1.3
-bump: true
+# bump: true
 
-#tags:
-#  - text: 'Required'
-#    type: 'is-danger'
+tags:
+ - text: 'Required'
+   type: 'is-danger'
 ---
 
 We will use [GitHub](https://github.com/features) for all things related to code in class, including sharing lecture code examples, sharing starter homework and project code, submitting homeworks and projects, and collaborating on projects. It is a software development platform built on top of the `git` software, which is version control system for software.
@@ -29,7 +29,7 @@ When creating an account for this class (including accounts already created), ke
 
   - Add your `@dons.usfca.edu` and `@usfca.edu` emails to your account. Go to ["Settings" » "Access" » "Emails"](https://github.com/settings/emails) to add an email.
 
-      <i class="fas fa-info-circle"></i>&nbsp;The `@usfca.edu` version of your email is an *alias* that forwards to your `@dons.usfca.edu` account. Some university services use this alias, including Canvas and Zoom.
+      <i class="fas fa-info-circle"></i>&nbsp;The `@usfca.edu` version of your email is an *alias* that forwards to your `@dons.usfca.edu` account. Some university services use this alias, including Canvas and Zoom. That is why you need to add *both* forms of your email address.
       {: .notification }
 
   - Apply for the [**GitHub Student Developer Pack**](https://education.github.com/pack) after adding your university emails to your account.
@@ -49,7 +49,7 @@ You will need to access your private GitHub repositories on your own local syste
 
   1. **Using HTTPS, which involves [generating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) (instead of a password).** If you do not already use SSH, I recommend the HTTPS method. It allows more fine-grained control, including when it should expire. With this option, make sure to configure an expiration *after* the end of the semester, and add both "repo" and "workflow" access:
 
-      ![Token Scope]({{ "/images/github-token-scope.png" | relative_url }}){: .is-400 }
+      ![Token Scope]({{ "/images/general/github-token-scope.png" | relative_url }}){: .is-400 }
 
 Either way works; they each have different pros and cons. When you know which method you prefer, go to the [**Authenticating with the command line**](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-command-line) article on GitHub for details about get started.
 
@@ -58,11 +58,13 @@ You should only need to complete this step **once** for the entire semester!
 ## Learn Git and GitHub
 {: .page-header }
 
-If you are unfamiliar with `git` and GitHub, the CS Tutoring Center has recordings of past `git` workshops posted:
+If you are unfamiliar with `git` and GitHub, it is important to self-learn some basics. The operations we will use in class include: commit, push, pull, merge, and branch. The GitHub features we will use in class include releases, issues, and pull requests.
 
-  - [CS Tutoring Center](https://tutoringcenter.cs.usfca.edu/)
+The CS Tutoring Center has recordings of past `git` workshops posted:
 
-Here are some other fantastic guides you can look at to learn more:
+  - [**CS Tutoring Center**](https://tutoringcenter.cs.usfca.edu/)
+
+Here are some other fantastic (and free) guides you can look at to learn more:
 
   - [**GitHub Guides**](https://guides.github.com/)  
     Guides for learning more about GitHub by Github.
@@ -76,7 +78,7 @@ Here are some other fantastic guides you can look at to learn more:
   - [**Git-SCM**](https://git-scm.com/)  
     Official Git project site (includes tutorials, a reference manual, and the free "Pro Git" ebook).
 
-Here are a couple resources that will help use `git` with Eclipse:
+Here are a couple free resources that will help use `git` with Eclipse:
 
   - [**Github and Eclipse (Video)**](https://www.youtube.com/watch?v=XuuzSaelUzo)  
     Videos produced by Github for using Github with Eclipse.
@@ -84,9 +86,7 @@ Here are a couple resources that will help use `git` with Eclipse:
   - [**Eclipse EGit Plugin User Guide**](http://wiki.eclipse.org/EGit/User_Guide)  
     User guide for the builtin `git` plugin in Eclipse. Works with Github repositories.
 
-You also have access to [Linkedin Learning](https://myusf.usfca.edu/ets/educational-technologies/linkedin) (formerly Lynda.com), which has many technical online tutorials and mini-courses. If you prefer that format, I strongly encourage you to take a look.
-
-There are *many* other resources you can find with a simple web search. The operations we will use in class include: commit, push, pull, merge, and branch. The GitHub features we will use in class include releases, issues, and pull requests.
+You also have free access to [**Linkedin Learning**](https://myusf.usfca.edu/ets/educational-technologies/linkedin) (formerly Lynda.com), which has many technical online tutorials and mini-courses. If you prefer that format, I strongly encourage you to take a look. There are *many* other resources you can find with a simple web search, like this [Really Friendly Git Intro](https://hellowebbooks.com/learn-git/) zine by Tracy Osborn or the [Oh Shit, Git!](https://wizardzines.com/zines/oh-shit-git/) zine by Julia Evans.
 
 <i class="fas fa-code-branch"></i>
 Don't just wing it! I recommend you spend some time learning the basics of `git` now, as it is a core skill for anyone in the tech and CS industries. It will also make this class and all CS classes that follow a lot less frustrating.

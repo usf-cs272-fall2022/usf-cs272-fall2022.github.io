@@ -72,17 +72,16 @@ weeks:
         sections:
           - <<: *labs
             items:
+              - text: 'Java and Eclipse Setup'
+                icon: 'website'
+                link: '/guides/eclipse/java-and-eclipse-setup.html'
+
+              - text: 'Github Setup'
+                icon: 'website'
+                link: '/guides/general/getting-started-with-github.html'
+
               - text: 'Homework Setup'
-              # - text: 'Java and Eclipse Setup'
-              #   icon: 'website'
-              #   link: '/guides/eclipse/java-and-eclipse-setup.html'
-
-              # - text: 'Github Setup'
-              #   icon: 'website'
-              #   link: '/guides/general/getting-started-with-github.html'
-
-              # - text: 'Homework Setup'
-              #   icon: 'website'
+                icon: 'website'
               #   link: '/guides/homework/setup-homework.html'
 
               - text: 'Homework Help'
