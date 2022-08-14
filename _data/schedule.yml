@@ -87,9 +87,14 @@ weeks:
               #   icon: 'website'
               #   link: '/guides/homework/setup-homework.html'
 
-              - file: 'homework'
-                name: 'argumentparser'
-                type: 'bump'
+              - text: 'Homework Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: homework
+                name: argumentparser
+                icon: indented
+                type: ['push']
 
           # - <<: *content
           #   items:
@@ -162,6 +167,29 @@ weeks:
             items:
               - text: 'Project Setup'
 
+              - text: 'Homework Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: homework
+                name: argumentparser
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: wordcleaner
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+
           - <<: *assignments
             items:
               - file: homework
@@ -201,6 +229,29 @@ weeks:
             items:
               - text: 'Project Testing'
 
+              - text: 'Homework Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: homework
+                name: wordcleaner
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: wordindex
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+
           - <<: *assignments
             items:
               - file: homework
@@ -235,6 +286,33 @@ weeks:
       - date: 2022-09-16
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: wordindex
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: prettyjsonwriter
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -274,6 +352,38 @@ weeks:
       - date: 2022-09-23
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: prettyjsonwriter
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: filesorter
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -312,6 +422,38 @@ weeks:
       - date: 2022-09-30
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: filesorter
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: filefinder
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump', 'strike']
+
           - <<: *assignments
             items:
               - file: homework
@@ -348,6 +490,38 @@ weeks:
       - date: 2022-10-07
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: filefinder
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: linkfinder
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -390,6 +564,38 @@ weeks:
       - date: 2022-10-14
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: linkfinder
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: htmlcleaner
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -431,6 +637,38 @@ weeks:
       - date: 2022-10-21
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: htmlcleaner
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: loggersetup
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -469,6 +707,43 @@ weeks:
       - date: 2022-10-28
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: loggersetup
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: readwritelock
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project1
+                icon: indented
+                type: ['push', *pending]
+
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project3
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -506,6 +781,38 @@ weeks:
       - date: 2022-11-04
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: readwritelock
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: primefinder
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project3
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -543,6 +850,38 @@ weeks:
       - date: 2022-11-11
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: primefinder
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: htmlfetcher
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push']
+              
+              - file: projects
+                name: project3
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -586,6 +925,43 @@ weeks:
       - date: 2022-11-18
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: htmlfetcher
+                icon: indented
+                type: ['push']
+
+              - file: homework
+                name: headerfetcher
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project2
+                icon: indented
+                type: ['push', *pending]
+
+              - file: projects
+                name: project3
+                icon: indented
+                type: ['push']
+
+              - file: projects
+                name: project4a
+                icon: indented
+                type: ['push']
+                
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
+
           - <<: *assignments
             items:
               - file: homework
@@ -663,6 +1039,37 @@ weeks:
       - date: 2022-12-02
         sections:
           - <<: *labs
+            items:
+              - text: 'Homework Help'
+                icon: 'assistants'
+
+              - file: homework
+                name: headerfetcher
+                icon: indented
+                type: ['push']
+
+              - text: 'Project Help'
+                icon: 'assistants'
+                type: ['bump']
+
+              - file: projects
+                name: project3
+                icon: indented
+                type: ['push']
+
+              - file: projects
+                name: project4a
+                icon: indented
+                type: ['push']
+
+              - file: projects
+                name: project4b
+                icon: indented
+                type: ['push']
+
+              - text: 'Code Reviews'
+                icon: 'review'
+                type: ['bump']
 
           - <<: *deadlines
             items:
@@ -684,6 +1091,11 @@ weeks:
               
               - file: projects
                 name: project4_tests
+
+              - text: 'Classes End'
+                icon: 'date'
+                date: 2022-12-07
+                type: [*pending, 'bump']
 
       - date: 2022-12-08
         sections:
@@ -711,6 +1123,8 @@ weeks:
             items:
               - text: 'Finals Begin'
                 icon: 'date'
+                date: 2022-12-09
+                show: true
                 type: [*pending]
 
   - text: 'Finals'

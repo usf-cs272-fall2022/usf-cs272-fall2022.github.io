@@ -1,4 +1,11 @@
-project1_tests: &default
+project1: &default
+  text: 'Project 1 Inverted Index'
+  # link: '/guides/projects/project-1.html'
+  icon: 'project'
+  type: ['has-text-usf-plum']
+
+project1_tests:
+  <<: *default
   text: 'Project 1 Tests'
   # link: '/guides/projects/project-1.html'
   date: 2022-09-20
@@ -24,6 +31,11 @@ project1_design:
   text: 'Project 1 Design'
   # link: '/guides/projects/project-1.html'
   date: 2022-10-11
+
+project2:
+  <<: *default
+  text: 'Project 2 Partial Search'
+  # link: '/guides/projects/project-2.html'
 
 project2_tests: 
   <<: *default
@@ -51,6 +63,11 @@ project2_design:
   # link: '/guides/projects/project-2.html'
   date: 2022-11-15
 
+project3:
+  <<: *default
+  text: 'Project 3 Multithreading'
+  # link: '/guides/projects/project-3.html'
+
 project3_tests: 
   <<: *default
   text: 'Project 3 Tests'
@@ -76,6 +93,16 @@ project3_design:
   text: 'Project 3 Design'
   # link: '/guides/projects/project-3.html'
   date: 2022-12-06
+
+project4a:
+  <<: *default
+  text: 'Project 4 Web Crawler'
+  # link: '/guides/projects/project-4a.html'
+
+project4b:
+  <<: *default
+  text: 'Project 4 Search Engine'
+  # link: '/guides/projects/project-4b.html'
 
 project4_tests:
   <<: *default

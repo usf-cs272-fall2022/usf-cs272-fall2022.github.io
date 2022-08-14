@@ -92,9 +92,17 @@ nothing:
   label: 'Placeholder'
   class: ''
 
+indented:
+  label: 'Indented'
+  class: 'fal fa-minus'
+
 time:
   label: 'Time'
   class: 'far fa-alarm-clock'
+
+assistants:
+  label: 'Teacher Assistants'
+  class: 'far fa-users-class'
 
 # holidays and breaks
 
@@ -125,4 +133,3 @@ thanksgiving:
 travel:
   label: 'Travel'
   class: 'far fa-plane-departure'
-  
