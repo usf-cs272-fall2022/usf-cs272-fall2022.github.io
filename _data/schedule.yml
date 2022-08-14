@@ -74,6 +74,7 @@ weeks:
         sections:
           - <<: *labs
             items:
+              - text: 'Homework Setup'
               # - text: 'Java and Eclipse Setup'
               #   icon: 'website'
               #   link: '/guides/eclipse/java-and-eclipse-setup.html'
@@ -158,6 +159,9 @@ weeks:
       - date: 2022-09-02
         sections:
           - <<: *labs
+            items:
+              - text: 'Project Setup'
+
           - <<: *assignments
             items:
               - file: homework
@@ -194,6 +198,9 @@ weeks:
       - date: 2022-09-09
         sections:
           - <<: *labs
+            items:
+              - text: 'Project Testing'
+
           - <<: *assignments
             items:
               - file: homework
@@ -296,6 +303,12 @@ weeks:
             items:
               - text: 'Stream Pipelines'
 
+          - <<: *deadlines
+            items:
+              - text: 'Sophie @ Conference'
+                icon: 'travel'
+                type: [*pending]
+
       - date: 2022-09-30
         sections:
           - <<: *labs
@@ -309,6 +322,9 @@ weeks:
               - file: homework
                 name: filesorter
 
+              - text: 'Sophie @ Conference'
+                icon: 'travel'
+                type: [*pending, 'bump']
   - week: 7
     days:
       - date: 2022-10-04
@@ -476,6 +492,11 @@ weeks:
               - file: projects
                 name: project2_review1
 
+              - text: 'Project Cutoff'
+                icon: 'project'
+                date: 2022-11-01
+                type: ['has-text-danger', 'has-text-weight-bold']
+
       - date: 2022-11-03
         sections:
           - <<: *lectures
@@ -494,6 +515,11 @@ weeks:
             items:
               - file: homework
                 name: readwritelock
+
+              - text: 'Withdraw Deadline'
+                icon: 'date'
+                date: 2022-11-04
+                type: ['has-text-danger', 'has-text-weight-bold', 'bump']
 
   - week: 12
     days:

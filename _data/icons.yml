@@ -121,3 +121,8 @@ fall:
 thanksgiving:
   label: 'Thanksgiving Recess'
   class: 'far fa-pie'
+
+travel:
+  label: 'Travel'
+  class: 'far fa-plane-departure'
+  
