@@ -8,9 +8,12 @@ blurb: |
 
 ---
 
+Pending
+
+{% comment %}
 ## Lecture Sections
 
-Lectures will be conducted in-person by the instructor, but may be attended in-person or remotely via Zoom by students. The same Zoom meeting will be used for both lecture sections:
+Lectures will be conducted in-person by the instructor. The lectures will be recorded via Zoom, and students may attend remotely via Zoom as a backup option if temporarily unable to make it to class in person. The same Zoom meeting will be used for both lecture sections:
 
 | Section | Date/Time | Zoom Meeting |
 |:--------|:----------|:-------------|
@@ -39,6 +42,7 @@ Once code reviews with instructor begin, labs will convert to remote-only teache
 ## Office Hours
 
 Office hours are first-come first-serve. Office hours will be held primarily remotely via Zoom, using the [same Zoom meeting]({{ site.data.info.streams.lectures.link }}) as lectures and labs. See the pinned "Weekly Schedule" post on [Piazza]({{ site.data.info.links.forums.link }}) for details.
+{% endcomment %}
 
 ## Subscribe to Calendar
 
