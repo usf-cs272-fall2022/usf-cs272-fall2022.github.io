@@ -93,11 +93,11 @@ weeks:
                 icon: indented
                 type: ['push']
 
-          # - <<: *content
-          #   items:
-          #     - text: 'Configuring Eclipse'
-          #       icon: 'website'
-          #       link: '/guides/eclipse/configuring-eclipse.html'
+          - <<: *content
+            items:
+              - text: 'Configuring Eclipse'
+                icon: 'website'
+                link: '/guides/eclipse/configuring-eclipse.html'
 
           #     - text: 'Completing Homework'
           #       icon: 'website'
