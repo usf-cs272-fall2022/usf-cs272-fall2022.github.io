@@ -81,7 +81,7 @@ If you answered yes to all of the above, you can request a code review to have y
 
 ## Deadlines
 
-The design grade is based on the **pull request reviewed date** of the **first** approved code review on Github. This is *not* when the code review was requested, nor the date of the passing release. It is the date when the code was **first** reviewed by the instructor (i.e. the date of your code review appointment), not the date your code actually passes code review. However, the grade will remain 0 until code review is passed.
+The design grade is based on the **pull request reviewed date** of the **first** approved code review on GitHub. This is *not* when the code review was requested, nor the date of the passing release. It is the date when the code was **first** reviewed by the instructor (i.e. the date of your code review appointment), not the date your code actually passes code review. However, the grade will remain 0 until code review is passed.
 
 There is a **5% late deduction per 72 hours** that the project design is late. For example, the design grade will be 95% if the first passing release is between 1 minute to 3 day late. There is another one-time **5% late deduction** if you have more than a ~~10 day~~ **14 day** gap in between code reviews.
 
@@ -110,7 +110,7 @@ Before your functional code will be reviewed by the instructor, you need to work
 
   - Your code should have no warnings, including Javadoc warnings.
 
-      There are two ways to check this locally. First, [configure Eclipse to show you warnings](../eclipse/configuring-eclipse.html). Second, you can [run using the Maven command](/guides/projects/project-testing.html#running-maven) to see the exact warnings that will be found by the Github Actions script.
+      There are two ways to check this locally. First, [configure Eclipse to show you warnings](../eclipse/configuring-eclipse.html). Second, you can [run using the Maven command](/guides/projects/project-testing.html#running-maven) to see the exact warnings that will be found by the GitHub Actions script.
 
   - Your code should have no old `TODO` comments and `main` methods outside of the `Driver` class. Do not forget to check for these in any homework classes you decide to use for your project!
 

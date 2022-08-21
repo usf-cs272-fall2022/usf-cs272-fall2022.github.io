@@ -69,7 +69,7 @@ Each method might look slightly different, but it will always have those same th
 ## Local Testing
 {: .page-header }
 
-**You should try passing the tests locally before you try passing them remotely.** Before you can do that, you need to follow the [setup homework](/guides/homework/setup-homework.html) guide to setup the your repository using Github classroom and then import that repository as a Java Project in Eclipse.
+**You should try passing the tests locally before you try passing them remotely.** Before you can do that, you need to follow the [setup homework](/guides/homework/setup-homework.html) guide to setup the your repository using GitHub classroom and then import that repository as a Java Project in Eclipse.
 
 To run the JUnit tests provided with the homework template, follow these steps:
 
@@ -111,14 +111,14 @@ Pretty much anywhere you can find the test and right-click it, you can run it as
 
 #### Advanced: Running Tests via Maven
 
-If you want to be sure there are no surprises when your code is tested by Github Actions, you need to run the [Maven](https://maven.apache.org/) command in Eclipse. Maven is the tool being used to setup your Eclipse projects (it handles importing third-party packages and the compile settings), and it is the tool used by Github Actions to compile and test your code.
+If you want to be sure there are no surprises when your code is tested by GitHub Actions, you need to run the [Maven](https://maven.apache.org/) command in Eclipse. Maven is the tool being used to setup your Eclipse projects (it handles importing third-party packages and the compile settings), and it is the tool used by GitHub Actions to compile and test your code.
 
 <details>
 <p><summary>View Details</summary></p>
 
 <div markdown=1>
 
-Most of the homework assignments assign 5 points for having warning-free code. Maven uses a different compiler than Eclipse, so you might not see the same set warnings reported in the "Problems" view of Eclipse that will be caught when Maven is run by Github Actions. To check for warnings, follow these steps:
+Most of the homework assignments assign 5 points for having warning-free code. Maven uses a different compiler than Eclipse, so you might not see the same set warnings reported in the "Problems" view of Eclipse that will be caught when Maven is run by GitHub Actions. To check for warnings, follow these steps:
 
   1. Right-click the `pom.xml` file, open the "Run As" menu, and select "3 Maven build..." from the menu. Make sure to select the option with the `...` at the end.
 
@@ -158,7 +158,7 @@ The next step is to re-compile your code regardless of warnings. Follow the same
 
       ...then the compile was successful and you can move on to the next step. If this does not work, reach out to us on CampusWire for help.
 
-Finally, you can run the tests as they will be run by Github Actions.  Follow the same steps as before to open the "Maven build..." menu. In the popup window, make sure to enter:
+Finally, you can run the tests as they will be run by GitHub Actions.  Follow the same steps as before to open the "Maven build..." menu. In the popup window, make sure to enter:
 
   1. Enter `test` in the "Goals" text box.
 
@@ -196,14 +196,14 @@ After that is uninstalled, you should no longer see that error message.
 </details>
 
 <br/>
-Generally these steps are only necessary if your tests pass normally in Eclipse but not on Github Actions. It is easier to debug the issue locally than re-run the Github Action multiple times.
+Generally these steps are only necessary if your tests pass normally in Eclipse but not on GitHub Actions. It is easier to debug the issue locally than re-run the GitHub Action multiple times.
 
 ## Remote Testing
 {: .page-header }
 
 Once you are passing all of the tests locally, it is time to test your homework remotely.
 
-  1. AFTER you have made a commit and pushed it to Github, open up your repository on Github. You should be able to see the status of your commit:
+  1. AFTER you have made a commit and pushed it to GitHub, open up your repository on GitHub. You should be able to see the status of your commit:
 
       [![Screenshot]({{ "/images/github-commit-status.png" | relative_url }}){: .is-400 }]({{ "/images/github-commit-status.png" | relative_url }})
 
@@ -229,7 +229,7 @@ Once you are passing all of the tests locally, it is time to test your homework 
 
       [![Screenshot]({{ "/images/github-homework-action-summary.png" | relative_url }}){: .is-400 }]({{ "/images/github-homework-action-summary.png" | relative_url }})
 
-      Github will often add other warnings here related to the Github Actions infrastructure. You can usually ignore those.
+      GitHub will often add other warnings here related to the GitHub Actions infrastructure. You can usually ignore those.
 
   5. Click on the "Autograding" action for details on which tests passed or failed. There is a lot of output to scroll through here. For example:
 

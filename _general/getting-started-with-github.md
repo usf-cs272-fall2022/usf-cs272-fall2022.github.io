@@ -34,10 +34,10 @@ When creating an account for this class (including accounts already created), ke
 
   - Apply for the [**GitHub Student Developer Pack**](https://education.github.com/pack) after adding your university emails to your account.
 
-You can see the [instructor's profile page](https://github.com/sjengle) for an example. When done with this class, you'll be able to show off your Github profile to potential employers.
+You can see the [instructor's profile page](https://github.com/sjengle) for an example. When done with this class, you'll be able to show off your GitHub profile to potential employers.
 
 <i class="fas fa-info-circle"></i>
-Using your Github username and password authentication [no longer an option for authentication](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) via the command-line.
+Using your GitHub username and password authentication [no longer an option for authentication](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) via the command-line.
 {: .notification }
 
 ## Setup Repository Access
@@ -67,10 +67,10 @@ The CS Tutoring Center has recordings of past `git` workshops posted:
 Here are some other fantastic (and free) guides you can look at to learn more:
 
   - [**GitHub Guides**](https://guides.github.com/)  
-    Guides for learning more about GitHub by Github.
+    Guides for learning more about GitHub by GitHub.
 
   - [**GitHub Training and Guides (Videos)**](https://www.youtube.com/githubguides)  
-    Videos produced by Github for learning Git and Github.
+    Videos produced by GitHub for learning Git and GitHub.
 
   - [**GitHub Learning Lab**](https://lab.github.com/)  
     Hands-on GitHub lessons taught by the friendly GitHub Learning Lab bot.
@@ -80,11 +80,11 @@ Here are some other fantastic (and free) guides you can look at to learn more:
 
 Here are a couple free resources that will help use `git` with Eclipse:
 
-  - [**Github and Eclipse (Video)**](https://www.youtube.com/watch?v=XuuzSaelUzo)  
-    Videos produced by Github for using Github with Eclipse.
+  - [**GitHub and Eclipse (Video)**](https://www.youtube.com/watch?v=XuuzSaelUzo)  
+    Videos produced by GitHub for using GitHub with Eclipse.
 
   - [**Eclipse EGit Plugin User Guide**](http://wiki.eclipse.org/EGit/User_Guide)  
-    User guide for the builtin `git` plugin in Eclipse. Works with Github repositories.
+    User guide for the builtin `git` plugin in Eclipse. Works with GitHub repositories.
 
 You also have free access to [**Linkedin Learning**](https://myusf.usfca.edu/ets/educational-technologies/linkedin) (formerly Lynda.com), which has many technical online tutorials and mini-courses. If you prefer that format, I strongly encourage you to take a look. There are *many* other resources you can find with a simple web search, like this [Really Friendly Git Intro](https://hellowebbooks.com/learn-git/) zine by Tracy Osborn or the [Oh Shit, Git!](https://wizardzines.com/zines/oh-shit-git/) zine by Julia Evans.
 

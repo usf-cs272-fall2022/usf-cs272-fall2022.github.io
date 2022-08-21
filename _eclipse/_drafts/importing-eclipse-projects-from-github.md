@@ -1,7 +1,7 @@
 ---
 layout: guides
 navbar: Guides
-title: Importing Eclipse Projects from Github
+title: Importing Eclipse Projects from GitHub
 key: 3
 bump: true
 
@@ -10,10 +10,10 @@ bump: true
 #    type: 'is-primary'
 ---
 
-Follow these steps to import an Eclipse project from your Github repository. You must have completed the steps in the following guides **before** starting this one:
+Follow these steps to import an Eclipse project from your GitHub repository. You must have completed the steps in the following guides **before** starting this one:
 
   - [Java and Eclipse Setup](/guides/eclipse/java-and-eclipse-setup.html)
-  - [Getting Started with Github](/guides/general/getting-started-with-github.html)
+  - [Getting Started with GitHub](/guides/general/getting-started-with-github.html)
 
 It is also recommended to complete the  [Configuring Eclipse](/guides/eclipse/configuring-eclipse.html) guide before this one.
 
@@ -24,11 +24,11 @@ There might be slight differences with the images below at the latest version of
 ## Import Project into Eclipse (New Repository)
 {: .page-header}
 
-Follow these steps if you do not yet have the Github repository on your system locally. This includes the *first* time you import the lecture code, homework assignments, and *first* time you import the project.
+Follow these steps if you do not yet have the GitHub repository on your system locally. This includes the *first* time you import the lecture code, homework assignments, and *first* time you import the project.
 
-Log into Github, open Eclipse, and follow these steps:
+Log into GitHub, open Eclipse, and follow these steps:
 
-  1. Copy the HTTPS or SSH link to clone your repository in Github (based on what you configured earlier):
+  1. Copy the HTTPS or SSH link to clone your repository in GitHub (based on what you configured earlier):
 
       ![Screenshot]({{ "/images/github-clone-or-download.png" | relative_url }}){: .is-400 }
 
@@ -42,7 +42,7 @@ Log into Github, open Eclipse, and follow these steps:
 
       ![Screenshot]({{ "/images/eclipse-import-source.png" | relative_url }}){: .is-400 }
 
-  1. Paste the clone URI copied from Github in the "URI" field. The rest should automatically fill in. Click the "Next" button.
+  1. Paste the clone URI copied from GitHub in the "URI" field. The rest should automatically fill in. Click the "Next" button.
 
       ![Screenshot]({{ "/images/eclipse-import-uri.png" | relative_url }}){: .is-400 }
 
@@ -106,4 +106,4 @@ Now, we have to re-add the necessary libraries. Click the "Add Library..." butto
 
 Click "Apply" and "OK" when done. You should see all of the scary red icons disappear. If not, ask on Piazza or during office hours for help!
 
-If the Eclipse workspace becomes corrupted somehow, it is often easier to make sure your code is committed and pushed to Github, and then re-importing everything in a fresh workspace.
+If the Eclipse workspace becomes corrupted somehow, it is often easier to make sure your code is committed and pushed to GitHub, and then re-importing everything in a fresh workspace.

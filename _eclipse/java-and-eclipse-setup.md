@@ -47,7 +47,7 @@ Note that `%` above indicates the command prompt, and the lines below that are t
 
 ## Setup Folders
 
-We are using the Eclipse integrated development environment (IDE) in class for writing Java code and Github (using `git`) to store and share that code. Both Eclipse and Github have hidden metadata they use to track the status of your code and it is *very important* to keep this hidden metadata **separate** from each other.
+We are using the Eclipse integrated development environment (IDE) in class for writing Java code and GitHub (using `git`) to store and share that code. Both Eclipse and GitHub have hidden metadata they use to track the status of your code and it is *very important* to keep this hidden metadata **separate** from each other.
 
 Therefore, I recommend you create these (or similarly named) folders:
 

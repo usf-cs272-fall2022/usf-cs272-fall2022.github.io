@@ -30,15 +30,15 @@ For every homework assignment, you will need to repeat these steps:
 
       1. Find the homework assignment on Canvas. For example, go to the [{{ site.data.homework.argumentparser.text }}]({{ site.data.homework.argumentparser.link }}) assignment on Canvas for the first homework of the semester.
 
-      1. Click the Github Classroom invitation link and follow the instructions.
+      1. Click the GitHub Classroom invitation link and follow the instructions.
 
-      1. If this is your first time using Github Classroom, you will be prompted to select your USF username from the list. This makes sure we can associate your Github username with your grades in Canvas. You only need to complete this step once.
+      1. If this is your first time using GitHub Classroom, you will be prompted to select your USF username from the list. This makes sure we can associate your GitHub username with your grades in Canvas. You only need to complete this step once.
 
-      This process will create a private Github repository with the homework starter code that only you, the teacher assistants, and the instructor can access.
+      This process will create a private GitHub repository with the homework starter code that only you, the teacher assistants, and the instructor can access.
 
   1. **Setup your Eclipse project.**
 
-      Once your repository is setup, you must import the homework as a Java Maven Project in Eclipse. See the [Importing Eclipse Projects from Github](/guides/eclipse/importing-eclipse-projects-from-github.html) guide for detailed steps.
+      Once your repository is setup, you must import the homework as a Java Maven Project in Eclipse. See the [Importing Eclipse Projects from GitHub](/guides/eclipse/importing-eclipse-projects-from-github.html) guide for detailed steps.
 
       When done, the "Package Explorer" view of your homework should look something like this:
 
@@ -56,9 +56,9 @@ For every homework assignment, you will need to repeat these steps:
 
       These are the tests you will need to pass for the homework. Most of the tests will fail the first time.
 
-  1. **Commit and push changes to Github.**
+  1. **Commit and push changes to GitHub.**
 
-      In Eclipse, make a minor change and [commit and push](http://wiki.eclipse.org/EGit/User_Guide#Committing_Changes) that change to Github.
+      In Eclipse, make a minor change and [commit and push](http://wiki.eclipse.org/EGit/User_Guide#Committing_Changes) that change to GitHub.
 
       I recommend placing the [Git Staging View](http://wiki.eclipse.org/EGit/User_Guide#Git_Staging_View) somewhere on your Eclipse layout to make this process more convenient. You can access that view via the "Window" » "Show View" » "Other..." option in the menu. Open the "Git" folder to find the "Git Staging View" option to add it to your layout:
 
@@ -68,11 +68,11 @@ For every homework assignment, you will need to repeat these steps:
 
       ![Screenshot]({{ "/images/homework/homework-staging.png" | relative_url }}){: .is-600 }
 
-      Click "Commit and Push" to make a checkpoint and push that checkpoint to Github. If you click "Commit" you only make a local checkpoint on your system.
+      Click "Commit and Push" to make a checkpoint and push that checkpoint to GitHub. If you click "Commit" you only make a local checkpoint on your system.
 
-  1. **Verify the Autograder Github Action ran properly.**
+  1. **Verify the Autograder GitHub Action ran properly.**
 
-      Visit your repository on Github. Click the "Actions" tab to view all of the runs. There should be a run with the same name as your last commit.
+      Visit your repository on GitHub. Click the "Actions" tab to view all of the runs. There should be a run with the same name as your last commit.
 
       Make sure the action finishes running. Here is an example of what a completed action looks like:
 
@@ -92,6 +92,6 @@ For every homework assignment, you will need to repeat these steps:
 
       ![Screenshot]({{ "/images/homework/homework-readme.png" | relative_url }}){: .is-400 }
 
-      You may need to refresh your view on Github to see the latest result.
+      You may need to refresh your view on GitHub to see the latest result.
 
 At this point, you should be able to start [completing](complete-homework.html) and [testing](test-homework.html) the homework.

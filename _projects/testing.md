@@ -93,9 +93,9 @@ You can keep running this same "Run Configuration" while debugging. If you are f
 
 ### Running Maven
 
-Most of the time, if you are passing the tests locally you will also pass them remotely. However, there are slight differences between how the tests are run by Eclipse and how they are run by Github Actions.
+Most of the time, if you are passing the tests locally you will also pass them remotely. However, there are slight differences between how the tests are run by Eclipse and how they are run by GitHub Actions.
 
-If you want to test out the same approach used by Github Actions, you have to use Maven to run the tests instead of the JUnit interface in Eclipse.
+If you want to test out the same approach used by GitHub Actions, you have to use Maven to run the tests instead of the JUnit interface in Eclipse.
 
 <details>
 <p><summary>View Details</summary></p>
@@ -126,7 +126,7 @@ Follow these steps to create this run configuration:
 
   1. Next to the "Parameter Name" list, click the "Add..." button to add a parameter. Enter `test` for the "Name:" text box and `Project#Test*` for the "Value:" textbox, where `#` is the project number. For example, enter `Project1Test*` for Project 1. Click the "OK" button when done.
 
-  1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `groups` and `test#` for the name and value, where `#` is the project (e.g. `test1`). This tells Maven to run just the tests that Github Actions focuses on for this project. *This can be skipped if you want to run all of the tests regardless.*
+  1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `groups` and `test#` for the name and value, where `#` is the project (e.g. `test1`). This tells Maven to run just the tests that GitHub Actions focuses on for this project. *This can be skipped if you want to run all of the tests regardless.*
 
   1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `compileOptionFail` and `true` for the name and value. This tells Maven to fail if any compile warning are detected. If there are warnings, it will report those warnings and exit (it will not run the tests). *This is not required to earn project test credit, but will be required to sign up for a code review.*
 
@@ -141,13 +141,13 @@ These steps are really only required for fine-grained debugging and can be skipp
 
 You must test your code remotely before you can earn credit for the functionality of your project and before you can sign up for a code review appointment.
 
-This process begins by creating a release on Github. This will trigger the Github Action that verifies your project functionality.
+This process begins by creating a release on GitHub. This will trigger the GitHub Action that verifies your project functionality.
 
 ### Creating Releases
 
 Creating releases will familiarize you with [**versioning**](https://en.wikipedia.org/wiki/Software_versioning) your code.
 
-  1. After passing all of the tests locally and pushing your latest commits to Github, follow the [Creating Releases](https://help.github.com/articles/creating-releases/) steps to draft a new release of your project code on Github.
+  1. After passing all of the tests locally and pushing your latest commits to GitHub, follow the [Creating Releases](https://help.github.com/articles/creating-releases/) steps to draft a new release of your project code on GitHub.
 
   2. Choose a "tag" or the version number to assign to the code at this stage. Out in the "real world" you will likely use [semantic versioning](https://semver.org/), which we will roughly mimic in class.
 
@@ -195,7 +195,7 @@ To see the detailed log of everything that happened, click the "Verification" li
 
 Look for the red circle <i class="fas fa-times-circle has-text-danger"></i> icon to figure out which steps failed and click the greater-than <i class="far fa-angle-right"></i> icon to see the step details and the triangle or caret <i class="fas fa-caret-right"></i> icon to open details within a step. You will often have to open the group just above the first error you find for the details.
 
-If the "Pre Test Project" step failed, the action was not able to setup its virtual machine. This could be an issue with Github Actions or our verification script. Reach out [Piazza]({{ site.data.info.links.forums.link }}) with a link to your run for help.
+If the "Pre Test Project" step failed, the action was not able to setup its virtual machine. This could be an issue with GitHub Actions or our verification script. Reach out [Piazza]({{ site.data.info.links.forums.link }}) with a link to your run for help.
 
 If the error(s) appear in the "Test Project" step under the "Verification Setup Phase" heading, then your code could not be compiled. This could be related to compile issues that arise when using the `javac` compiler instead of the Eclipse compiler. Again, reach out privately on [Piazza]({{ site.data.info.links.forums.link }}) with a link directly to the issue in your run log for help.
 
@@ -221,7 +221,7 @@ If the tests failed and generated actual output files, these will be available t
 
 ###### Checking Warnings
 
-It is possible something went wrong with the Github Actions script itself. That is sometimes indicated by warnings. These might appear in the "Annotations" section:
+It is possible something went wrong with the GitHub Actions script itself. That is sometimes indicated by warnings. These might appear in the "Annotations" section:
 
 ![Screenshot]({{ "/images/actions-annotations.png" | relative_url }}){: .is-600 }
 
@@ -229,7 +229,7 @@ And in the detailed run log:
 
 ![Screenshot]({{ "/images/actions-run-log-warnings.png" | relative_url }}){: .is-600 }
 
-Most of the time, these can be ignored. For example, the warnings above happen anytime the test repository changes. They are only problematic if they show up in other situations as well. Sometimes, Github Actions also automatically adds warnings to indicate an pending change to their infrastructure.
+Most of the time, these can be ignored. For example, the warnings above happen anytime the test repository changes. They are only problematic if they show up in other situations as well. Sometimes, GitHub Actions also automatically adds warnings to indicate an pending change to their infrastructure.
 
 If you are ever in doubt, do not hesitate to post on [Piazza]({{ site.data.info.links.forums.link }}) with a link to the warning.
 
@@ -239,7 +239,7 @@ If you are ever in doubt, do not hesitate to post on [Piazza]({{ site.data.info.
 
 The following video 33 minute video gives an overview of projects, how to test projects locally (starting at 13:53), testing projects remotely (starting at 24:33), and get your first functionality grade (starting at 29:38).
 
-Keep in mind the version of Java, appearance of Eclipse, and appearance of the Github Action runs may be slightly different between semesters.
+Keep in mind the version of Java, appearance of Eclipse, and appearance of the GitHub Action runs may be slightly different between semesters.
 
 <figure>
 <p>

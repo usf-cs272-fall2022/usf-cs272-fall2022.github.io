@@ -39,7 +39,7 @@ After choosing the appropriate issue template, you will see instructions to:
 
   1. Replace `v0.0.0` in the issue title with the release you want graded.
   2. Replace `FULL_NAME` with your first and last name in the issue body.
-  3. Replace `USF_USERNAME` with your USF username (*not* your Github username) in the issue body.
+  3. Replace `USF_USERNAME` with your USF username (*not* your GitHub username) in the issue body.
 
 See [this issue](https://github.com/usf-cs272-spring2022/project-template/issues/1) for an example of what the title and body should look like.
 

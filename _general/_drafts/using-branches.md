@@ -33,7 +33,7 @@ All grading and code reviews will be done from your `main` branch. Use a branch 
 In general, it is a good idea to always use branches for development and keep only stable, tested, production-ready code in the `main` branch.
 
 <i class="fas fa-info-circle"></i>
-Traditionally, the primary branch of a `git` repository was the `master` branch. There is a fantastic movement to move away from this and other troubling terminology prevalent in CS and tech. Github now automatically uses `main` as the default, but you may find older repositories still using `master` as the primary branch.
+Traditionally, the primary branch of a `git` repository was the `master` branch. There is a fantastic movement to move away from this and other troubling terminology prevalent in CS and tech. GitHub now automatically uses `main` as the default, but you may find older repositories still using `master` as the primary branch.
 {: .notification }
 
 ## How Should You Branch?
@@ -42,9 +42,9 @@ Learning both the command-line and the Eclipse interface is recommended. Learnin
 
 Here are a few guides on the topic,
 
-  - [About Branches](https://help.github.com/articles/about-branches/) (Github Help Article)
+  - [About Branches](https://help.github.com/articles/about-branches/) (GitHub Help Article)
 
-  - [Learn Git Branching](https://learngitbranching.js.org/) (Github Interactive Training)
+  - [Learn Git Branching](https://learngitbranching.js.org/) (GitHub Interactive Training)
 
   - [Using Branches](https://www.atlassian.com/git/tutorials/using-branches) (Bitbucket Tutorial)
 
@@ -67,9 +67,9 @@ Once you start branching, it is likely you will run into merge conflicts.
 
 There are several guides dedicated to resolving these conflicts:
 
-- [About Merge Conflicts](https://help.github.com/articles/about-merge-conflicts/) (Github Help Article)
+- [About Merge Conflicts](https://help.github.com/articles/about-merge-conflicts/) (GitHub Help Article)
 
-- [Managing Merge Conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts) (Github Training)
+- [Managing Merge Conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts) (GitHub Training)
 
 - [Merge Conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts) (Bitbucket Tutorial)
 

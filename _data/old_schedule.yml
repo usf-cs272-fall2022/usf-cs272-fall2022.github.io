@@ -91,7 +91,7 @@ weeks:
                 icon: 'website'
                 link: '/guides/eclipse/java-and-eclipse-setup.html'
 
-              - text: 'Github Setup'
+              - text: 'GitHub Setup'
                 icon: 'website'
                 link: '/guides/general/getting-started-with-github.html'
 

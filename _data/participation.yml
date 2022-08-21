@@ -56,7 +56,7 @@ assistants_reply:
 
 # # github_resource:
 # #   <<: *default
-# #   text: 'Git/Github Resource'
+# #   text: 'Git/GitHub Resource'
 # #   date: 2022-02-11
 
 # lecture_setup:

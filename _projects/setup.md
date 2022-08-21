@@ -9,7 +9,7 @@ key: 0.1
 #    type: 'is-primary'
 ---
 
-The project is broken into two separate Github repositories and Eclipse projects:
+The project is broken into two separate GitHub repositories and Eclipse projects:
 
   - **SearchEngine**: This is where you will place your project code. You will have your own private version of this project. The initial template includes some configuration files and a skeleton `Driver.java` class.
 
@@ -37,9 +37,9 @@ The version of Java and appearance of Eclipse may be slightly different between 
 
 Below is a quick summary of the **one-time setup** needed for the project:
 
-  1. Visit the [Project Setup](https://usfca.instructure.com/courses/1605147/assignments/7184853) assignment in Canvas and click the Github Classroom link. This will setup a private repository named `project-username` where `username` is your Github username. You will use this same repository the *entire* semester for all of the projects.
+  1. Visit the [Project Setup](https://usfca.instructure.com/courses/1605147/assignments/7184853) assignment in Canvas and click the GitHub Classroom link. This will setup a private repository named `project-username` where `username` is your GitHub username. You will use this same repository the *entire* semester for all of the projects.
 
-  1. Import the repository as a Java Project in Eclipse. See the [Importing Eclipse Projects from Github](/guides/eclipse/importing-eclipse-projects-from-github.html) guide for steps. This will create a "SearchEngine" project in Eclipse where you will add your own code for the project.
+  1. Import the repository as a Java Project in Eclipse. See the [Importing Eclipse Projects from GitHub](/guides/eclipse/importing-eclipse-projects-from-github.html) guide for steps. This will create a "SearchEngine" project in Eclipse where you will add your own code for the project.
 
   1. Import the `project-tests` repository at <{{ site.data.info.links.github.link }}/project-tests> as a Java Project in Eclipse. This will create a "SearchEngineTests" project in Eclipse where you will find all of the test code and data files.
 
@@ -63,7 +63,7 @@ Once you have everything imported into Eclipse, try these steps to verify everyt
 
   1. Verify you can make, commit, and push changes to `Driver.java` in the "SearchEngine" project in Eclipse.
 
-  1. Create your first release. Click the "Releases" heading (usually on the right side) in Github and click the "Draft a new release" button. Enter `v1.0.0` as the tag version, *optionally* click the "This is a pre-release" checkbox, and leave the other fields unchanged:
+  1. Create your first release. Click the "Releases" heading (usually on the right side) in GitHub and click the "Draft a new release" button. Enter `v1.0.0` as the tag version, *optionally* click the "This is a pre-release" checkbox, and leave the other fields unchanged:
 
       ![Screenshot]({{ "/images/github-create-release.png" | relative_url }}){: .is-400 }
 

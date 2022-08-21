@@ -21,7 +21,7 @@ links:
     line: true
 
   github:
-    name: 'Github'
+    name: 'GitHub'
     icon: 'fab fa-github-alt'
     link: 'https://github.com/usf-cs272-fall2022'
     info: 'lecture code, homework templates, and project tests'
