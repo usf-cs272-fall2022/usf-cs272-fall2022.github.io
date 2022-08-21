@@ -41,7 +41,7 @@ weeks:
                 icon: 'website'
                 link: '/guides/general/getting-started.html'
 
-              - text: 'Java and Eclipse Setup'
+              - text: 'Java and Eclipse Setup' 
                 icon: 'website'
                 link: '/guides/eclipse/java-and-eclipse-setup.html'
 
@@ -67,7 +67,24 @@ weeks:
         sections:
           - <<: *lectures
             items:
-            - text: 'Exception Handling'
+              - text: 'Project Euler'
+              - text: 'Simple Grader'
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'exceptions'
+
+          - <<: *assignments
+            items:
+              - file: 'participation'
+                name: 'ask_why'
+
+              - file: 'participation'
+                name: 'ask_anything'
+
+              - file: 'participation'
+                name: 'piazza_reply'
 
       - date: 2022-08-26
         sections:
@@ -113,8 +130,8 @@ weeks:
               - file: 'participation'
                 name: 'introduction_reply'
 
-              # - file: 'participation'
-              #   name: 'assistants_reply'
+              - file: 'participation'
+                name: 'assistants_reply'
 
               # - file: 'participation'
               #   name: 'homework_setup'
@@ -197,6 +214,9 @@ weeks:
             items:
               - file: 'participation'
                 name: 'introduction_reply'
+
+              - file: 'participation'
+                name: 'assistants_reply'
 
               - file: homework
                 name: argumentparser
@@ -603,6 +623,9 @@ weeks:
             items:
               - file: homework
                 name: linkfinder
+
+              - file: 'participation'
+                name: 'ask_why'
 
               - text: 'Fall Break'
                 icon: 'date'
@@ -1073,6 +1096,12 @@ weeks:
             items:
               - file: homework
                 name: headerfetcher
+
+              - file: 'participation'
+                name: 'ask_anything'
+
+              - file: 'participation'
+                name: 'piazza_reply'
 
   - week: 16
     days:

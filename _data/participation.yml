@@ -4,8 +4,6 @@ example_assignment: &default
   date: false
   link: false
 
-# week 1
-
 introduction_post:
   <<: *default
   text: 'Introduction Post'
@@ -18,19 +16,35 @@ forum_setup:
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223871'
   date: 2022-08-26
 
-# week 2 (homework bundle 0 due)
-
 introduction_reply:
   <<: *default
   text: 'Introduction Reply'
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223897'
   date: 2022-09-02
 
-# assistants_reply:
-#   <<: *default
-#   text: 'TA Introuctions'
-#   link: 'https://usfca.instructure.com/courses/1605147/discussion_topics/8062687'
-#   date: 2022-02-04
+ask_why:
+  <<: *default
+  text: 'Ask Why on Piazza'
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223901'
+  date: 2022-10-14
+
+ask_anything:
+  <<: *default
+  text: 'Ask Anything on Piazza'
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7234626'
+  date: 2022-12-02
+
+piazza_reply:
+  <<: *default
+  text: 'Reply on Piazza'
+  date: 2022-12-02
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223902'
+
+assistants_reply:
+  <<: *default
+  text: 'TA Introductions'
+  link: 'https://usfca.instructure.com/courses/1608197/discussion_topics/8106138'
+  date: 2022-09-02
 
 # homework_setup:
 #   <<: *default
@@ -116,12 +130,6 @@ introduction_reply:
 #   show: true
 #   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401177'
 
-# piazza_reply:
-#   <<: *default
-#   text: 'Piazza Reply'
-#   date: 2022-05-13
-#   show: true
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7181490'
 
 # whatif:
 #   <<: *default
