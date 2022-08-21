@@ -10,11 +10,11 @@ course_intro:
   text: 'Course Introduction'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSO7g1sDqi3XoWkOKFO7_7YR-BrT2iA8tMrWbeHvX5HT8msJqILQCMIHM6QJpTxPS46KysQyfhQatDY/pub?start=false&loop=false&delayms=3000'
 
-# exceptions:
-#   <<: *default
-#   text: 'Exception Handling'
-#   tags: ['exceptions']
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vT6WdZbuKS1KqIKwCkVhMwvlyiCbztsMi2w7Cd1AkZqdIf4dsRo_Kb7_fgH_qGvcEjTTiCiNfjnmKiY/pub?start=false&loop=false&delayms=3000'
+exceptions:
+  <<: *default
+  text: 'Exception Handling'
+  tags: ['exceptions']
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vROu3FS53xFrjB_HQzBYEW16rhtulZgAlXrLr6V30Se60zvEo4_ryQb9tXRb5U9klMRkg4vXdqpOENp/pub?start=false&loop=false&delayms=3000'
 
 # paths:
 #   <<: *default
