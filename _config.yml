@@ -32,10 +32,10 @@ collections:
     output: true
     permalink: /guides/:collection/:name:output_ext
 
-  # homework:
-  #   title: 'Homework Guides'
-  #   output: true
-  #   permalink: /guides/:collection/:name:output_ext
+  homework:
+    title: 'Homework Guides'
+    output: true
+    permalink: /guides/:collection/:name:output_ext
 
   # projects:
   #   title: 'Project Guides'
