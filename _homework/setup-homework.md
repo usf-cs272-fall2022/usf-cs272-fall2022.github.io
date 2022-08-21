@@ -4,8 +4,8 @@ navbar: Guides
 title: Setup Homework
 key: 1
 
-run_summary: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/actions/runs/1763252998'
-run_detail: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/runs/4985351349?check_suite_focus=true#step:3:1'
+run_summary: 'https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template/actions/runs/2900144399'
+run_detail: 'https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template/runs/7942084107?check_suite_focus=true#step:3:131'
 
 ---
 
@@ -42,7 +42,7 @@ For every homework assignment, you will need to repeat these steps:
 
       When done, the "Package Explorer" view of your homework should look something like this:
 
-      ![Screenshot]({{ "/images/homework-imported.png" | relative_url }}){: .is-400 }
+      ![Screenshot]({{ "/images/homework/homework-imported.png" | relative_url }}){: .is-300 }
 
       Make sure the correct Java version is showing up and that you are in the "Java" perspective before moving on. This perspective allows you to run Java code. The "Git" perspective lets you view, but not run, Java code.
 
@@ -52,7 +52,7 @@ For every homework assignment, you will need to repeat these steps:
 
       That should open up the "JUnit" view automatically, which will look similar to this:
 
-      ![Screenshot]({{ "/images/homework-junit.png" | relative_url }}){: .is-400 }
+      ![Screenshot]({{ "/images/homework/homework-junit.png" | relative_url }}){: .is-300 }
 
       These are the tests you will need to pass for the homework. Most of the tests will fail the first time.
 
@@ -62,11 +62,11 @@ For every homework assignment, you will need to repeat these steps:
 
       I recommend placing the [Git Staging View](http://wiki.eclipse.org/EGit/User_Guide#Git_Staging_View) somewhere on your Eclipse layout to make this process more convenient. You can access that view via the "Window" » "Show View" » "Other..." option in the menu. Open the "Git" folder to find the "Git Staging View" option to add it to your layout:
 
-      ![Screenshot]({{ "/images/eclipse-show-view.png" | relative_url }}){: class="is-size is-bordered" style="width: 300px;" }
+      ![Screenshot]({{ "/images/homework/eclipse-show-view.png" | relative_url }}){: .is-300 }
 
       Make sure to drag files from the "Unstaged" to the "Staged" box and add a commit message. Sometimes, you need to click the "Refresh" <i class="far fa-sync"></i> button in the upper right corner of the view to update. For example:
 
-      ![Screenshot]({{ "/images/homework-staging.png" | relative_url }}){: .is-600 }
+      ![Screenshot]({{ "/images/homework/homework-staging.png" | relative_url }}){: .is-600 }
 
       Click "Commit and Push" to make a checkpoint and push that checkpoint to Github. If you click "Commit" you only make a local checkpoint on your system.
 
@@ -76,21 +76,21 @@ For every homework assignment, you will need to repeat these steps:
 
       Make sure the action finishes running. Here is an example of what a completed action looks like:
 
-      ![Screenshot]({{ "/images/github-homework-action-summary.png" | relative_url }}){: .is-600 }  
+      ![Screenshot]({{ "/images/homework/github-homework-action-summary.png" | relative_url }}){: .is-600 }  
       <{{ page.run_summary }}>
 
-      Scroll down in the "Summary" view to see the "Annotations" section. That will report the number of points your homework has earned so far:
+      Scroll down in the "Summary" view to see the "Annotations" section. That will report the number of points your homework has earned so far. The first annotation named "Autograding complete" shows the points returned by the GitHub Classroom Autograder. The second annotation mamed "Check Autograding Results" takes into account late penalties (if appropriate):
 
-      ![Screenshot]({{ "/images/homework-annotation.png" | relative_url }}){: .is-400 }
+      ![Screenshot]({{ "/images/homework/homework-annotation.png" | relative_url }}){: .is-300 }
 
       For details on which tests failed, you need to drill into the "Autograding" output.
 
-      ![Screenshot]({{ "/images/github-homework-action-detail.png" | relative_url }}){: .is-600 }  
+      ![Screenshot]({{ "/images/homework/github-homework-action-detail.png" | relative_url }}){: .is-400 }  
       <{{ page.run_detail }}>
 
       You can also see the number of points on the README.md file as well:
 
-      ![Screenshot]({{ "/images/homework-readme.png" | relative_url }}){: .is-400 }
+      ![Screenshot]({{ "/images/homework/homework-readme.png" | relative_url }}){: .is-400 }
 
       You may need to refresh your view on Github to see the latest result.
 
