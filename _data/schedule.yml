@@ -68,7 +68,12 @@ weeks:
           - <<: *lectures
             items:
               - text: 'Project Euler'
-              - text: 'Simple Grader'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ProjectEuler'
+
+              - text: 'Exception Handling'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ExceptionHandling'
 
           - <<: *content
             items:
