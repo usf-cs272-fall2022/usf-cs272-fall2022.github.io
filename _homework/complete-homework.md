@@ -3,6 +3,8 @@ layout: guides
 navbar: Guides
 title: Completing Homework
 key: 2
+
+example_issue: 'https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template/issues/1'
 ---
 
 This guides discusses how to work on your homework and submit it for grading.
@@ -32,7 +34,7 @@ Refer to the `TODO` comments in the template code for specifics on what code to 
 
 Post on [Piazza]({{ site.data.info.links.forums.link }}) if you have any questions regarding what must be done for a homework assignment or a question about your homework grade.
 
-## Receiving Homework Credit
+## Submitting On-Time Homework
 {: .page-header }
 
 To receive full credit on any homework assignment, you must:
@@ -45,25 +47,33 @@ To receive full credit on any homework assignment, you must:
 
   - **Follow the `TODO` directions.** For example, if the `TODO` comment stated you must use a `HashSet` and your code does not, you could lose points even if you are passing all of the unit tests.
 
-  - **Properly submit your homework on time.** By default, GitHub Classroom will report your grade based on the last commit *before* the deadline and will ignore all other commits after that. You will have to reach out on Piazza to have late submissions regraded manually.
+  - **Properly submit your homework on time.** By default, GitHub Classroom will report your grade based on the last commit *before* the deadline and will ignore all other commits after that.
 
 To submit your homework, you must make a commit and push that commit to GitHub before the deadline!
 
 ## Submitting Late Homework
 {: .page-header }
 
-GitHub 
+GitHub Classroom will report your grade based on the last commit pushed **before** the deadline and will ignore all commits pushed after that. To have your homework regraded after the deadline, you must:
 
-To receive full credit on any homework assignment, you must:
+  1. Make sure you are happy with the late grade reported by the most recent GitHub Action run. Pay attention to the grade reported by the "Check Autograding Results" annotation.
+      
+      ![Screenshot]({{ "/images/homework/annotation-late.png" | relative_url }}){: .is-300 }
 
-  - **Pass all of the unit tests remotely.** See the [Testing Homework](/guides/homework/test-homework.html) guide detailed steps. You will not receive full points if you are passing the tests locally but not remotely.
+  2. Create an issue using the "Late Homework Request" template. Follow the instructions to fill in your name and USF username.
 
-  - **Commit your work often.** Some assignments require a minimum number of commits! Consider making a commit after you complete every `TODO` in the code or after you pass a new test. <i class="fas fa-star has-text-warning"></i>
+      ![Screenshot]({{ "/images/homework/late-issue-template.png" | relative_url }}){: .is-300 }
 
-  - **Avoid warnings.** Some assignments require the code to compile with no warnings to earn full points. Try to make sure your code is warning-free in Eclipse before testing your code remotely!
+  3. Wait for the GitHub Action bot to run. Within a few minutes, it should respond with:
+  
+      - If there are problems with your request, the bot will report the problems and close the issue. You must fix those problems and then re-open the issue to trigger it to run again.
 
-  - **Follow the `TODO` directions.** For example, if the `TODO` comment stated you must use a `HashSet` and your code does not, you could lose points even if you are passing all of the unit tests.
+          ![Screenshot]({{ "/images/homework/late-issue-error.png" | relative_url }}){: .is-400 }
 
-  - **Properly submit your homework on time.** By default, GitHub Classroom will report your grade based on the last commit *before* the deadline and will ignore all other commits after that. You will have to reach out on Piazza to have late submissions regraded manually.
+      - If there are no problems with your request, the bot will respond with the grade that should be entered into Canvas and assign the issue to the teacher assistants to process. Once they have entered your grade, they will close the issue.
 
-To submit your homework, you must make a commit and push that commit to GitHub before the deadline!
+          ![Screenshot]({{ "/images/homework/late-issue-success.png" | relative_url }}){: .is-400 }
+  
+      If you are uncertain what to do or your issue has been open for over 2 business days without any activity, reach out on [Piazza]({{ site.data.info.links.forums.link }}) for help.
+
+See [this example issue]({{ page.example_issue }}) for what the request should look like when it runs properly.
