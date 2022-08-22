@@ -100,7 +100,7 @@ weeks:
 
               - text: 'Homework Setup'
                 icon: 'website'
-              #   link: '/guides/homework/setup-homework.html'
+                link: '/guides/homework/setup-homework.html'
 
               - text: 'Homework Help'
                 icon: 'assistants'
@@ -117,13 +117,13 @@ weeks:
                 icon: 'website'
                 link: '/guides/eclipse/configuring-eclipse.html'
 
-          #     - text: 'Completing Homework'
-          #       icon: 'website'
-          #       link: '/guides/homework/complete-homework.html'
+              - text: 'Completing Homework'
+                icon: 'website'
+                link: '/guides/homework/complete-homework.html'
 
-          #     - text: 'Testing Homework'
-          #       icon: 'website'
-          #       link: '/guides/homework/test-homework.html'
+              - text: 'Testing Homework'
+                icon: 'website'
+                link: '/guides/homework/test-homework.html'
 
           - <<: *assignments
             items:
@@ -133,8 +133,8 @@ weeks:
               - file: 'participation'
                 name: 'assistants_reply'
 
-              # - file: 'participation'
-              #   name: 'homework_setup'
+              - file: 'participation'
+                name: 'homework_setup'
 
               - file: 'homework'
                 name: 'argumentparser'
@@ -217,6 +217,9 @@ weeks:
 
               - file: 'participation'
                 name: 'assistants_reply'
+
+              - file: 'participation'
+                name: 'homework_setup'
 
               - file: homework
                 name: argumentparser

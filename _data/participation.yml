@@ -46,11 +46,11 @@ assistants_reply:
   link: 'https://usfca.instructure.com/courses/1608197/discussion_topics/8106138'
   date: 2022-09-02
 
-# homework_setup:
-#   <<: *default
-#   text: 'Homework Setup'
-#   date: 2022-02-04
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7180812'
+homework_setup:
+  <<: *default
+  text: 'Homework Setup'
+  date: 2022-09-02
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223894'
 
 # # week 3 (nothing)
 
