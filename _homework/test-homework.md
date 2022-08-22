@@ -4,15 +4,19 @@ navbar: Guides
 title: Testing Homework
 key: 3
 
-example_test: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/blob/01d2c51a1986ee4007ad0a040fe6ffbdc9641cb1/src/test/java/edu/usfca/cs272/ArgumentParserTest.java#L73-L86'
-example_run: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/runs/4985351349?check_suite_focus=true#step:3:1'
+run_summary: 'https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template/actions/runs/2900144399'
+run_detail: 'https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template/runs/7942084107?check_suite_focus=true#step:3:131'
+
+
+example_test: 'https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template/blob/bf497ebc2ce865ba623031fd76c0d73a1341df8e/src/test/java/edu/usfca/cs272/ArgumentParserTest.java#L59-L74'
+example_run: 'https://github.com/usf-cs272-fall2022/homework-ArgumentParser-template/runs/7942084107?check_suite_focus=true#step:3:133'
 
 ---
 
 Every homework comes with a `src` » `test` » `java` directory with JUnit 5 test code. You must pass all of these tests remotely to earn full credit.
 
 <i class="fas fa-info-circle"></i>
-The screenshots are shown at reduced size. Click to open the image to view it at 100% size (useful for reading the text).
+The screenshots are shown at reduced size. Right-click to open the image at 100% size in a new tab (useful for reading the text).
 {: .notification }
 
 ## Understanding Tests
@@ -26,18 +30,19 @@ For example, consider [this test]({{ page.example_test }}):
 
 ```java
 /**
- * Tests values that should be considered invalid flags.
+ * Tests values that should be considered valid flags.
  *
- * @param flag invalid flag value
+ * @param flag valid flag value
  */
-@Order(2)
+@Order(1)
 @ParameterizedTest(name = "[{index}: \"{0}\"]")
-@ValueSource(strings = { "a-b-c", "hello", "hello world", "", " ", "\t",
-    "\n", "-", " - a", " -a", "\t-a", "--a", "-$a", "-_a", "-\ta", "97",
-    "1", "-1", "-42" })
-public void testInvalidFlags(String flag) {
+@ValueSource(strings = {
+    "-a", "-hello", "-hello world", "-trailing  ", "-résumé", "-über",
+    "-abc123", "-with-dash", "-with_underscore", "-@debug", "-#admin",
+    "--quiet", })
+public void testValidFlags(String flag) {
   boolean actual = ArgumentParser.isFlag(flag);
-  Assertions.assertFalse(actual, flag);
+  Assertions.assertTrue(actual, flag);
 }
 ```
 
@@ -51,18 +56,18 @@ The method is being tested multiple times, once for each input in the `@ValueSou
 
 ```java
 @ValueSource(strings = {
-    "a-b-c", "hello", "hello world", "", " ", "\t", "\n", "-", " - a",
-    " -a", "\t-a", "--a", "-$a", "-_a", "-\ta", "97", "1", "-1"
-})
+    "-a", "-hello", "-hello world", "-trailing  ", "-résumé", "-über",
+    "-abc123", "-with-dash", "-with_underscore", "-@debug", "-#admin",
+    "--quiet", })
 ```
 
-For each of these input values for the `isFlag` method, the test is expecting the method to return `false` each time:
+For each of these input values for the `isFlag` method, the test is expecting the method to return `true` each time:
 
 ```java
-Assertions.assertFalse(actual, flag);
+Assertions.assertTrue(actual, flag);
 ```
 
-If we consider the first input value, then the code *asserts* `ArgumentParser.isFlag("a-b-c")` should return `false`. If it does, the test passes. If not, an exception is thrown.
+If we consider the first input value, then the code *asserts* `ArgumentParser.isFlag("-a")` should return `true`. If it does, the test passes. If not, an exception is thrown.
 
 Each method might look slightly different, but it will always have those same three components: what is being tested, what is the actual value, and what is the expected value. If you ever have trouble understanding a test, reach out on CampusWire!
 
@@ -95,17 +100,17 @@ There are *many* ways to run an individual JUnit test within Eclipse. Here are a
 
   - Open up the test file in the Java perspective. Find the test in the "Outline" view. Right-click the name, and select "Run As" then "JUnit Test" from the menus.
 
-      [![Screenshot]({{ "/images/eclipse-run-one-from-outline.png" | relative_url }}){: .is-400}]({{ "/images/eclipse-run-one-from-outline.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/eclipse-run-one-from-outline.png" | relative_url }}){: .is-400}]({{ "/images/homework/eclipse-run-one-from-outline.png" | relative_url }})
 
-  - In the JUnit view, right-click the test you want to run and select "Run" from the menu. ([See example.]({{ "/images/eclipse-run-one-from-junit.png" | relative_url }}))
+  - In the JUnit view, right-click the test you want to run and select "Run" from the menu. ([See example.]({{ "/images/homework/eclipse-run-one-from-junit.png" | relative_url }}))
 
-  - In the "Package Explorer" view, browse to the test, right-click the test name, and select "Run As" then "JUnit Test" from the menus. ([See example.]({{ "/images/eclipse-run-one-from-explorer.png" | relative_url }}))
+  - In the "Package Explorer" view, browse to the test, right-click the test name, and select "Run As" then "JUnit Test" from the menus. ([See example.]({{ "/images/homework/eclipse-run-one-from-explorer.png" | relative_url }}))
 
-  - Open up the test file in the Java perspective. Find the test in the file. Click the test so it is the current active line in the editor. Right-click the name, and select "Run As" then "JUnit Test" from the menus. ([See example.]({{ "/images/eclipse-run-one-from-file.png" | relative_url }}))
+  - Open up the test file in the Java perspective. Find the test in the file. Click the test so it is the current active line in the editor. Right-click the name, and select "Run As" then "JUnit Test" from the menus. ([See example.]({{ "/images/homework/eclipse-run-one-from-file.png" | relative_url }}))
 
   - Finally, if you want to manually run a single test (or group of tests), you can modify the run configuration to look something like this:
 
-      [![Screenshot]({{ "/images/eclipse-run-one-from-configuration.png" | relative_url }}){: .is-600}]({{ "/images/eclipse-run-one-from-configuration.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/eclipse-run-one-from-configuration.png" | relative_url }}){: .is-600}]({{ "/images/homework/eclipse-run-one-from-configuration.png" | relative_url }})
 
 Pretty much anywhere you can find the test and right-click it, you can run it as a JUnit test without running everything else. This process works for an individual test method or a group of tests (usually an inner or nested class with multiple test methods)!
 
@@ -122,13 +127,13 @@ Most of the homework assignments assign 5 points for having warning-free code. M
 
   1. Right-click the `pom.xml` file, open the "Run As" menu, and select "3 Maven build..." from the menu. Make sure to select the option with the `...` at the end.
 
-      [![Screenshot]({{ "/images/eclipse-runas-maven.png" | relative_url }}){: .is-400 }]({{ "/images/eclipse-runas-maven.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/eclipse-runas-maven.png" | relative_url }}){: .is-400 }]({{ "/images/homework/eclipse-runas-maven.png" | relative_url }})
 
   2. On the resulting popup window, make sure to enter `clean compile` into the "Goals" text box.
 
   3. Click the "Add..." button and add a parameter with name `compileOptionFail` and value `true`. This will cause the compile operation to fail if there are warnings in your code.
 
-      [![Screenshot]({{ "/images/eclipse-maven-warnings.png" | relative_url }}){: .is-400 }]({{ "/images/eclipse-maven-warnings.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/eclipse-maven-warnings.png" | relative_url }}){: .is-400 }]({{ "/images/homework/eclipse-maven-warnings.png" | relative_url }})
 
   4. Click the "Run" button and inspect the console output. If you see this message:
 
@@ -166,32 +171,10 @@ Finally, you can run the tests as they will be run by GitHub Actions.  Follow th
 
       Alternatively, if you want to run one of the A, B, C, etc. test groups, enter `HomeworkTest*X_*` where `Homework` is the homework name and `X` is the test group (such as `A`, `B`, and so on). For example, enter `ArgumentParserTest*A_*` to run the `A` tests for the `ArgumentParser` homework.
 
-      [![Screenshot]({{ "/images/eclipse-maven-run-test.png" | relative_url }}){: .is-400 }]({{ "/images/eclipse-maven-run-test.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/eclipse-maven-run-test.png" | relative_url }}){: .is-400 }]({{ "/images/homework/eclipse-maven-run-test.png" | relative_url }})
 
   3. Click the "Run" button and inspect the console output for which tests passed or failed.
 
-
-If you see error messages similar to these in your console:
-
-<pre class="has-text-danger">
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [...StaticLoggerBinder.class]
-SLF4J: Found binding in [...StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-</pre>
-
-While the messages are *annoying*, they do not impact your code. However, [you can remove them](https://stackoverflow.com/questions/63518376/eclipse-maven-slf4j-class-path-contains-multiple-slf4j-bindings) by doing the following:
-
-  1. Open the "About Eclipse" dialog from the "Eclipse" menu and click the "Installation Details" button.
-
-      ![Screenshot]({{ "/images/eclipse-about.png" | relative_url }}){: .is-400 }
-
-  2. In the "Installed Software" tab, select "m2e - slf4j over logback logging (Optional)" and then click "Uninstall".
-
-      ![Screenshot]({{ "/images/eclipse-installed-software.png" | relative_url }}){: .is-400 }
-
-After that is uninstalled, you should no longer see that error message.
 </div>
 </details>
 
@@ -205,7 +188,7 @@ Once you are passing all of the tests locally, it is time to test your homework 
 
   1. AFTER you have made a commit and pushed it to GitHub, open up your repository on GitHub. You should be able to see the status of your commit:
 
-      [![Screenshot]({{ "/images/github-commit-status.png" | relative_url }}){: .is-400 }]({{ "/images/github-commit-status.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/github-commit-status.png" | relative_url }}){: .is-400 }]({{ "/images/homework/github-commit-status.png" | relative_url }})
 
       There are three icons you could see next to your commit:
 
@@ -217,33 +200,26 @@ Once you are passing all of the tests locally, it is time to test your homework 
 
   2. On that same page, you should also see the number of points you are earning for the homework assignment:
 
-      [![Screenshot]({{ "/images/homework-readme.png" | relative_url }}){: .is-400 }]({{ "/images/homework-readme.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/homework-readme.png" | relative_url }}){: .is-400 }]({{ "/images/homework/homework-readme.png" | relative_url }})
 
       Keep in mind that the number of points displayed in your `README` will not be correct until the autograder is complete. If you see the yellow dot next to your commit, you'll need to refresh the `README` file when it is done to see the updated value.
 
   3. If you want more details, you have to click on the "Actions" tab. From there, you should see all of the autograder runs. Click on the latest run for details.
 
-      [![Screenshot]({{ "/images/github-workflow-status.png" | relative_url }}){: .is-400 }]({{ "/images/github-workflow-status.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/github-workflow-status.png" | relative_url }}){: .is-400 }]({{ "/images/homework/github-workflow-status.png" | relative_url }})
 
   4. The workflow details view will show you the status of each step, but the only really important one is the "Autograding" step. You can also see the number of points warned in the "Annotations" section:
 
-      [![Screenshot]({{ "/images/github-homework-action-summary.png" | relative_url }}){: .is-400 }]({{ "/images/github-homework-action-summary.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/github-homework-action-summary.png" | relative_url }}){: .is-400 }]({{ "/images/homework/github-homework-action-summary.png" | relative_url }})
 
       GitHub will often add other warnings here related to the GitHub Actions infrastructure. You can usually ignore those.
 
   5. Click on the "Autograding" action for details on which tests passed or failed. There is a lot of output to scroll through here. For example:
 
-      [![Screenshot]({{ "/images/github-homework-action-detail.png" | relative_url }}){: .is-400 }]({{ "/images/github-homework-action-detail.png" | relative_url }})
+      [![Screenshot]({{ "/images/homework/github-homework-action-detail.png" | relative_url }}){: .is-400 }]({{ "/images/homework/github-homework-action-detail.png" | relative_url }})
 
       ...the "📝 Check Commit Count" heading is the start of that test output. The "❌ Check Commit Count" heading is the end of that output with the status of that test. Everything in between those two headings is the output from Maven for that test.
 
       In this case, the ❌ red "x" means the test failed. You will see a ✅ green checkmark if the test passed.
-
-      **Ignore the line that states:**
-
-      <pre class="has-text-warning">
-      Warning: G] Unable to autodetect 'javac' path, using 'javac' from the environment.</pre>
-
-      ...this is output by Maven and not an issue with your code.
 
 You can link to a specific line in this autograder run when asking for help on [Piazza]({{ site.data.info.links.forums.link }})! For example, [here is a link]({{ page.example_run }}) to the autograder run for the `ArgumentParser` template.
