@@ -8,6 +8,19 @@ key: 0.3
 #  - text: 'Pending'
 #    type: 'is-info'
 
+subsections:
+  - text: 'Project Tests'
+    link: '#project-tests'
+
+  - text: 'Project Reviews'
+    link: '#project-reviews'
+
+  - text: 'Project Design'
+    link: '#project-design'
+
+  - text: 'Project Timeline'
+    link: '#project-timeline'
+
 ---
 
 Project grades are separated into multiple parts: **tests**, **reviews**, and **design**. The **tests** grade indicates your project passes the functionality requirements, the **review** grades track your code reviews with the instructor, and the **design** grade indicates your project passes the design requirements.
