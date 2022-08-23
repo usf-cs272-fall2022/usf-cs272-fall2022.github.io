@@ -1,36 +1,44 @@
 project1: &default
   text: 'Project 1 Inverted Index'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   icon: 'project'
   type: ['has-text-usf-plum']
 
 project1_tests:
   <<: *default
   text: 'Project 1 Tests'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   date: 2022-09-20
   icon: 'project'
   type: ['has-text-usf-plum']
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223907'
+  points: 100
 
 project1_review1:
   <<: *default
   text: 'Project 1 Review 1'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   date: 2022-09-27
   icon: 'review'
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223905'
+  points: 30
 
 project1_review2: 
   <<: *default
   text: 'Project 1 Review 2'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   date: 2022-10-04
   icon: 'review'
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223906'
+  points: 20
 
 project1_design: 
   <<: *default
   text: 'Project 1 Design'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   date: 2022-10-11
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223904'
+  points: 50
 
 project2:
   <<: *default

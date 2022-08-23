@@ -4,7 +4,14 @@ navbar: Guides
 layout: guides
 key: 0.2
 
+tags:
+ - text: 'Pending'
+
 ---
+
+Pending
+
+{% comment %}
 
 You must verify your project is passing the functionality tests to earn the project tests grade as well as before every code review required to earn your project final release grade. This guide walks through that testing process.
 
@@ -248,3 +255,4 @@ Keep in mind the version of Java, appearance of Eclipse, and appearance of the G
   <caption><a href="https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/view?usp=sharing">https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/view?usp=sharing</a></caption>
 </p>
 </figure>
+{% endcomment %}

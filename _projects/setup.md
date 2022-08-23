@@ -4,11 +4,14 @@ navbar: Guides
 layout: guides
 key: 0.1
 
-#tags:
-#  - text: 'New'
-#    type: 'is-primary'
+tags:
+ - text: 'Pending'
+  #  type: 'is-primary'
 ---
 
+Pending
+
+{% comment %}
 The project is broken into two separate GitHub repositories and Eclipse projects:
 
   - **SearchEngine**: This is where you will place your project code. You will have your own private version of this project. The initial template includes some configuration files and a skeleton `Driver.java` class.
@@ -105,3 +108,4 @@ Here is the folder structure for the project and its tests:
 If you run a test from the **SearchEngineTest** project, the output files will appear in the **SearchEngineTest** project even though your code is in the **SearchEngine** project.
 
 If you run the `main` method via a Runtime Configuration in Eclipse from the **SearchEngine** project, then your output files will appear in the **SearchEngine** project.
+{% endcomment %}

@@ -52,10 +52,10 @@
       {{ page.blurb }}
       {% endif -%}
 
-      {%- if page.assignments %}
+      {%- if page.subsections %}
       <p>
-        <strong class="heading has-text-grey">Associated Assignments</strong>
-        {%- for item in page.assignments %}
+        <strong class="heading has-text-grey">Table of Contents</strong>
+        {%- for item in page.subsections %}
         {%- if item.link %}
         <a href="{{ item.link }}">{{ item.text }}</a> {{ item.info }}
         {% else %}
