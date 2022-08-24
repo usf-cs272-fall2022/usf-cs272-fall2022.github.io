@@ -13,7 +13,7 @@ For homework and projects, it may be useful to compare actual and expected outpu
 
 ## Opening Compare Text View
 
-![Compare Result]({{ "/images/compareresult.png" | relative_url }}){: .is-600 }
+![Compare Result]({{ "/images/eclipse/compareresult.png" | relative_url }}){: .is-600 }
 
 
 Some of the tests compare **text** that can be opened in a side-by-side comparison view for debugging. To open this view, follow these steps:
@@ -28,7 +28,7 @@ This will open up a comparison view. See below for how to use that view.
 
 ## Opening Compare Files View
 
-![Compare With]({{ "/images/comparewith.gif" | relative_url }}){: .is-800 }
+![Compare With]({{ "/images/eclipse/comparewith.gif" | relative_url }}){: .is-800 }
 
 Some of the tests compare **files** instead of the difference between text output. To open a comparison view for two files, follow these steps:
 
@@ -42,7 +42,7 @@ Some of the tests compare **files** instead of the difference between text outpu
 
 ## Using the Comparison View
 
-![Compare With]({{ "/images/compareview.png" | relative_url }}){: .is-600 }
+![Compare With]({{ "/images/eclipse/compareview.png" | relative_url }}){: .is-600 }
 
 The output will be displayed side-by-side. If it is a long file, Eclipse will synchronize scrolling of the output.
 
