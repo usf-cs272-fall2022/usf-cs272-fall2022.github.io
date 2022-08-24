@@ -4,6 +4,8 @@ example_assignment: &default
   date: false
   link: false
 
+# week 1
+
 introduction_post:
   <<: *default
   text: 'Introduction Post'
@@ -21,6 +23,20 @@ introduction_reply:
   text: 'Introduction Reply'
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223897'
   date: 2022-09-02
+
+assistants_reply:
+  <<: *default
+  text: 'TA Introductions'
+  link: 'https://usfca.instructure.com/courses/1608197/discussion_topics/8106138'
+  date: 2022-09-02
+
+homework_setup:
+  <<: *default
+  text: 'Homework Setup'
+  date: 2022-09-02
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223894'
+
+# end of semester
 
 ask_why:
   <<: *default
@@ -40,19 +56,12 @@ piazza_reply:
   date: 2022-12-02
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223902'
 
-assistants_reply:
+cs_event:
   <<: *default
-  text: 'TA Introductions'
-  link: 'https://usfca.instructure.com/courses/1608197/discussion_topics/8106138'
-  date: 2022-09-02
-
-homework_setup:
-  <<: *default
-  text: 'Homework Setup'
-  date: 2022-09-02
-  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223894'
-
-# # week 3 (nothing)
+  text: 'CS Event'
+  date: 2022-12-09
+  show: true
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409338'
 
 # # github_resource:
 # #   <<: *default
@@ -64,8 +73,6 @@ homework_setup:
 #   text: 'Lecture Setup'
 #   date: 2022-02-11
 #   link: 'https://usfca.instructure.com/courses/1605147/assignments/7181492'
-
-# # week 4 (nothing)
 
 # intake_review:
 #   <<: *default
@@ -79,30 +86,11 @@ homework_setup:
 #   date: 2022-02-18
 #   link: 'https://usfca.instructure.com/courses/1605147/assignments/7184853'
 
-# # week 5 (homework bundle 1)
-
-# # week 6 (project 1)
-
-# # week 7 (exam 1)
-
-# piazza_post:
-#   <<: *default
-#   text: 'Piazza Post'
-#   date: 2022-03-11
-#   #show: true
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7181489'
-
-# # week 8 (spring break)
-
-# # week 9 (retake, homework bundle 2)
-
 # midterm_survey:
 #   <<: *default
 #   text: 'Midterm Survey'
 #   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402539'
 #   date: 2022-03-25
-
-# # week 10 (project 2)
 
 # # final_plan:
 # #   <<: *default
@@ -110,26 +98,6 @@ homework_setup:
 # #   link: 'https://usfca.instructure.com/courses/1602551/assignments/7145001'
 # #   date: 2021-12-09
 # #   show: true
-
-# # week 11 (homework bundle 3, pass requirement)
-
-# # week 12 (easter)
-
-# # week 13 (project 3)
-
-# # week 14 (homework bundle 4)
-
-# # week 15 (exam 2, homework bundle 5)
-
-# # week 16 (project 4, end of semester)
-
-# cs_event:
-#   <<: *default
-#   text: 'CS Event'
-#   date: 2022-05-13
-#   show: true
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401177'
-
 
 # whatif:
 #   <<: *default

@@ -87,9 +87,14 @@ weeks:
 
               - file: 'participation'
                 name: 'ask_anything'
+                type: 'bump'
 
               - file: 'participation'
                 name: 'piazza_reply'
+
+              - file: 'participation'
+                name: 'cs_event'
+                type: 'bump'
 
       - date: 2022-08-26
         sections:
@@ -1151,8 +1156,9 @@ weeks:
         sections:
           - label: 'Deadlines'
             items:
-              - text: 'Pending'
-          
+              - file: 'participation'
+                name: 'cs_event'
+
           - label: 'Upcoming Deadlines'
             dates: true
             items:
