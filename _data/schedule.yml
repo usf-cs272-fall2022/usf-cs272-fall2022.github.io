@@ -80,6 +80,10 @@ weeks:
               - file: 'slides'
                 name: 'exceptions'
 
+              - text: 'Importing Code from GitHub'
+                icon: 'website'
+                link: '/guides/eclipse/importing-eclipse-projects-from-github.html'
+
           - <<: *assignments
             items:
               - file: 'participation'
@@ -107,6 +111,11 @@ weeks:
               - text: 'GitHub Setup'
                 icon: 'website'
                 link: '/guides/general/getting-started-with-github.html'
+
+              - text: 'Importing Code from GitHub'
+                icon: 'website'
+                link: '/guides/eclipse/importing-eclipse-projects-from-github.html'
+                type: 'bump'
 
               - text: 'Homework Setup'
                 icon: 'website'
