@@ -27,7 +27,7 @@ introduction_reply:
 assistants_reply:
   <<: *default
   text: 'TA Introductions'
-  link: 'https://usfca.instructure.com/courses/1608197/discussion_topics/8106138'
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223885'
   date: 2022-09-02
 
 homework_setup:
