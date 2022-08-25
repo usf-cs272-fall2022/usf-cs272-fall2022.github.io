@@ -50,7 +50,7 @@ The following test checks must pass to be eligible for this grade:
 
   1. Your release must NOT pass the functionality tests for the future projects. The functionality for future projects must be in a separate branch until the design of the current project is approved through code review.
 
-  1. For projects 2, 3, and 4, you must have a non-zero grade for the "Project `[X-1]` Review 2" assignment in Canvas, where `[X-1]` is the previous project number.
+  1. For projects 2, 3, and 4, you must have a non-zero grade for the "Project `[X-1]` Review 1" assignment in Canvas, where `[X-1]` is the previous project number.
 
 <i class="fas fa-info-circle"></i>
 Even though your future releases of this project still need to pass the test checks for code review, you only need to request a test grade once. 
