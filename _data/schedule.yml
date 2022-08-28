@@ -217,6 +217,20 @@ weeks:
           - <<: *lectures
             items:
               - text: 'Data Structures'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/DataStructures'
+
+              - text: '– CollectionDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/CollectionDemo.java'
+
+              - text: '– MapDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MapDemo.java'
+
+              - text: '– NestedMapDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/NestedMapDemo.java'
 
       - date: 2022-09-02
         sections:
