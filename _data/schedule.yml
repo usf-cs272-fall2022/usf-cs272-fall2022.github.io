@@ -181,7 +181,30 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - file: 'projects'
+                name: 'project1'
+
+              - file: 'slides'
+                name: 'paths'
+                type: 'bump'
+
               - text: 'File IO'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/FileIO'
+                icon: 'code'
+
+              - text: '– EliteFileConverter.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/EliteFileConverter.java'
+
+              - text: '– DirectoryStreamDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/DirectoryStreamDemo.java'
+
+          - <<: *content
+            items:
+              - text: 'PathDemo.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/PathDemo.java'
 
           - <<: *assignments
             items:
