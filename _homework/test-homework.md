@@ -19,6 +19,10 @@ Every homework comes with a `src` » `test` » `java` directory with JUnit 5 tes
 The screenshots are shown at reduced size. Right-click to open the image at 100% size in a new tab (useful for reading the text).
 {: .notification }
 
+<i class="fas fa-video"></i>
+Our TA has recorded a [super helpful walkthrough](https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1b49784b-448a-46b7-a32a-aeff00129c93) if you prefer a video of these steps! You may need to login with your USF username and password for access.
+{: .notification .is-success }
+
 ## Understanding Tests
 {: .page-header }
 

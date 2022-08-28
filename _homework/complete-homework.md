@@ -37,6 +37,10 @@ Post on [Piazza]({{ site.data.info.links.forums.link }}) if you have any questio
 ## Submitting On-Time Homework
 {: .page-header }
 
+<i class="fas fa-video"></i>
+Our TA has recorded a [super helpful walkthrough](https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1b49784b-448a-46b7-a32a-aeff00129c93) if you prefer a video of these steps! You may need to login with your USF username and password for access.
+{: .notification .is-success }
+
 To receive full credit on any homework assignment, you must:
 
   - **Pass all of the unit tests remotely.** See the [Testing Homework](/guides/homework/test-homework.html) guide detailed steps. You will not receive full points if you are passing the tests locally but not remotely.
@@ -53,6 +57,10 @@ To submit your homework, you must make a commit and push that commit to GitHub b
 
 ## Submitting Late Homework
 {: .page-header }
+
+<i class="fas fa-video"></i>
+Our TA has recorded a [super helpful walkthrough](https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7da811a2-478f-4b9f-8c47-aeff00160d09) if you prefer a video of these steps! You may need to login with your USF username and password for access.
+{: .notification .is-success }
 
 GitHub Classroom will report your grade based on the last commit pushed **before** the deadline and will ignore all commits pushed after that. To have your homework regraded after the deadline, you must:
 
