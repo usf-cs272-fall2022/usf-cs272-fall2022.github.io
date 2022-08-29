@@ -9,28 +9,28 @@ syllabus:
   date: 2022-08-26
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223863'
 
-# paths:
-#   <<: *default
-#   text: 'Paths and Files'
-#   date: 2022-02-11
-#   tags: ['files']
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401174'
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402165'
+paths:
+  <<: *default
+  text: 'Paths and Files'
+  date: 2022-09-09
+  tags: ['files']
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223878'
+  # test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402165'
 
-# data:
-#   <<: *default
-#   text: 'Data Structures'
-#   date: 2022-02-11
-#   tags: ['data']
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401175'
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402173'
+data:
+  <<: *default
+  text: 'Data Structures'
+  date: 2022-09-09
+  tags: ['data']
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223869'
+  # test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402173'
 
-# maps:
-#   <<: *default
-#   text: 'Using Maps'
-#   date: 2022-02-11
-#   tags: ['data']
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401176'
+maps:
+  <<: *default
+  text: 'Using Maps'
+  date: 2022-09-09
+  tags: ['data']
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223873'
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402168'
 
 # static:

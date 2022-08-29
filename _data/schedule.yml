@@ -208,9 +208,13 @@ weeks:
 
           - <<: *assignments
             items:
+              - file: 'quizzes'
+                name: 'paths'
+
               - file: projects
                 name: project1_tests
                 text: 'Project 1 Inverted Index'
+                type: 'bump'
 
       - date: 2022-09-01
         sections:
@@ -231,6 +235,14 @@ weeks:
               - text: '– NestedMapDemo.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/NestedMapDemo.java'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'data'
+
+              - file: 'quizzes'
+                name: 'maps'
 
       - date: 2022-09-02
         sections:
@@ -336,8 +348,18 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'paths'
+
+              - file: 'quizzes'
+                name: 'data'
+
+              - file: 'quizzes'
+                name: 'maps'
+
               - file: homework
                 name: wordcleaner
+                type: 'bump'
 
               - text: 'Drop Deadline (Census)'
                 date: 2022-09-09
