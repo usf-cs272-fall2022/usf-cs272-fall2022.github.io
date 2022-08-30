@@ -211,6 +211,9 @@ weeks:
               - file: 'quizzes'
                 name: 'paths'
 
+              - file: 'quizzes'
+                name: 'project1'
+
               - file: projects
                 name: project1_tests
                 text: 'Project 1 Inverted Index'
@@ -356,6 +359,9 @@ weeks:
 
               - file: 'quizzes'
                 name: 'maps'
+
+              - file: 'quizzes'
+                name: 'project1'
 
               - file: homework
                 name: wordcleaner

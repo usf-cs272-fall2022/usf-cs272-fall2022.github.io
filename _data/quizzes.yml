@@ -33,6 +33,13 @@ maps:
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223873'
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402168'
 
+project1:
+  <<: *default
+  text: 'Project 1 Guide'
+  date: 2022-09-09
+  tags: ['none']
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7242279'
+
 # static:
 #   <<: *default
 #   text: 'Instance vs Static'
