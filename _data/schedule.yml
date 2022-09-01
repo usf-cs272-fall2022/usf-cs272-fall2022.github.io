@@ -252,6 +252,8 @@ weeks:
           - <<: *labs
             items:
               - text: 'Project Setup'
+                icon: 'website'
+                link: '/guides/projects/setup.html'
 
               - text: 'Homework Help'
                 icon: 'assistants'
@@ -278,6 +280,12 @@ weeks:
 
           - <<: *assignments
             items:
+              - file: participation
+                name: lecture_setup
+
+              - file: participation
+                name: project_setup
+
               - file: homework
                 name: wordcleaner
 
@@ -362,6 +370,12 @@ weeks:
 
               - file: 'quizzes'
                 name: 'project1'
+
+              - file: participation
+                name: lecture_setup
+
+              - file: participation
+                name: project_setup
 
               - file: homework
                 name: wordcleaner
