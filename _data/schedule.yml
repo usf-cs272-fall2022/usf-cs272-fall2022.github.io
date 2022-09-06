@@ -321,12 +321,44 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - file: 'slides'
+                name: 'projects'
+
               - text: 'Data Structures'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/DataStructures'
+                type: ['bump']
+
+              - text: '– IterationDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/IterationDemo.java'
+
+              - text: '– MutableSetDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MutableSetDemo.java'
+
+              - text: '– RemoveDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/RemoveDemo.java'
+
+          - <<: *content
+            items:
+              - text: 'FindDemo.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/FindDemo.java'
+
+          - <<: *assignments
+            items:
+              - file: 'participation'
+                name: 'intake_review'
 
       - date: 2022-09-08
         sections:
           - <<: *lectures
             items:
+              - file: 'slides'
+                name: 'help'
+
               - text: 'Classes'
               - text: 'Interfaces'
 
@@ -446,6 +478,9 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'participation'
+                name: 'intake_review'
+
               - file: homework
                 name: wordindex
 

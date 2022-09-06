@@ -48,6 +48,12 @@ lecture_setup:
   date: 2022-09-09
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7223898'
 
+intake_review:
+  <<: *default
+  text: 'Code Review Intake'
+  date: 2022-09-16
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223888'
+
 # end of semester
 
 ask_why:
@@ -84,11 +90,6 @@ cs_event:
 
 
 
-# intake_review:
-#   <<: *default
-#   text: 'Code Review Intake'
-#   date: 2022-02-25
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7184046'
 
 
 
