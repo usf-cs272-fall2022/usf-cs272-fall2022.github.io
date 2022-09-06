@@ -37,12 +37,24 @@ collections:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSuurg3CcidG3_JCw68NOnSKep8DzY_e9ZtANCB8x1g0G8q79Oe7zwUxTSZQLmwjKsagv6Ygw1_i1VH/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1O2I-vvdaul1AEZ31PO6KrFakcw1ORlkJ/view?usp=sharing'
 
-# oop:
-#   <<: *default
-#   tags: ['objects']
-#   text: 'Object Oriented Programming'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRvHDGd0zAcJWsRyjtwFNPInmQg-9Q4qYDL5DPnp75LWQPLOSE0p2tRo6WhAyhzeaqy4j2aadWmzBY0/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/14aTl6kRfuIptdA3T9kOx75FNUBXS7tGX/view?usp=sharing'
+oop:
+  <<: *default
+  tags: ['objects']
+  text: 'Object Oriented Programming'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTHOQmSkbb8ey4RK0fV-S3ObZ2bK-AUltiRCRPK7xlca06fiOngxOn02rOQBwZ3Miv-WrDWZUD8NOqs/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/14aTl6kRfuIptdA3T9kOx75FNUBXS7tGX/view?usp=sharing'
+
+projects:
+  <<: *default
+  tags: ['none']
+  text: 'Project Overview'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRG9FEXbAK_1mMZ6jIy4O_v7YJTCAwsr-a0Y19M3HiV8XsNOrkx7VwyrosOKvwPMxtwqiFRR2pd6euD/pub?start=false&loop=false&delayms=3000'
+
+help:
+  <<: *default
+  tags: ['none']
+  text: 'Getting Help'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTBG6IAT560dL4dnMpmHRxGhe6ZBk1w0r3axeih2WxRMNqRp0Vh9LmEtXKQrjzfYCkJ2owhGSRmZ33S/pub?start=false&loop=false&delayms=3000'
 
 # inheritance:
 #   <<: *default

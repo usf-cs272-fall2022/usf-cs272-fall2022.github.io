@@ -65,9 +65,9 @@ If your release meets these eligibility criteria, use the "Request Project Code 
 
 ### Release Version
 
-You must have a release with the correct version number in the form `v[X].[Y].[Z]` where the major number `[X]` is the project number, the minor number `[Y]` is the code review number, and the patch number `[Z]` starts at `0` and is incremented as necessary.
+You must have a release with the correct version number in the form `v[X].[Y].[Z]` where the major number `[X]` is the project number, the minor number `[Y]` is the number of *completed* code reviews, and the patch number `[Z]` starts at `0` and is incremented as necessary.
 
-For example, the first release you create for the first code review of project 1 should be numbered `v1.1.0`. If you need to make changes before your first code review appointment, it should be numbered `v1.1.1`. The patch number keeps incrementing until you successfully request and attend the code review. After you attend code review and merge the changes, the next release should be numbered `v1.2.0`.
+For example, the first release you create for project 1 should be numbered `v1.0.0` since you do not yet have any completed code reviews. After you attend code review and merge the changes, the next release should be numbered `v1.1.0`. If you need to make another change before your next code review appointment appointment, the patch number increments to `v1.1.1` and so on.
 
 ### Review Checks
 
