@@ -404,8 +404,11 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Inheritance Keywords'
-              - text: 'Collections Revisited'
+              - file: 'quizzes'
+                name: 'inheritance'
+
+              - file: 'quizzes'
+                name: 'collections'
 
       - date: 2022-09-09
         sections:
@@ -532,6 +535,12 @@ weeks:
             items:
               - file: 'participation'
                 name: 'intake_review'
+
+              - file: 'quizzes'
+                name: 'inheritance'
+
+              - file: 'quizzes'
+                name: 'collections'
 
               - file: homework
                 name: wordindex

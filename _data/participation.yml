@@ -4,8 +4,6 @@ example_assignment: &default
   date: false
   link: false
 
-# week 1
-
 introduction_post:
   <<: *default
   text: 'Introduction Post'

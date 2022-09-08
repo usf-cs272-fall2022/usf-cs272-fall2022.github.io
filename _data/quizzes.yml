@@ -72,20 +72,20 @@ project1:
 #   tags: ['objects']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402170'
 
-# inheritance:
-#   <<: *default
-#   text: 'Inheritance Keywords'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401874'
-#   date: 2022-02-25
-#   tags: ['inheritance']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402167'
+inheritance:
+  <<: *default
+  text: 'Inheritance Keywords'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409342'
+  date: 2022-09-16
+  tags: ['inheritance']
+  # test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402167'
 
-# collections:
-#   <<: *default
-#   text: 'Collections Revisited'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401873'
-#   date: 2022-02-25
-#   tags: ['inheritance']
+collections:
+  <<: *default
+  text: 'Collections Revisited'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409376'
+  date: 2022-09-16
+  tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402171'
 
 # casting:
