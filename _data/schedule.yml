@@ -357,10 +357,55 @@ weeks:
           - <<: *lectures
             items:
               - file: 'slides'
-                name: 'help'
+                name: 'oop'
 
-              - text: 'Classes'
-              - text: 'Interfaces'
+              - file: 'slides'
+                name: 'inheritance'
+                type: ['bump']
+
+              - file: 'slides'
+                name: 'abstract'
+              
+              - file: 'slides'
+                name: 'final'
+
+              - file: 'slides'
+                name: 'revisited'
+
+              - text: 'Inheritance Basics'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceBasics'
+                type: ['bump']
+
+              - text: '– PrefixMap.java'
+                icon: 'nothing'
+                link: '#'
+
+              - text: '– PrefixDemo.java'
+                icon: 'nothing'
+                link: '#'
+
+              - text: 'Shape Demo'
+                icon: 'code'
+                link: '#'
+
+              - text: '– Shape.java'
+                icon: 'nothing'
+                link: '#'
+
+              - text: '– Rectangle.java'
+                icon: 'nothing'
+                more: 'and <a href="">Square.java</a>'
+                link: '#'
+
+              - text: '– ShapeDemo.java'
+                icon: 'nothing'
+                link: '#'
+
+          - <<: *assignments
+            items:
+              - text: 'Inheritance Keywords'
+              - text: 'Collections Revisited'
 
       - date: 2022-09-09
         sections:
@@ -432,14 +477,21 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Mutability'
-              - text: 'Generic Types'
+              - file: 'slides'
+                name: 'help'
+
+              - text: 'Inheritance Topics'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceTopics'
 
       - date: 2022-09-15
         sections:
           - <<: *lectures
             items:
-              - text: 'Inheritance'
+              - text: 'Exploring Objects'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ExploringObjects'
+
 
       - date: 2022-09-16
         sections:
