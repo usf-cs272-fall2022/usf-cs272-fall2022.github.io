@@ -415,6 +415,8 @@ weeks:
           - <<: *labs
             items:
               - text: 'Project Testing'
+                icon: 'website'
+                link: '/guides/projects/testing.html'
 
               - text: 'Homework Help'
                 icon: 'assistants'
