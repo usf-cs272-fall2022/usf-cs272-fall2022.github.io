@@ -5,13 +5,14 @@ layout: guides
 key: 0.2
 
 tags:
- - text: 'Pending'
+ - text: 'Updated'
+   type: 'is-primary' 
 
 ---
 
-Pending
-
-{% comment %}
+<i class="fas fa-video"></i>
+There is a 33 minute [walkthrough video](https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/view?usp=sharing) an overview of projects, how to test projects locally (starting at 13:53), testing projects remotely (starting at 24:33), and get your first functionality grade (starting at 29:38). However, it is for an earlier semester and some parts of the process may now look different.
+{: .notification .is-success }
 
 You must verify your project is passing the functionality tests to earn the project tests grade as well as before every code review required to earn your project final release grade. This guide walks through that testing process.
 
@@ -28,9 +29,9 @@ You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [p
 
 While you are initially working on the project, **focus on individual tests** or individual groups of tests. There is no need to run all of the tests every time; in fact this can make debugging harder! See the [Homework Testing](/guides/homework/test-homework.html#running-individual-tests) guide for different ways you can run individual JUnit tests. Here is an example run configuration:
 
-![Screenshot]({{ "/images/project-eclipse-junit-run-configuration.png" | relative_url }}){: .is-600 }
+![Screenshot]({{ "/images/projects/project-eclipse-junit-run-configuration.png" | relative_url }}){: .is-600 }
 
-**Pay attention to the test output.** The output tells you where to find the actual and expected output files and what caused the test to fail. It also tells you the arguments that were passed to your `Driver` class, which is helpful for debugging. The full output, which can be copied to the console for easy copying/pasting using the <img src="{{ "eclipse-copy-junit-output-to-console.png" | prepend: "/images/" | relative_url }}" style="height: 16px; vertical-align: middle;"> button, includes the following text:
+**Pay attention to the test output.** The output tells you where to find the actual and expected output files and what caused the test to fail. It also tells you the arguments that were passed to your `Driver` class, which is helpful for debugging. The full output, which can be copied to the console for easy copying/pasting using the <img src="{{ "eclipse-copy-junit-output-to-console.png" | prepend: "/images/projects/" | relative_url }}" style="height: 16px; vertical-align: middle;"> button, includes the following text:
 
 ```
 Actual File:
@@ -47,7 +48,7 @@ This gives the actual arguments passed to `Driver` by the test, the actual and e
 
 <i class="fas fa-exclamation-triangle"></i>
 To save space, the tests automatically delete your output files if they match the expected output. Only output files for failing tests will be kept.
-{: .notification }
+{: .notification .is-danger }
 
 ### Running Driver
 
@@ -68,7 +69,7 @@ When you first start, very little template code is provided and the tests provid
 
   1. Next to the "Main class:" text box, click the "" button and select "Driver" from the list. At this point, your setup should look like this:
 
-      ![Screenshot]({{ "/images/eclipse-project-driver-run-main.png" | relative_url }}){: .is-600 }
+      ![Screenshot]({{ "/images/projects/eclipse-project-driver-run-main.png" | relative_url }}){: .is-600 }
 
   1. Click on the "Arguments" tab. Enter the following into the "Program arguments" text area:
 
@@ -88,7 +89,7 @@ When you first start, very little template code is provided and the tests provid
 
   1. Click the "Workspace..." button and select the "SearchEngineTests" project. At this point, your setup should look like this:
 
-      ![Screenshot]({{ "/images/eclipse-project-driver-run-arguments.png" | relative_url }}){: .is-600 }
+      ![Screenshot]({{ "/images/projects/eclipse-project-driver-run-arguments.png" | relative_url }}){: .is-600 }
 
   1. Click the "Apply" and "Run" buttons.
 
@@ -98,7 +99,92 @@ When you first start, very little template code is provided and the tests provid
 <br/>
 You can keep running this same "Run Configuration" while debugging. If you are failing a specific JUnit test, you can copy/paste the arguments used by the test (provided in the failure output) to debug your code.
 
-### Running Maven
+## Testing Remotely
+{: .page-header }
+
+You must test your code remotely before you can earn credit for the functionality of your project and before you can sign up for a code review appointment.
+
+This process begins by creating a release on GitHub. This will trigger the GitHub Action that verifies your project functionality.
+
+### Creating Releases
+
+Creating releases will familiarize you with [**versioning**](https://en.wikipedia.org/wiki/Software_versioning) your code.
+
+  1. After passing all of the tests locally and pushing your latest commits to GitHub, follow the [Creating Releases](https://help.github.com/articles/creating-releases/) steps to draft a new release of your project code on GitHub.
+
+  2. Choose a "tag" or the version number to assign to the code at this stage. Out in the "real world" you will likely use [semantic versioning](https://semver.org/), which we will roughly mimic in class.
+
+      Specifically, you must name your release `v#.#.#` where the first `#` is the project number (1, 2, 3, or 4), the second `#` is the number of code reviews you've had for that project, and the last `#` is the number of patches/fixes you released in between code reviews for that project.
+
+      For example, your first release should be `v1.0.0` because it is for project 1, you have not had any code reviews yet, and you have not had any other releases yet. If your code does not pass the tests remotely, then you have to fix your code and re-release your project as `v1.0.1` since you now have 1 prior release. After your first code review, the next release will be `v1.1.0` (notice how the last number reset to 0).
+
+      The release `v2.3.4` means this release is for project 2, you have had 3 code reviews for project 2 so far, and this is the 4th release since your last code review of project 2. (It also means there must be a prior `v2.3.3` release made before this one.)
+
+  3. Enter the tag number in the "Choose a tag" dropdown and click the "Create new tag on publish" option. If you are working ahead and have the project code in a different branch, select that branch in the "Target" dropdown.
+
+      ![Screenshot]({{ "/images/projects/github-create-release.png" | relative_url }}){: .is-400 }
+
+  4. Click the "Publish release" button. You can leave the title and description blank. You *should* click the "This is a pre-release" checkbox unless you have passed code review, but it is not something we enforce currently.
+
+You can see a [sample release]({{ site.data.info.links.github.link }}/project-template/releases) on the template repository.
+
+### Deleting Releases
+
+**Generally, you should not delete releases even if they are not passing tests.** The exception is if you created a release with the wrong version number. In that case, you should follow these steps to delete the release **and** the underlying tag on GitHub.
+
+<details>
+<p><summary>View Details</summary></p>
+
+<div markdown=1>
+
+  1. Go to the "Code" section in your repository and then click "Releases" on the right sidebar. Find the release you want to delete and click the <i class="far fa-trash"></i> trash icon to delete the release:
+      
+      ![Screenshot]({{ "/images/projects/github-release-delete.png" | relative_url }}){: .is-400 }
+
+  2. Click on the "Tags" tab and find the tag that was created for the release. Click the tag title. You should see something like this:
+
+      ![Screenshot]({{ "/images/projects/github-tag-delete.png" | relative_url }}){: .is-400 }
+
+  3. Click on the "Delete" button to delete the tag. This is an important step, otherwise this version number cannot be reused again in the future!
+
+</div>
+</details>
+
+<br/>
+Again, you should only go through these steps if you create a release with the wrong version number. Otherwise, keep the other releases around for debugging and to track your progression.
+
+### Project Release Action
+
+Creating or editing a release triggers the "Project Release" action in the "Actions" tab to run automatically. It will have the same title as the release tag:
+
+![Screenshot]({{ "/images/projects/actions-run-project-tests.png" | relative_url }}){: .is-600 }
+
+To view details, click on the run title. The yellow circle <i class="fas fa-circle has-text-warning"></i> icon indicates the run or step is still in progress and has not yet completed. The red circle <i class="fas fa-times-circle has-text-danger"></i> indicates the run or step failed (either because of setup issues or the tests failed). The green circle <i class="fas fa-check-circle has-text-success"></i> icon indicates the run or step completed and was successful (i.e. all tests passed).
+
+You can see an [example run]({{ site.data.info.links.github.link }}/project-template/actions/workflows/project-release.yml) in the template repository. You can still request a "Project Tests" grade from this release if the action fails, as long as the "Run / ... / Tests" step passes. In the summary, you will see a messages similar to:
+
+> ✅ The release v1.0.x may be used to request a project 1 tests grade. This grade only needs to be requested once.
+
+If you do not see this message, then the tests did not pass and you will need to debug what went wrong.
+
+## Debugging
+{: .page-header }
+
+If the "Project Release" action failed, you need to debug what went wrong. Details on what happened can be found in the detailed view.
+
+### Release Action Run Details
+
+To see the detailed log of everything that happened, click on the job heading that failed. There are three jobs:
+
+  1. **"Run / Check / Tests"**: This job sets up the virtual machine, compiles the Java code, and runs the tests. There are three groups of tests run: tests for the current project, tests for the past project, and tests for the next project (making sure you don't have the next project functionality in the current branch). This job must pass to earn a "Project Tests" grade, request a code review appointment, or earn a "Project Design" grade.
+
+  1. **"Run / Check / Style"**: This job checks that the code compiles without warnings, and does a keyword search for other potential problems (like leftover `TODO` comments or extra `main` methods). This job must pass to request a code review appointment or earn a "Project Design" grade.
+
+  1. **"Run / Save / Results"**: This job makes sure to save the results so that when you request a grade or code review, the bot can figure out whether that release is eligible. If this step fails, something is wrong with either the action or GitHub---not your code. Reach out on Piazza for how to proceed.
+
+Look for the red circle <i class="fas fa-times-circle has-text-danger"></i> icon to figure out which jobs and steps failed, click the greater-than <i class="far fa-angle-right"></i> icon to see the step details, and the triangle or caret <i class="fas fa-caret-right"></i> icon to open details within a step. You will often have to scroll up in the logs to find the start of the errors.
+
+### Running Maven Locally
 
 Most of the time, if you are passing the tests locally you will also pass them remotely. However, there are slight differences between how the tests are run by Eclipse and how they are run by GitHub Actions.
 
@@ -111,7 +197,7 @@ If you want to test out the same approach used by GitHub Actions, you have to us
 
 Here is a screenshot of the run configuration you must create:
 
-![Screenshot]({{ "/images/eclipse-maven-project-configuration.png" | relative_url }}){: .is-600 }
+![Screenshot]({{ "/images/projects/eclipse-maven-project-configuration.png" | relative_url }}){: .is-600 }
 
 Follow these steps to create this run configuration:
 
@@ -143,72 +229,9 @@ Follow these steps to create this run configuration:
 <br/>
 These steps are really only required for fine-grained debugging and can be skipped most of the time.
 
-## Testing Remotely
-{: .page-header }
 
-You must test your code remotely before you can earn credit for the functionality of your project and before you can sign up for a code review appointment.
-
-This process begins by creating a release on GitHub. This will trigger the GitHub Action that verifies your project functionality.
-
-### Creating Releases
-
-Creating releases will familiarize you with [**versioning**](https://en.wikipedia.org/wiki/Software_versioning) your code.
-
-  1. After passing all of the tests locally and pushing your latest commits to GitHub, follow the [Creating Releases](https://help.github.com/articles/creating-releases/) steps to draft a new release of your project code on GitHub.
-
-  2. Choose a "tag" or the version number to assign to the code at this stage. Out in the "real world" you will likely use [semantic versioning](https://semver.org/), which we will roughly mimic in class.
-
-      Specifically, you must name your release `v#.#.#` where the first `#` is the project number (1, 2, 3, or 4), the second `#` is the number of code reviews you've had for that project, and the last `#` is the number of patches/fixes you released in between code reviews for that project.
-
-      For example, your first release should be `v1.0.0` because it is for project 1, you have not had any code reviews yet, and you have not had any other releases yet. If your code does not pass the tests remotely, then you have to fix your code and re-release your project as `v1.0.1` since you now have 1 prior release. After your first code review, the next release will be `v1.1.0` (notice how the last number reset to 0).
-
-      The release `v2.3.4` means this release is for project 2, you have had 3 code reviews for project 2 so far, and this is the 4th release since your last code review of project 2. (It also means there must be a prior `v2.3.3` release made before this one.)
-
-  3. Enter the tag number in the "Choose a tag" dropdown and click the "Create new tag on publish" option. If you are working ahead and have the project code in a different branch, select that branch in the "Target" dropdown.
-
-      ![Screenshot]({{ "/images/github-create-release.png" | relative_url }}){: .is-400 }
-
-  4. Click the "Publish release" button. You can leave the title and description blank. You *should* click the "This is a pre-release" checkbox unless you have passed code review, but it is not something we enforce currently.
-
-You can see a [sample release]({{ site.data.info.links.github.link }}/project-template/releases) on the template repository.
-
-**Generally, you should not delete releases even if they are not passing tests.**
-
-### Check Release Action
-
-Creating or editing a release triggers the "Check project release" action in the "Actions" tab to run automatically. It will have the same title as the release tag:
-
-![Screenshot]({{ "/images/actions-run-project-tests.png" | relative_url }}){: .is-600 }
-
-To view details, click on the run title. The yellow circle <i class="fas fa-circle has-text-warning"></i> icon indicates the run or step is still in progress and has not yet completed. The red circle <i class="fas fa-times-circle has-text-danger"></i> indicates the run or step failed (either because of setup issues or the tests failed). The green circle <i class="fas fa-check-circle has-text-success"></i> icon indicates the run or step completed and was successful (i.e. all tests passed).
-
-You can see an [example run]({{ site.data.info.links.github.link }}/project-template/actions/workflows/project-release.yml) in the template repository.
-
-### Debugging Failures
-
-Pending
 
 {% comment %}
-
-If the "Check project release" action failed, you need to debug what went wrong. Details on what happened can be found in the detailed view, and reports and actual output files can be downloaded from the summary view.
-
-<i class="fas fa-exclamation-triangle"></i>
-The raw logs are always available, but debug output is only provided when the action fully completes but one or more tests fail.
-{: .notification }
-
-###### Run Details
-
-To see the detailed log of everything that happened, click the "Verification" link under the "Jobs" heading from the "Summary" view.
-
-Look for the red circle <i class="fas fa-times-circle has-text-danger"></i> icon to figure out which steps failed and click the greater-than <i class="far fa-angle-right"></i> icon to see the step details and the triangle or caret <i class="fas fa-caret-right"></i> icon to open details within a step. You will often have to open the group just above the first error you find for the details.
-
-If the "Pre Test Project" step failed, the action was not able to setup its virtual machine. This could be an issue with GitHub Actions or our verification script. Reach out [Piazza]({{ site.data.info.links.forums.link }}) with a link to your run for help.
-
-If the error(s) appear in the "Test Project" step under the "Verification Setup Phase" heading, then your code could not be compiled. This could be related to compile issues that arise when using the `javac` compiler instead of the Eclipse compiler. Again, reach out privately on [Piazza]({{ site.data.info.links.forums.link }}) with a link directly to the issue in your run log for help.
-
-If the error(s) appear after the "Verification Testing Phase" heading instead, it is likely that one or more tests failed. Open the "Running verification tests..." and "Running debug tests..." steps for details. This is the scenario illustrated in the [example run log](https://github.com/usf-cs272-fall2021/project-template/runs/3527921399?check_suite_focus=true) in the template repository.
-
-You can also turn to the generated reports and actual output in that case, as discussed next.
 
 ###### Generated Reports
 
@@ -240,7 +263,6 @@ Most of the time, these can be ignored. For example, the warnings above happen a
 
 If you are ever in doubt, do not hesitate to post on [Piazza]({{ site.data.info.links.forums.link }}) with a link to the warning.
 
-{% endcomment %}
 
 ## Walkthrough Video
 

@@ -5,8 +5,8 @@ layout: guides
 key: 0.1
 
 tags:
- - text: 'Updated'
-   type: 'is-primary'
+#  - text: 'Updated'
+#    type: 'is-primary'
 ---
 
 <i class="fas fa-video"></i>
