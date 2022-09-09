@@ -523,6 +523,14 @@ weeks:
                 more: '<a href="https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/Widget.java">Widget.java</a> and <a href="https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/WidgetDemo.java">WidgetDemo.java</a>'
                 tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
 
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'identifier'
+
+              - file: 'quizzes'
+                name: 'mutability1'
+
       - date: 2022-09-15
         sections:
           - <<: *lectures
@@ -571,6 +579,20 @@ weeks:
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/StaticDemo.java'
                 tube: 'https://drive.google.com/file/d/13OATz6xNyiRGQXX_ZzSHPWSwt8mEaLji/view?usp=sharing'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'mutability2'
+
+              - file: 'quizzes'
+                name: 'static'
+
+              - file: 'quizzes'
+                name: 'casting'
+
+              - file: 'quizzes'
+                name: 'nesting'
 
       - date: 2022-09-16
         sections:
@@ -696,6 +718,24 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'identifier'
+
+              - file: 'quizzes'
+                name: 'static'
+
+              - file: 'quizzes'
+                name: 'mutability1'
+
+              - file: 'quizzes'
+                name: 'mutability2'
+
+              - file: 'quizzes'
+                name: 'casting'
+
+              - file: 'quizzes'
+                name: 'nesting'
+
               - file: homework
                 name: prettyjsonwriter
 

@@ -40,38 +40,6 @@ project1:
   tags: ['none']
   link: 'https://usfca.instructure.com/courses/1608197/assignments/7242279'
 
-# static:
-#   <<: *default
-#   text: 'Instance vs Static'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401868'
-#   date: 2022-02-18
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2401869'
-
-# identifier:
-#   <<: *default
-#   text: 'Instance vs Identifier'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401870'
-#   date: 2022-02-18
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402174'
-
-# mutability1:
-#   <<: *default
-#   text: 'Mutability Part 1'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401869'
-#   date: 2022-02-25
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402169'
-
-# mutability2:
-#   <<: *default
-#   text: 'Mutability Part 2'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401871'
-#   date: 2022-02-25
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402170'
-
 inheritance:
   <<: *default
   text: 'Inheritance Keywords'
@@ -88,20 +56,53 @@ collections:
   tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402171'
 
-# casting:
-#   <<: *default
-#   text: 'Casting'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401872'
-#   date: 2022-03-04
-#   tags: ['inheritance']
+
+static:
+  <<: *default
+  text: 'Instance vs Static'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409339'
+  date: 2022-09-23
+  tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2401869'
+
+identifier:
+  <<: *default
+  text: 'Instance vs Identifier'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409345'
+  date: 2022-09-23
+  tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402174'
+
+mutability1:
+  <<: *default
+  text: 'Mutability Part 1'
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7244526'
+  date: 2022-09-23
+  tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402169'
+
+mutability2:
+  <<: *default
+  text: 'Mutability Part 2'
+  link: 'https://usfca.instructure.com/courses/1608197/assignments/7223879'
+  date: 2022-09-23
+  tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402170'
+
+casting:
+  <<: *default
+  text: 'Casting'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409346'
+  date: 2022-09-23
+  tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402175'
 
-# nesting:
-#   <<: *default
-#   text: 'Nested Classes'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401875'
-#   date: 2022-03-04
-#   tags: ['inheritance']
+nesting:
+  <<: *default
+  text: 'Nested Classes'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409348'
+  date: 2022-09-23
+  tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402166'
 
 # java:
