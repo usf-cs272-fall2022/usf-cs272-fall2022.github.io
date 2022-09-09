@@ -199,6 +199,7 @@ weeks:
               - text: '– DirectoryStreamDemo.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/DirectoryStreamDemo.java'
+                tube: 'https://drive.google.com/file/d/1sAML7el7txCn53kIMccCgEPgOSDDzeCm/view?usp=sharing'
 
           - <<: *content
             items:
@@ -237,10 +238,12 @@ weeks:
               - text: '– CollectionDemo.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/CollectionDemo.java'
+                tube: 'https://drive.google.com/file/d/1UbVnpLnFL1v0AKH6pazLRH0jKh1OkTF1/view?usp=sharing'
 
               - text: '– MapDemo.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MapDemo.java'
+                tube: 'https://drive.google.com/file/d/1byBtkaRo7WkY3cBfPXJNkvEi3D7UhoJD/view?usp=sharing'
 
               - text: '– NestedMapDemo.java'
                 icon: 'nothing'
@@ -365,9 +368,6 @@ weeks:
 
               - file: 'slides'
                 name: 'abstract'
-              
-              - file: 'slides'
-                name: 'final'
 
               - file: 'slides'
                 name: 'revisited'
@@ -377,30 +377,22 @@ weeks:
                 link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceBasics'
                 type: ['bump']
 
+              - text: '– WordGroup.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/WordGroup.java'
+
               - text: '– PrefixMap.java'
                 icon: 'nothing'
-                link: '#'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/PrefixMap.java'
 
               - text: '– PrefixDemo.java'
                 icon: 'nothing'
-                link: '#'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/PrefixDemo.java'
 
-              - text: 'Shape Demo'
-                icon: 'code'
-                link: '#'
-
-              - text: '– Shape.java'
-                icon: 'nothing'
-                link: '#'
-
-              - text: '– Rectangle.java'
-                icon: 'nothing'
-                more: 'and <a href="">Square.java</a>'
-                link: '#'
-
-              - text: '– ShapeDemo.java'
-                icon: 'nothing'
-                link: '#'
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'final'
 
           - <<: *assignments
             items:
@@ -417,6 +409,10 @@ weeks:
               - text: 'Project Testing'
                 icon: 'website'
                 link: '/guides/projects/testing.html'
+
+              - text: 'Comparing Files'
+                icon: 'website'
+                link: '/guides/eclipse/comparing-output.html'
 
               - text: 'Homework Help'
                 icon: 'assistants'
@@ -485,9 +481,47 @@ weeks:
               - file: 'slides'
                 name: 'help'
 
-              - text: 'Inheritance Topics'
+              - file: 'slides'
+                name: 'generics'
+                type: ['bump']
+
+              - text: 'GenericTypesDemo.java'
                 icon: 'code'
-                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceTopics'
+                link: '#'
+                tube: 'https://drive.google.com/file/d/1Haj475bCoHuTN3TZBAuYgsafkeka8WNA/view?usp=sharing'
+
+              - text: 'Exploring Objects'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ExploringObjects'
+                type: ['bump']
+
+              - text: '– StringDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/StringDemo.java'
+                tube: 'https://drive.google.com/file/d/1Gncwuj-YnyaPivB3vQLLyWVM-8ZnFjeT/view?usp=sharing'
+
+              - text: '– HashCodeDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/HashCodeDemo.java'
+
+              - text: '– MutabilityDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/MutabilityDemo.java'
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'object'
+
+              - text: 'ObjectDemo.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/ObjectDemo.java'
+                tube: 'https://drive.google.com/file/d/1U0uVHUPp1-zZK-J5rVn0X-pP2CdxF3el/view?usp=sharing'
+
+              - text: ''
+                icon: 'code'
+                more: '<a href="https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/Widget.java">Widget.java</a> and <a href="https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/WidgetDemo.java">WidgetDemo.java</a>'
+                tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
 
       - date: 2022-09-15
         sections:
@@ -496,7 +530,47 @@ weeks:
               - text: 'Exploring Objects'
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ExploringObjects'
+                type: ['bump']
 
+              - text: '– MapMutabilityDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/MapMutabilityDemo.java'
+
+              - text: '– ConcatenationDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/ConcatenationDemo.java'
+
+              - file: 'slides'
+                name: 'casting'
+                type: ['bump']
+
+              - file: 'slides'
+                name: 'nested'
+
+              - text: 'Inheritance Revisited'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceBasics'
+                type: ['bump']
+
+              - text: '– Shape.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/Shape.java'
+
+              - text: '– Rectangle.java'
+                icon: 'nothing'
+                more: 'and <a href="https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/Square.java">Square.java</a>'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/Rectangle.java'
+
+              - text: '– ShapeDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/ShapeDemo.java'
+
+          - <<: *content
+            items:
+              - text: 'StaticDemo.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/StaticDemo.java'
+                tube: 'https://drive.google.com/file/d/13OATz6xNyiRGQXX_ZzSHPWSwt8mEaLji/view?usp=sharing'
 
       - date: 2022-09-16
         sections:
@@ -553,8 +627,15 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Casting'
-              - text: 'Nesting'
+
+
+              - text: 'Inheritance Topics'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceTopics'
+                type: ['bump']
+
+              - text: 'Gadget Sort Demo'
+                tube: 'https://drive.google.com/file/d/1LLItjwK8SwopHXJdZ7o1vffT1nNvoaEa/view?usp=sharing'
 
           - <<: *assignments
             items:
