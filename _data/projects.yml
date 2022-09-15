@@ -50,6 +50,7 @@ project2_tests:
   text: 'Project 2 Tests'
   # link: '/guides/projects/project-2.html'
   date: 2022-10-25
+  points: 100
 
 project2_review1: 
   <<: *default
@@ -57,6 +58,7 @@ project2_review1:
   # link: '/guides/projects/project-2.html'
   date: 2022-11-01
   icon: 'review'
+  points: 30
 
 project2_review2: 
   <<: *default
@@ -64,12 +66,14 @@ project2_review2:
   # link: '/guides/projects/project-2.html'
   date: 2022-11-08
   icon: 'review'
+  points: 20
 
 project2_design: 
   <<: *default
   text: 'Project 2 Design'
   # link: '/guides/projects/project-2.html'
   date: 2022-11-15
+  points: 50
 
 project3:
   <<: *default
