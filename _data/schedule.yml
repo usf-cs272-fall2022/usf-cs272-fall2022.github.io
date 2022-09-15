@@ -490,8 +490,9 @@ weeks:
                 link: '#'
                 tube: 'https://drive.google.com/file/d/1Haj475bCoHuTN3TZBAuYgsafkeka8WNA/view?usp=sharing'
 
-              - file: 'slides'
-                name: 'object'
+              - text: 'Exploring Objects'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ExploringObjects'
                 type: ['bump']
 
               - text: 'ObjectDemo.java'
@@ -499,22 +500,16 @@ weeks:
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/ObjectDemo.java'
                 tube: 'https://drive.google.com/file/d/1U0uVHUPp1-zZK-J5rVn0X-pP2CdxF3el/view?usp=sharing'
 
-              - text: 'Exploring Objects'
-                icon: 'code'
-                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ExploringObjects'
-                type: ['bump']
-
               - text: '– StringDemo.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/StringDemo.java'
                 tube: 'https://drive.google.com/file/d/1Gncwuj-YnyaPivB3vQLLyWVM-8ZnFjeT/view?usp=sharing'
 
-              - text: '– HashCodeDemo.java'
-                icon: 'nothing'
-                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/HashCodeDemo.java'
-
           - <<: *content
             items:
+              - file: 'slides'
+                name: 'object'
+
               - text: 'StaticDemo.java'
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/StaticDemo.java'
@@ -542,6 +537,16 @@ weeks:
                 link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/ExploringObjects'
                 type: ['bump']
 
+              - text: '– StringDemo.java'
+                more: '(Revisited)'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/StringDemo.java'
+                tube: 'https://drive.google.com/file/d/1Gncwuj-YnyaPivB3vQLLyWVM-8ZnFjeT/view?usp=sharing'
+
+              - text: '– HashCodeDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/HashCodeDemo.java'
+
               - text: '– MutabilityDemo.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/MutabilityDemo.java'
@@ -554,17 +559,13 @@ weeks:
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/ExploringObjects/src/main/java/edu/usfca/cs272/ConcatenationDemo.java'
 
+          - <<: *content
+            items:
               - file: 'slides'
                 name: 'casting'
-                type: ['bump']
 
-              - text: 'CastDemo.java'
-                icon: 'code'
-                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/CastDemo.java
-'
               - file: 'slides'
                 name: 'nested'
-                type: ['bump']
 
           - <<: *assignments
             items:
@@ -640,6 +641,10 @@ weeks:
                 link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceBasics'
                 type: ['bump']
 
+              - text: '– CastDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/CastDemo.java
+'
               - text: '– Shape.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceBasics/src/main/java/edu/usfca/cs272/Shape.java'
