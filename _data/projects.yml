@@ -43,19 +43,19 @@ project1_design:
 project2:
   <<: *default
   text: 'Project 2 Partial Search'
-  # link: '/guides/projects/project-2.html'
+  link: '/guides/projects/project-2.html'
 
 project2_tests: 
   <<: *default
   text: 'Project 2 Tests'
-  # link: '/guides/projects/project-2.html'
+  link: '/guides/projects/project-2.html'
   date: 2022-10-25
   points: 100
 
 project2_review1: 
   <<: *default
   text: 'Project 2 Review 1'
-  # link: '/guides/projects/project-2.html'
+  link: '/guides/projects/project-2.html'
   date: 2022-11-01
   icon: 'review'
   points: 30
@@ -63,7 +63,7 @@ project2_review1:
 project2_review2: 
   <<: *default
   text: 'Project 2 Review 2'
-  # link: '/guides/projects/project-2.html'
+  link: '/guides/projects/project-2.html'
   date: 2022-11-08
   icon: 'review'
   points: 20
@@ -71,7 +71,7 @@ project2_review2:
 project2_design: 
   <<: *default
   text: 'Project 2 Design'
-  # link: '/guides/projects/project-2.html'
+  link: '/guides/projects/project-2.html'
   date: 2022-11-15
   points: 50
 
