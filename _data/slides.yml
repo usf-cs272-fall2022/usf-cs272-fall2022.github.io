@@ -111,11 +111,11 @@ nested:
   text: 'Nested Classes'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSeqg3U6O_VkZfdI434cdgk0G5TVkTkJ4AzjqQB1GuG1Ti-eKnY_mom9TyYk3_DBLJ5yDSHIkGMo_kr/pub?start=false&loop=false&delayms=3000'
 
-# java:
-#   <<: *default
-#   text: 'Java Features'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ2V6ZRfey3ntHos4WYSn6CApCcQoXqv4jEO4XIKcoMSC_HqzdDOaMGErp3ICfjTFB9wSJNCSUBrKge/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1WNk4AG9zWdC-n58sLeCEkgVA8VEgFUji/view?usp=sharing'
+java:
+  <<: *default
+  text: 'Java Features'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQgwh-Ed-cHJac54JsmOnFAAwXsApcUzkqJZeQsf1IS36NYlxcSAa1VjQc0qEYvjK2AGXZQ70C8ldfC/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1WNk4AG9zWdC-n58sLeCEkgVA8VEgFUji/view?usp=sharing'
 
 # lambdas:
 #   <<: *default
