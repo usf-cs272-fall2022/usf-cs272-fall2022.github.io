@@ -662,8 +662,8 @@ weeks:
               - text: 'CastDemo.java'
                 icon: indented
                 type: ['push']
-                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/CastDemo.java
-'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/CastDemo.java'
+
               - text: 'Shape.java'
                 icon: indented
                 type: ['push']
@@ -747,6 +747,25 @@ weeks:
               - file: 'slides'
                 name: 'lambdas'
 
+              - text: 'Lambda Expressions'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/LambdaExpressions'
+                type: ['bump']
+              
+              - text: 'StringSorter.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/StringSorter.java'
+                type: ['push']
+
+              - text: 'PathMatcher.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/PathMatcherDemo.java'
+                type: ['push']
+
+              - text: 'LambdaDemo.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
+                type: ['push']
 
       - date: 2022-09-23
         sections:
