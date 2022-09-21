@@ -4,9 +4,9 @@ navbar: Guides
 layout: guides
 key: 1.4
 
-#tags:
-#  - text: 'New'
-#    type: 'is-primary'
+tags:
+ - text: 'New'
+   type: 'is-primary'
 
 ---
 
@@ -18,7 +18,7 @@ Using branches in `git` will be *extremely helpful* for both homework and projec
 
 The way `git` tracks history is using a [directed acyclic graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), which is a graph with arrows but no cycles (similar to a [tree](https://en.wikipedia.org/wiki/Tree_(graph_theory))). You can think of branching as a label or pointer to a specific branch (or path) in this graph.
 
-Still confused? Essentially, branching creates a new line of development that allows you to work on new features without disturbing other branches (like the `main` or other stable production branches). That branch can then be *merged* back into other branches when that new feature is stable.
+Still confused? Essentially, branching creates a new line of development that allows you to work on new features without disturbing other branches (like the `main` or other stable production branches). It is essentially a copy of your code made at a specific point in time. That branch (or copy) can then be *merged* back into other branches when that new feature is stable.
 
 There are several guides ([linked below](#how-should-you-branch)) that explain this concept further.
 

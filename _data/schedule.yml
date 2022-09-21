@@ -675,7 +675,7 @@ weeks:
 
               - text: '- GadgetSortDemo.java'
                 icon: 'nothing'
-                type: ['strike']                
+                type: ['strike']
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetSortDemo.java'
 
           - <<: *assignments
@@ -702,16 +702,19 @@ weeks:
                 tube: 'https://drive.google.com/file/d/1LLItjwK8SwopHXJdZ7o1vffT1nNvoaEa/view?usp=sharing'
                 type: ['bump']
 
-              - text: '– Gadget.java'
-                icon: 'nothing'
+              - text: 'Gadget.java'
+                icon: indented
+                type: ['push']
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/Gadget.java'
 
-              - text: '- GadgetComparator.java'
-                icon: 'nothing'
+              - text: 'GadgetComparator.java'
+                icon: indented
+                type: ['push']
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetComparator.java'
 
-              - text: '- GadgetSortDemo.java'
-                icon: 'nothing'
+              - text: 'GadgetSortDemo.java'
+                icon: indented
+                type: ['push']
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetSortDemo.java'
 
               - file: 'slides'
@@ -726,8 +729,13 @@ weeks:
         sections:
           - <<: *labs
             items:
+              - text: 'Using Branches'
+                icon: 'website'
+                link: '/guides/general/using-branches.html'
+
               - text: 'Homework Help'
                 icon: 'assistants'
+                type: ['bump']
 
               - file: homework
                 name: prettyjsonwriter
