@@ -714,8 +714,13 @@ weeks:
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetSortDemo.java'
 
-              - text: 'Lambda Expressions'
+              - file: 'slides'
+                name: 'java'
                 type: 'bump'
+
+              - file: 'slides'
+                name: 'lambdas'
+
 
       - date: 2022-09-23
         sections:
