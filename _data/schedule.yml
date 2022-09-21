@@ -670,10 +670,12 @@ weeks:
 
               - text: '- GadgetComparator.java'
                 icon: 'nothing'
+                type: ['strike']
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetComparator.java'
 
               - text: '- GadgetSortDemo.java'
                 icon: 'nothing'
+                type: ['strike']                
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetSortDemo.java'
 
           - <<: *assignments
@@ -681,6 +683,9 @@ weeks:
               - file: projects
                 name: project2_tests
                 text: 'Project 2 Partial Search'
+
+              - file: quizzes
+                name: project2
 
           - <<: *deadlines
             items:
@@ -691,7 +696,26 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Gadget Sort Demo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/InheritanceTopics'
+                tube: 'https://drive.google.com/file/d/1LLItjwK8SwopHXJdZ7o1vffT1nNvoaEa/view?usp=sharing'
+                type: ['bump']
+
+              - text: '– Gadget.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/Gadget.java'
+
+              - text: '- GadgetComparator.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetComparator.java'
+
+              - text: '- GadgetSortDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/InheritanceTopics/src/main/java/edu/usfca/cs272/GadgetSortDemo.java'
+
               - text: 'Lambda Expressions'
+                type: 'bump'
 
       - date: 2022-09-23
         sections:
@@ -823,6 +847,9 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: quizzes
+                name: project2
+
               - file: homework
                 name: filesorter
 
