@@ -852,7 +852,62 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'CLASS CANCELED'
+                icon: 'warning'
+                type: ['has-text-danger', 'has-text-weight-bold']
+              
+              - text: 'Instead of in-person lecture, watch the videos (1h 22m) and complete the quizzes (15m) listed below during our normally scheduled class time.'
+                icon: 'nothing'
+                type: ['em', 'has-text-grey']
+
+          - <<: *content
+            items:
               - text: 'Stream Pipelines'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vTjQo-LxI9hY2OwOZtF9MYqm2uzAB3voPgcpR3Sufzx6s8QEj-sIitaeOMVst8wanFt0iVM3kxjG0XD/pub?start=false&loop=false&delayms=3000'
+                icon: 'slides'
+                more: '(<a href="https://drive.google.com/file/d/1vWdlCE8eOt3HzVGa04zO1jJiWP1mJJ3z/view?usp=sharing"><i class="fab fa-youtube"></i> 20:36 Video</a>)'
+
+              - text: 'Problem1Revisited.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/Problem1Revisited.java'
+                more: '(<a href="https://drive.google.com/file/d/1gTjlMdvnCHs_E3yEL_DNsvkswG0zSg96/view?usp=sharing"><i class="fab fa-youtube"></i> 13:24 Video</a>)'
+                type: ['bump']
+
+              - text: 'InfiniteStreamDemo.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/InfiniteStreamDemo.java'
+                more: '(<a href="https://drive.google.com/file/d/1AbBKj-JiQYLNACw3GXGPkHlInBmVzg3X/view?usp=sharing"><i class="fab fa-youtube"></i> 09:16 Video</a>)'
+
+              - text: 'TextFileParser.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/TextFileParser.java'
+                more: '(<a href="https://drive.google.com/file/d/1x07LOgjD-N431tK_2sk2_kdboovJouCu/view?usp=sharing"><i class="fab fa-youtube"></i> 18:31 Video</a>)'
+                type: ['bump']
+
+              - text: 'TextFileStreamer.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/TextFileStreamer.java'
+                more: '(<a href="https://drive.google.com/file/d/1H-FYMCrXlyx5xZ-M-wAIx5xtj9aieN8U/view?usp=sharing"><i class="fab fa-youtube"></i> 21:03 Video</a>)'
+          
+          - <<: *assignments
+            items:
+              - text: 'Check Deadlines'
+                icon: 'warning'
+                type: ['has-text-warning', 'has-text-weight-bold']
+
+              - text: 'Since these quizzes are part of the asynchronous lecture content, they are due within 24 hours of the normally scheduled lecture time.'
+                icon: 'nothing'
+                type: ['em', 'has-text-grey']
+
+              - text: 'Java Features'
+                more: '(05:00)'
+                type: ['bump']
+
+              - text: 'Lambda Expressions'
+                more: '(05:00)'
+
+              - text: 'Stream Pipelines'
+                more: '(05:00)'
 
           - <<: *deadlines
             items:
@@ -911,6 +966,7 @@ weeks:
               - text: 'Sophie @ Conference'
                 icon: 'travel'
                 type: [*pending, 'bump']
+
   - week: 7
     days:
       - date: 2022-10-04
