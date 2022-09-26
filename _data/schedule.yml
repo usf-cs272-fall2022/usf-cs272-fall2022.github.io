@@ -760,12 +760,12 @@ weeks:
               - text: 'PathMatcher.java'
                 icon: 'indented'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/PathMatcherDemo.java'
-                type: ['push']
+                type: ['push', 'del']
 
               - text: 'LambdaDemo.java'
                 icon: 'indented'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
-                type: ['push']
+                type: ['push', 'del']
 
       - date: 2022-09-23
         sections:
@@ -841,7 +841,40 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Lambda Expressions'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/LambdaExpressions'
+                type: ['bump']
+
+              - text: 'PathMatcher.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/PathMatcherDemo.java'
+                type: ['push']
+
+              - text: 'LambdaDemo.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
+                type: ['push']
+
+              - file: 'slides'
+                name: 'streams'
+                type: ['bump']
+              
               - text: 'Stream Pipelines'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/StreamPipelines'
+                type: ['bump']
+
+              - text: 'StreamDemo.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/StreamDemo.java'
+                type: ['push']
+                tube: 'https://drive.google.com/file/d/18RKTIjJmH1ovGVIwbVzfCIiDBq1BhmbP/view?usp=sharing'
+
+              - text: 'ParallelStreamBenchmark.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/ParallelStreamBenchmark.java'
+                type: ['push']
 
           - <<: *deadlines
             items:
@@ -860,7 +893,8 @@ weeks:
                 icon: 'nothing'
                 type: ['em', 'has-text-grey']
 
-          - <<: *content
+          - label: 'Assigned Videos (1h 22m)'
+            dates: ''
             items:
               - text: 'Stream Pipelines'
                 link: 'https://docs.google.com/presentation/d/e/2PACX-1vTjQo-LxI9hY2OwOZtF9MYqm2uzAB3voPgcpR3Sufzx6s8QEj-sIitaeOMVst8wanFt0iVM3kxjG0XD/pub?start=false&loop=false&delayms=3000'
@@ -889,7 +923,8 @@ weeks:
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/TextFileStreamer.java'
                 more: '(<a href="https://drive.google.com/file/d/1H-FYMCrXlyx5xZ-M-wAIx5xtj9aieN8U/view?usp=sharing"><i class="fab fa-youtube"></i> 21:03 Video</a>)'
           
-          - <<: *assignments
+          - label: 'Assigned Quizzes (15m)'
+            dates: ''
             items:
               - text: 'Check Deadlines'
                 icon: 'warning'
