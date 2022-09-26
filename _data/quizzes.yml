@@ -105,25 +105,25 @@ nesting:
   tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402166'
 
-# java:
-#   <<: *default
-#   text: 'Java Features'
+java:
+  <<: *default
+  text: 'Java Features'
 #   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402043'
-#   date: 2022-03-04
-#   tags: ['none']
+  date: 2022-09-30
+  tags: ['none']
 
-# lambdas:
-#   <<: *default
-#   text: 'Lambda Expressions'
-#   date: 2022-03-04
+lambdas:
+  <<: *default
+  text: 'Lambda Expressions'
+  date: 2022-09-30
 #   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402044'
-#   tags: ['lambdas']
+  tags: ['lambdas']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402172'
 
-# streams:
-#   <<: *default
-#   text: 'Stream Pipelines'
-#   date: 2022-03-04
+streams:
+  <<: *default
+  text: 'Stream Pipelines'
+  date: 2022-09-30
 #   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402162'
 #   tags: ['streams']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402176'

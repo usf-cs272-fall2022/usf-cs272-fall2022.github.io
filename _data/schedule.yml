@@ -934,14 +934,17 @@ weeks:
                 icon: 'nothing'
                 type: ['em', 'has-text-grey']
 
-              - text: 'Java Features'
+              - file: 'quizzes'
+                name: 'java'
                 more: '(05:00)'
                 type: ['bump']
 
-              - text: 'Lambda Expressions'
+              - file: 'quizzes'
+                name: 'lambdas'
                 more: '(05:00)'
 
-              - text: 'Stream Pipelines'
+              - file: 'quizzes'
+                name: 'streams'
                 more: '(05:00)'
 
           - <<: *deadlines
@@ -995,8 +998,19 @@ weeks:
               - file: quizzes
                 name: project2
 
+              - file: 'quizzes'
+                name: 'java'
+                type: ['bump']
+
+              - file: 'quizzes'
+                name: 'lambdas'
+
+              - file: 'quizzes'
+                name: 'streams'
+
               - file: homework
                 name: filesorter
+                type: ['bump']
 
               - text: 'Sophie @ Conference'
                 icon: 'travel'
