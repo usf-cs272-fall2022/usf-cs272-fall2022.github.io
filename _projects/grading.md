@@ -99,7 +99,7 @@ Only the first two code review appointments are graded. However, you must contin
 
 ### Review Limits
 
-**You may only have up to 30 minutes maximum of code reviews every 5 days.** That works out to one 30 minute appointment or two 15 minute appointments per 5 day period. 
+**You may only have up to 30 minutes maximum of code reviews every ~~5~~ 4 days.** That works out to one 30 minute appointment or two 15 minute appointments per ~~5~~ 4 day period. 
 
 Most projects take 3 to 5 code reviews to complete the design. Due to weekends, that works out to approximately 2 to 4 weeks to complete the code review process. You may have as many code reviews as necessary to pass the design, but too many reviews will prevent progress on the next project and may result in late penalties down the line.
 
