@@ -138,6 +138,12 @@ pipelines:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTjQo-LxI9hY2OwOZtF9MYqm2uzAB3voPgcpR3Sufzx6s8QEj-sIitaeOMVst8wanFt0iVM3kxjG0XD/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1vWdlCE8eOt3HzVGa04zO1jJiWP1mJJ3z/view?usp=sharing'
 
+regex:
+  <<: *default
+  tags: ['regexes']
+  text: 'Regular Expressions'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTO88-l6I37jTV3eM1QGEPbsZ9XsYM5YCascMfUqjzYPXSQnJG1elC0Hx0oUw9MT9z781i8ApW3nYmh/pub?start=false&loop=false&delayms=3000'
+
 # testing_intro:
 #   <<: *default
 #   tags: ['testing']
@@ -230,12 +236,6 @@ pipelines:
 #   text: 'Thread Pools and Work Queues'
 #   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRDwWXi-ZKFNEHpxugFBLPd3P-JBtlE3dFziNg91abi0EzkYbiZgNyh2EA9OFuOOw2nlQQ0ibw0Xii8/pub?start=false&loop=false&delayms=3000'
 #   tube: 'https://drive.google.com/file/d/1Nz47N4dqlnypm3HSvtOB0iMwmO35aMgR/view?usp=sharing'
-
-# regex:
-#   <<: *default
-#   tags: ['regexes']
-#   text: 'Regular Expressions'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTtjIEXsc9TLIzJdgDXCzgsKhrQ5U6rsFZJEJZRmFL-XvAULA7Gk8zL2_oR-5p8EO_H3cOyiH0CYljJ/pub?start=false&loop=false&delayms=3000'
 
 # web:
 #   <<: *default
