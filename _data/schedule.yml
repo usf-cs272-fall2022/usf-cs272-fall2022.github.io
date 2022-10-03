@@ -873,12 +873,12 @@ weeks:
               - text: 'ParallelStreamBenchmark.java'
                 icon: 'indented'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/ParallelStreamBenchmark.java'
-                type: ['push']
+                type: ['push', 'del']
 
               - text: 'StreamDemo.java'
                 icon: 'indented'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/StreamDemo.java'
-                type: ['push']
+                type: ['push', 'del']
                 tube: 'https://drive.google.com/file/d/18RKTIjJmH1ovGVIwbVzfCIiDBq1BhmbP/view?usp=sharing'
 
           - <<: *deadlines
@@ -1027,7 +1027,33 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Stream Pipelines'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/StreamPipelines'
+                type: ['bump']
+
+              - text: 'PipelineDemo.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/PipelineDemo.java'
+                type: ['push']
+
+              - text: 'ParallelStreamBenchmark.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/ParallelStreamBenchmark.java'
+                type: ['push']
+
+              - file: 'slides'
+                name: 'regex'
+                type: ['bump']
+
               - text: 'Regular Expressions'
+
+          - <<: *content
+            items:
+              - text: 'StreamDemo.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/StreamDemo.java'
+                tube: 'https://drive.google.com/file/d/18RKTIjJmH1ovGVIwbVzfCIiDBq1BhmbP/view?usp=sharing'
 
           - <<: *deadlines
             items:
