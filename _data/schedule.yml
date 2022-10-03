@@ -1055,6 +1055,11 @@ weeks:
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/StreamDemo.java'
                 tube: 'https://drive.google.com/file/d/18RKTIjJmH1ovGVIwbVzfCIiDBq1BhmbP/view?usp=sharing'
 
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'regex'
+
           - <<: *deadlines
             items:
               - file: projects
@@ -1188,6 +1193,9 @@ weeks:
 
               - file: 'participation'
                 name: 'ask_why'
+
+              - file: 'quizzes'
+                name: 'regex'
 
               - text: 'Fall Break'
                 icon: 'date'
