@@ -5,9 +5,9 @@ layout: default
 key: 1.1
 bump: true
 
-#tags:
-#  - text: 'New'
-#    type: 'is-primary'
+tags:
+ - text: 'New'
+   type: 'is-primary'
 
 topics:
   - text: 'Exception Handling'
@@ -22,13 +22,13 @@ topics:
     tags: 'data'
     code: 'DataStructures'
 
-  - text: 'Object Oriented Programming'
+  - text: 'Exploring Objects'
     tags: 'objects'
-    code: 'ObjectOrientedProgramming'
+    code: 'ExploringObjects'
 
   - text: 'Inheritance'
     tags: 'inheritance'
-    code: 'Inheritance'
+    code: ['InheritanceBasics', 'InheritanceTopics']
 
   - text: 'Lambda Expressions'
     tags: 'lambdas'
@@ -37,6 +37,10 @@ topics:
   - text: 'Stream Pipelines'
     tags: 'streams'
     code: 'StreamPipelines'
+
+  - text: 'Regular Expressions'
+    tags: 'regexes'
+    code: 'RegularExpressions'
 
 ---
 
@@ -47,6 +51,26 @@ The exam will cover topics on the lecture content, homework assignments, and qui
 {% endfor %}
 
 See below for resources and additional details.
+
+<style>
+ul.icons {
+  list-style-type: none;
+  margin-left: 1.5em;
+  margin-top: 0em;
+}
+
+ul.icons > li {
+  position: relative;
+}
+
+ul.icons > li > i {
+  width: 1.25em;
+  left: -1.5em;
+  position: absolute;
+  text-align: center;
+  line-height: inherit;
+}
+</style>
 
 ## Resources
 
@@ -66,24 +90,29 @@ See below for resources and additional details.
 {% for topic in page.topics %}
 <tr>
   <td>
-    {%-if topic.code -%}
-    <a href="{{ site.data.info.links.github.link }}/lectures/tree/main/{{ topic.code }}">{{ topic.text }}</a>
-    {%- else %}
-    <span>{{ topic.text }}</span>
-    {%-endif -%}
+    <ul class="icons">
+      {% if topic.code %}
+      {% for repo in topic.code %}
+      <li><i class="{{ site.data.icons.code.class }}"></i> <a href="{{ site.data.info.links.github.link }}/lectures/tree/main/{{ repo }}">{{ repo }}</a></li>
+      {% endfor %}
+      {% else %}
+      <li><i class="{{ site.data.icons.pending.class }}"></i> {{ topic.text }}</li>
+      {% endif %}
+    </ul>
   </td>
 
   {% for column in columns %}
   {% assign data = site.data[column] %}
   {% assign filtered = data | where_exp:"item", "item.tags contains topic.tags" %}
   <td>
-    <ul style="margin-top: 0ex;">
+    <ul class="icons">
       {% for item in filtered -%}
       <li>
+        <i class="{{ site.data.icons[item.icon].class }}"></i>
         {% if column == "homework" %}
         <a href="{{ site.data.info.links.github.link }}/homework-{{ item.text }}-template/">{{ item.text }}</a>
         {% elsif column == "quizzes" %}
-        <a href="{{ item.test }}">{{ item.text }}</a>
+        {% if item.test %}<a href="{{ item.test }}">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}
         {% else %}
         <a href="{{ item.link }}">{{ item.text }}</a>
         {% endif %}
@@ -172,3 +201,21 @@ The following are some example topics that you may want to make sure you underst
 - You should understand how to create and use **streams** and stream pipelines, and the differences between a stream and a collection.
 
 - You should understand terminology with respect to stream operations, including **intermediate** versus **terminal** operations, **lazy** versus **eager** operations, and what it means for an operation to be **non-interfering**, **stateless**, and without **side-effects**.
+
+- You should understand how to use the `Pattern` and `Matcher` classes in Java to handle regular expressions, and the difference between the `find()` versus `matches()` methods.
+
+- You should understand how to create **character classes**, such as `[a-z]` and `[^0-9]`, in regular expressions.
+
+- You should understand how to use **predefined character classes** such as `\w`, `\W`, `\s`, `\S`, and `.` in regular expressions.
+
+- You should understand how to use the `?`, `*`, and `+` **quantifiers** in regular expressions.
+
+- You should understand the difference between a **greedy versus reluctant quantifier** in regular expressions.
+
+- You should understand how to create and use **capturing groups** and non-capturing groups in regular expressions.
+
+- You should understand how to use the `i`, `m`, and `s` **flags**.
+
+- You should understand how to use the `^`, `$`, `\A`, `\z`, and `\b` **boundary matchers**.
+
+- You should understand the different ways to use the **`?` character** in a regular expression. For example: `(?i)` to turn on the `i` flag, `(?:i)` to create a non-capturing group that matches the `i` character, `[?!]` to create a character class that matches the `?` and `!` characters, `i?` to match the `i` character 0 or 1 times (greedy), and `i+?` to match the `i` character 1 or more times (reluctant).
