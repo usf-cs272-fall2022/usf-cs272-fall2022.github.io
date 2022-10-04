@@ -1090,7 +1090,13 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Exam Guides'
+                icon: 'website'
+                link: '/guides/exams'
+
               - text: 'Exam Review'
+                icon: 'website'
+                link: '/guides/exams/exam-1.html'
 
               - text: 'Regular Expressions'
                 icon: 'code'
