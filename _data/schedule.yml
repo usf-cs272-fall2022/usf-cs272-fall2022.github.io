@@ -1047,6 +1047,27 @@ weeks:
                 type: ['bump']
 
               - text: 'Regular Expressions'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/RegularExpressions'
+                type: ['bump']
+
+              - text: 'RegexClasses.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexClasses.java'
+                type: ['push']
+                tube: 'https://drive.google.com/file/d/1TFSN35nVHQlhAqptWLbApR_3hg89v1yF/view?usp=sharing'
+
+              - text: 'RegexQuantifiers.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexQuantifiers.java'
+                type: ['push']
+                tube: 'https://drive.google.com/file/d/1OwNQ72SGStcDEFZBvw40bQW2ldjEfiUg/view?usp=sharing'
+
+              - text: 'RegexWordParsing.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
+                type: ['push']
+                tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
 
           - <<: *content
             items:
@@ -1069,8 +1090,12 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Regular Expressions'
               - text: 'Exam Review'
+
+              - text: 'Regular Expressions'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/RegularExpressions'
+                type: ['bump']
 
       - date: 2022-10-07
         sections:
