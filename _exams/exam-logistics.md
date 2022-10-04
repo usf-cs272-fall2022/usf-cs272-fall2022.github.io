@@ -5,6 +5,10 @@ layout: guides
 key: 0.1
 bump: true
 
+tags:
+ - text: 'New'
+   type: 'is-primary'
+
 ---
 
 This guide will discuss the logistics and possible topics for exam 1 and exam 2. See the [Retake Logistics](retake-logistics.html) for information on the exam retake.
@@ -35,7 +39,7 @@ Any student may opt to choose a remote modality; pre-approval is not required.
 
 ## Timing
 
-The exam will automatically unlock and lock at the start and end times of the enrolled section for each student. However, students may request a different start time by making a private post on [course forums]({{ site.data.info.links.forums.link }}).
+The exam will automatically unlock and lock at the start and end times of the **enrolled section** for each student. However, students may request a different start time by making a private post on the [course discussion forum]({{ site.data.info.links.forums.link }}).
 
 The exam should take around 1 hour to complete, but students will have the entire class time of <i class="far fa-hourglass-half"></i> **1 hour 45 minutes** to complete the exam.
 
@@ -73,4 +77,4 @@ Students should also be prepared to access any of the class materials, including
 
 Students may receive [exam accommodations](https://myusf.usfca.edu/sds/exam-accommodations), such as additional testing time, through [Student Disability Services](https://myusf.usfca.edu/sds/exam-accommodations). The instructor must receive a notification for accommodation from [SDS](https://myusf.usfca.edu/sds) approximately <strong>one week</strong> before the exam itself.
 
-Contact the instructor on the [course forums]({{ site.data.info.links.forums.link }}) to schedule a specific time to take the exam and retake. In most cases, students will start the exam with their section and have additional time past the end of lecture time. The instructor will attempt to actively monitor the [course forums]({{ site.data.info.links.forums.link }}) for any exam questions after lecture time ends, but might not be available to answer questions live on Zoom.
+Contact the instructor on the [course discussion forum]({{ site.data.info.links.forums.link }}) to schedule a specific time to take the exam and retake. In most cases, students will start the exam with their section and have additional time past the end of lecture time. The instructor will attempt to actively monitor the [course discussion forum]({{ site.data.info.links.forums.link }}) for any exam questions after lecture time ends, but might not be available to answer questions live on Zoom.

@@ -4,6 +4,10 @@ navbar: Guides
 layout: guides
 key: 0.0
 
+tags:
+ - text: 'New'
+   type: 'is-primary'
+
 ---
 
 There will be two non-comprehensive exams. The exam dates are provided on the [course schedule]({{ "/schedule.html" | relative_url }}) and the [course syllabus]({{ site.data.info.links.syllabus.link }}). This guide will discuss the exam pass requirement and how exams are graded.
@@ -16,7 +20,7 @@ The exam pass requirement assesses that students understand the underlying conce
 
 Based on the standard grading scale used by this class, the average of the original and retake grade must be `74%` or higher to meet this requirement. Students must earn a passing grade in only one of the two exams, *not* both.
 
-Students that failure to meet 1 or more of the pass requirements will have their letter grade capped to C– maximum, regardless of whether they have a higher letter grade in Canvas. See the [course syllabus]({{ site.data.info.links.syllabus.link }}) for details.
+Students that failure to meet 1 or more of the pass requirements will have their letter grade capped to C– letter grade (1.7 GPA), regardless of whether they have a higher letter grade in Canvas. See the [course syllabus]({{ site.data.info.links.syllabus.link }}) for details.
 
 ## Grading
 
@@ -24,11 +28,13 @@ Each exam category includes the following grades:
 
   - **Original Exam Score:** This is the score earned on the original exam attempt (including any code snippet questions), which is taken during lecture. See the [exam logistics]({{ exam-logistics.html | relative_url }}) guide for details.
 
-  - **Retake Exam Score:** This is the *highest* score earned of all asynchronous exam retake attempts completed before the deadline.  See the [retake logistics]({{ retake-logistics.html | relative_url }}) guide for details.
+  - **Retake Exam Score:** This is the *highest* score earned of all asynchronous exam retake attempts completed before the deadline. See the [retake logistics]({{ retake-logistics.html | relative_url }}) guide for details.
 
 The category grade is the average of the above scores. The instructor usually does not curve the exam grades beyond offering the retake opportunities.
 
 For example, suppose a student earned a `68%` on the original exam attempt. The student retook the exam three times, earning a `72%`, `93%`, and `89%` on each retake attempt. The exam category score will be the average of the `68%` from the first attempt and the highest `93%` retake attempt, which works out to a passing score of `80.5%`. That score meets the exam pass requirement.
+
+You must earn *at least* a `48%` on the original exam attempt to be able to earn a passing score through the retake process, assuming you are able to earn a `100%` on a retake attempt.
 
 ## Cheating
 
