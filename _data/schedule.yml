@@ -1066,7 +1066,7 @@ weeks:
               - text: 'RegexWordParsing.java'
                 icon: 'indented'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
-                type: ['push']
+                type: ['push', 'del']
                 tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
 
           - <<: *content
@@ -1102,6 +1102,38 @@ weeks:
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/RegularExpressions'
                 type: ['bump']
+
+              - text: 'RegexWordParsing.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
+                type: ['push']
+                tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
+
+              - text: 'RegexBoundaries.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexBoundaries.java'
+                type: ['push']
+
+              - text: 'RegexGroups.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexGroups.java'
+                type: ['push']
+                more: '(<a href="https://regex101.com/r/Dusf9V/">101 <i class="fas fa-external-link-square"></i></a>)'
+
+              - text: 'RegexChallenge.java'
+                icon: 'indented'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexGroups.java'
+                type: ['push']
+
+          - <<: *content
+            items:
+              - text: 'RegexStreams.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexStreams.java'
+
+              - text: 'Regex Crossword'
+                icon: 'website'
+                link: 'https://regexcrossword.com/'
 
       - date: 2022-10-07
         sections:
