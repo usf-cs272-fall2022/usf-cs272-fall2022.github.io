@@ -4,9 +4,9 @@ navbar: Guides
 layout: guides
 key: 0.2
 
-tags:
- - text: 'Updated'
-   type: 'is-primary' 
+# tags:
+#  - text: 'Updated'
+#    type: 'is-primary' 
 
 ---
 

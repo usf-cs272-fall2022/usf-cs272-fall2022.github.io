@@ -5,9 +5,9 @@ layout: guides
 key: 0.1
 bump: true
 
-tags:
- - text: 'New'
-   type: 'is-primary'
+# tags:
+#  - text: 'New'
+#    type: 'is-primary'
 
 ---
 
