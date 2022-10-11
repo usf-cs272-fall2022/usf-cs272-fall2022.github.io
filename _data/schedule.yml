@@ -1199,8 +1199,16 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Testing'
-              - text: 'Logging'
+              - file: 'slides'
+                name: 'testing_bugs'
+
+              - file: 'slides'
+                name: 'logging'
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'assertions'
 
           - <<: *assignments
             items:
@@ -1274,6 +1282,19 @@ weeks:
               - text: 'Fall Break'
                 icon: 'fall'
                 type: [*pending]
+
+          - label: 'Optional Content'
+            items:
+              - text: 'Software Testing'
+                more: '(Full Lecture)'
+                link: 'https://drive.google.com/file/d/1kNuNxqI4p1FQ1f9BYiYdfQfLhA5ut7Cp/view?usp=sharing'
+                icon: 'video'
+
+              - file: 'slides'
+                name: 'testing_intro'
+
+              - file: 'slides'
+                name: 'testing_unit'
 
       - date: 2022-10-20
         sections:

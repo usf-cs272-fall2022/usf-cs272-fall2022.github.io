@@ -150,17 +150,17 @@ testing_bugs:
   text: 'Software Bugs'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRx3Celd7paeP5-TbE-LEU-1f1UzcoG93-PlqwrmTsW76tMXlyOH3qxlJB067TaeUWEznDGa7CsDcwN/pub?start=false&loop=false&delayms=3000'
 
-# testing_intro:
-#   <<: *default
-#   tags: ['testing']
-#   text: 'Software Testing'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQCykMh0wOkbNohLHdsra9OttbGaberD5kR6EivUs1IQ70uKWRIJGJyWi7eWOfV1WmLUtAgoNVs111f/pub?start=false&loop=false&delayms=3000'
+testing_intro:
+  <<: *default
+  tags: ['testing']
+  text: 'Software Testing'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vSBCRFRsHERFo9gqwW8TsusCW63wgsBDXs5k2SBuphtbigsZplHkiQB6sxesTaNFcKPHDU8u2f7ZpbD/pub?start=false&loop=false&delayms=3000'
 
-# testing_unit:
-#   <<: *default
-#   tags: ['testing']
-#   text: 'Unit Testing'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vT6cokBI3rwCMSABvuZOzAQw0gnAi3R4tTFsdVbRqwd8oUB2TwT5lEmwJaZMe74ihVwqtoS4dV68hBQ/pub?start=false&loop=false&delayms=3000'
+testing_unit:
+  <<: *default
+  tags: ['testing']
+  text: 'Unit Testing'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRRfeHE_j03Wl4zQRnubmZBztMMC94gUt4Gs2FnN7Ka31KuO7GMK8bQjmEzSHnoZZeqrnRQNCAZTDNU/pub?start=false&loop=false&delayms=3000'
 
 assertions:
   <<: *default
