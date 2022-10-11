@@ -11,22 +11,109 @@ project: 3
 #  - text: 'New'
 #    type: 'is-primary'
 
-assignments:
-  - text: 'Project 3 Tests'
-    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166805'
+subsections:
+  - text: 'Requirements'
+    link: '#requirements'
 
-  - text: 'Project 3 Review 1'
-    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166806'
+  - text: 'Grading'
+    link: '#grading'
 
-  - text: 'Project 3 Review 2'
-    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166807'
+  - text: 'Getting Started'
+    link: '#getting-started'
 
-  - text: 'Project 3 Final Release'
-    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166808'
+tests: 'project3_tests'
+review1: 'project3_review1'
+review2: 'project3_review2'
+design: 'project3_design'
+
+review0: 'project2_review1'
+
 ---
 
-For this project, you will extend your [previous project](project-{{ page.project | minus: 1 }}.html) to support multithreading. In addition to meeting the previous project requirements, your code must make a thread-safe inverted index, and use work queues to build and search an inverted index using multiple threads.
+For this project, you will extend your [previous project](project-{{ page.project | minus: 1 }}.html) to support **multithreading**. In addition to meeting the previous project requirements, your code must make a **thread-safe inverted index**, and use **work queues** to build and search an inverted index using multiple threads.
 
+## Requirements
+{: .page-header }
+
+The following detail the functionality requirements that must be implemented for this project.
+
+### Input Requirements
+
+Your `main` method must be placed in a class named `Driver` and must process the following command-line arguments:
+
+Pending
+
+### Other Headings
+
+Pending
+
+### Output Requirements
+
+Pending
+
+### Run Examples
+
+Pending
+
+## Grading
+{: .page-header }
+
+This project grade is split into the following assignments:
+
+| Assignment | Points | Deadline | Release | Prerequisites |
+|:-----------|-------:|---------:|:-------:|:--------------|
+| [{{ site.data.projects[page.tests].text }}]({{ site.data.projects[page.tests].canvas }}) | {{ site.data.projects[page.tests].points }} | {{ site.data.projects[page.tests].date | date: "%b %d, %Y" }} | `v{{ page.project }}.0.Z` | `Project{{ page.project }}Test.java`, [{{ site.data.projects[page.review0].text }}]({{ site.data.projects[page.review1].canvas }}), [Test Checks](grading.html#project-tests) |
+| [{{ site.data.projects[page.review1].text }}]({{ site.data.projects[page.review1].canvas }}) (30 min) | {{ site.data.projects[page.review1].points }} | {{ site.data.projects[page.review1].date | date: "%b %d, %Y" }} | `v{{ page.project }}.1.Z` | [{{ site.data.projects[page.tests].text }}]({{ site.data.projects[page.tests].canvas }}), [Review Checks](grading.html#project-reviews) |
+| [{{ site.data.projects[page.review2].text }}]({{ site.data.projects[page.review2].canvas }}) (15 min)<sup>1</sup> | {{ site.data.projects[page.review2].points }} | {{ site.data.projects[page.review2].date | date: "%b %d, %Y" }} | `v{{ page.project }}.2.Z` | [{{ site.data.projects[page.review1].text }}]({{ site.data.projects[page.review1].canvas }}), [Review Checks](grading.html#project-reviews) |
+| Project {{ page.project }} Review Y (15 min)<sup>2</sup> | 0 | {{ site.data.projects[page.design].date | date: "%b %d, %Y" }} | `v{{ page.project }}.Y.Z` | [{{ site.data.projects[page.review2].text }}]({{ site.data.projects[page.review2].canvas }}), [Review Checks](grading.html#project-reviews) |
+| [{{ site.data.projects[page.design].text }}]({{ site.data.projects[page.design].canvas }}) | {{ site.data.projects[page.design].points }} | {{ site.data.projects[page.design].date | date: "%b %d, %Y" }} | `v{{ page.project }}.Y.Z` | [{{ site.data.projects[page.review2].text }}]({{ site.data.projects[page.review2].canvas }}), [Review Checks](grading.html#project-reviews), Passing Pull Request |
+{: .table .is-auto .is-hoverable :}
+
+<sup>1</sup> You should start on [project {{ page.project | plus: 1 }}](project-{{ page.project | plus: 1 }}.html) after receiving a grade for [{{ site.data.projects[page.review2].text }}]({{ site.data.projects[page.review2].canvas }})---do NOT wait to finish this project to start the next one!
+
+<sup>2</sup> It takes approximately 3 to 4 code reviews to pass the design of this project. Keep in mind you may have only 30 minutes worth of code review appointments every 5 days. Due to weekends, that works out to approximately 3 weeks or more of code reviews.
+
+See the [Project Grading](grading.html) guide for details on how projects are graded. 
+
+## Getting Started
+{: .page-header }
+
+The following sections may be useful for getting started on this project.
+
+### Related Homework
+
+The following homework assignments may be useful for this project:
+
+  - Pending
+
+
+You can modify homework assignments as necessary for this project. However, make sure your code is passing all of the tests before using.
+
+**You should NOT wait until you have completed all of the associated homework assignments to start the project.**{: .has-text-danger :} You should develop the project *iteratively* as you progress throughout the semester, integrating assignments one at a time into your project code.
+
+### Related Content
+
+The following lecture content may be useful for this project:
+
+  - Pending
+
+
+You can use and modify lecture code as necessary for this project. However, make sure you understand the concepts *before* using the code.
+
+**You should NOT wait until you have covered all of the associated lecture content to start the project.**{: .has-text-danger :} You should develop the project *iteratively* as you progress throughout the semester, integrating concepts one at a time into your project code.
+
+### Suggestions
+
+Your goal should be to get to **testable code** as quickly as possible first, and then **developing iteratively** to pass the functionality tests.
+
+  - Pending
+
+It is important to **get started early** so you have plenty of time to think about how you want to approach the project *and* start coding iteratively. Planning to complete the code in too large of a chunk is a recipe to get stuck and fall behind!
+
+<i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
+{: .notification }
+
+{% comment %}
 ## Functionality
 {: .page-header }
 
@@ -239,3 +326,4 @@ It is important to **get started early** so you have plenty of time to think abo
 
 <i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
+{% endcomment %}
