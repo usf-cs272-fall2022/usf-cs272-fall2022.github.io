@@ -78,33 +78,37 @@ project2_design:
 project3:
   <<: *default
   text: 'Project 3 Multithreading'
-  # link: '/guides/projects/project-3.html'
+  link: '/guides/projects/project-3.html'
 
 project3_tests: 
   <<: *default
   text: 'Project 3 Tests'
-  # link: '/guides/projects/project-3.html'
+  link: '/guides/projects/project-3.html'
   date: 2022-11-15
+  points: 100
 
 project3_review1: 
   <<: *default
   text: 'Project 3 Review 1'
-  # link: '/guides/projects/project-3.html'
+  link: '/guides/projects/project-3.html'
   date: 2022-11-22
   icon: 'review'
+  points: 30
 
 project3_review2:
   <<: *default
   text: 'Project 3 Review 2'
-  # link: '/guides/projects/project-3.html'
+  link: '/guides/projects/project-3.html'
   date: 2022-11-29
   icon: 'review'
+  points: 20
 
 project3_design: 
   <<: *default
   text: 'Project 3 Design'
-  # link: '/guides/projects/project-3.html'
+  link: '/guides/projects/project-3.html'
   date: 2022-12-06
+  points: 50
 
 project4a:
   <<: *default
