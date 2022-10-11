@@ -169,12 +169,12 @@ assertions:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRLXyc0T98b27UmaNg-jZONLb-CIRy_TFAL5sGendDFbFFc2MmV6ZOURlEwZhE6WBDr8Q36Degsx9vA/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1mSAPW69YHYzl-Uqz-FyZY3Eg8j7StxiP/view?usp=sharing'
 
-# logging:
-#   <<: *default
-#   tags: ['debugging']
-#   text: 'Logging'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTx6cqMhgvR_isXl34UX-l1Meu4IMwhHh7H-N5ZRpEfNgQcLr8_zdQQeDStydaZIVeI_PdaDOeClXQ6/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1ZJnvRK56Zj43E8pkby_YVPfQm7rwM_PT/view?usp=sharing'
+logging:
+  <<: *default
+  tags: ['debugging']
+  text: 'Logging'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vSW62BhOpFZQzghSV5fkrmZCGQ3udhK-myxFmh9Cf1WfsiP6PK0h4PFx02DUhidksERTk1Ou4_QQ8nh/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1ZJnvRK56Zj43E8pkby_YVPfQm7rwM_PT/view?usp=sharing'
 
 # multithreading:
 #   <<: *default
