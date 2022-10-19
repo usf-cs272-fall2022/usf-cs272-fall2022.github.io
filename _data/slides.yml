@@ -176,33 +176,33 @@ logging:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSW62BhOpFZQzghSV5fkrmZCGQ3udhK-myxFmh9Cf1WfsiP6PK0h4PFx02DUhidksERTk1Ou4_QQ8nh/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1ZJnvRK56Zj43E8pkby_YVPfQm7rwM_PT/view?usp=sharing'
 
-# multithreading:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Multithreading'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQyqZEpYY9CZbQXQ6AGgWfmp3O1Er8ROx6Vh7zIURfG6Xrp6NOVtNO23YN26LTvlYljAKlO-X67XRQB/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1bDx_QfV8uXgxBnMuGW1BifaOkcHuVsxU/view?usp=sharing'
+multithreading:
+  <<: *default
+  tags: ['threads']
+  text: 'Multithreading'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRX6RCeUBV4oY2pE3PwPR11oV0CbXnJYDQg6fupgT6b1w44qmzsCsRfWyhd_kIdZjtqECwITRfm-X-L/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1bDx_QfV8uXgxBnMuGW1BifaOkcHuVsxU/view?usp=sharing'
 
-# threads:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Thread Lifecycle'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQTx2eOpOXS-BeVLcWFvH5RtdH-Whg__yGVR1A6ygG2jB6SvjQP6IKno3trNT520Lvzip_UbKWp3BTS/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/19WIE-aE_n2okfI-Evk7OMEtCUvzaCSwT/view?usp=sharing'
+threads:
+  <<: *default
+  tags: ['threads']
+  text: 'Thread Lifecycle'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vSR1cZ0OOKgBSz2MkWKaWzBZJPsm33joCC9fX9zAmh23bhs6lPuO11TCPOs3gJzk2WvN92Uw69K7j1m/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/19WIE-aE_n2okfI-Evk7OMEtCUvzaCSwT/view?usp=sharing'
 
-# consistency:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Consistency'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSsaYqKGQIrnjAmz8jBFTwRGb3vRb5ZF0NSuEabWCausebxeiL00HMapK1aW4wLNG8FyHLm3W4e1c0K/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1XGxlAjAP10M77GLTy7mRquS6Miy9PTkh/view?usp=sharing'
+consistency:
+  <<: *default
+  tags: ['threads']
+  text: 'Consistency'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTRAzhLDNE32VRqGC3dddI0pFxqiN_8DOihGJv6OuVj-3oiJEgBSGJQMIZBD0WwL5vMpfKuu95Q-tTa/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1XGxlAjAP10M77GLTy7mRquS6Miy9PTkh/view?usp=sharing'
 
-# liveness:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Liveness'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQX0l_EFmG_CzaQXOG2_UiqEuWGN8lgyULSD3RKCnC6f_a5ivL9G7hbgRFPVkmmQASLLboVOMQEKVdg/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1ZoPqrdm4e2exLo9djFJcoLKBRwNMOEII/view?usp=sharing'
+liveness:
+  <<: *default
+  tags: ['threads']
+  text: 'Liveness'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vS6RCZPY_h5NtvogQccLSEfTCAXz-Hqfmxgqkolqp6Cc41gCc8WWcb-aMXADAFvKwQ9HeKKjfjw6PmL/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1ZoPqrdm4e2exLo9djFJcoLKBRwNMOEII/view?usp=sharing'
 
 # synchronization:
 #   <<: *default
