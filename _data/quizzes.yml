@@ -151,26 +151,26 @@ regex:
 # #   tags: ['testing']
 # #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394175'
 
-# asserts:
-#   <<: *default
-#   text: 'Assert Statements'
-#   date: 2022-03-25
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402549'
+asserts:
+  <<: *default
+  text: 'Assert Statements'
+  date: 2022-10-28
+  # link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402549'
 #   tags: ['debugging']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402546'
 
-# logging:
-#   <<: *default
-#   text: 'Logging'
-#   date: 2022-03-25
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402548'
+logging:
+  <<: *default
+  text: 'Logging'
+  date: 2022-10-28
+  # link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402548'
 #   tags: ['debugging']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402547'
 
-# threads:
-#   <<: *default
-#   text: 'Thread Basics'
-#   date: 2022-04-01
+threads:
+  <<: *default
+  text: 'Thread Basics'
+  date: 2022-10-28
 #   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402848'
 #   tags: ['threads']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403925'

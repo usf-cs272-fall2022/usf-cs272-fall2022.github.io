@@ -1304,7 +1304,33 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Thread Basics'
+              - file: 'slides'
+                name: 'multithreading'
+
+              - file: 'slides'
+                name: 'lifecycle'
+
+              - text: 'Multithreading Basics'
+                icon: 'code'
+                type: ['bump']
+
+              - file: 'slides'
+                name: 'consistency'
+                type: ['bump']
+
+              - file: 'slides'
+                name: 'liveness'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'asserts'
+
+              - file: 'quizzes'
+                name: 'logging'
+
+              - file: 'quizzes'
+                name: 'threads'
 
           - <<: *deadlines
             items:
@@ -1430,8 +1456,18 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'asserts'
+
+              - file: 'quizzes'
+                name: 'logging'
+
+              - file: 'quizzes'
+                name: 'threads'
+
               - file: homework
                 name: loggersetup
+                type: 'bump'
 
   - week: 11
     days:

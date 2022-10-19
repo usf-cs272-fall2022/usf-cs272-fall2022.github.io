@@ -183,7 +183,7 @@ multithreading:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRX6RCeUBV4oY2pE3PwPR11oV0CbXnJYDQg6fupgT6b1w44qmzsCsRfWyhd_kIdZjtqECwITRfm-X-L/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1bDx_QfV8uXgxBnMuGW1BifaOkcHuVsxU/view?usp=sharing'
 
-threads:
+lifecycle:
   <<: *default
   tags: ['threads']
   text: 'Thread Lifecycle'
