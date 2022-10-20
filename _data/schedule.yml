@@ -1312,7 +1312,18 @@ weeks:
 
               - text: 'Multithreading Basics'
                 icon: 'code'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/Multithreading'
                 type: ['bump']
+
+              - text: 'RandomArrayDemo.java'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/RandomArrayTotal.java'
+                icon: 'indented'
+                type: ['push']
+
+              - text: 'ThreadStateDemo.java'
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/ThreadStateDemo.java'
+                icon: 'indented'
+                type: ['push']
 
               - file: 'slides'
                 name: 'consistency'
