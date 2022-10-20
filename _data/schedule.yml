@@ -1332,6 +1332,9 @@ weeks:
               - file: 'quizzes'
                 name: 'threads'
 
+              - file: participation
+                name: midterm_survey
+
           - <<: *deadlines
             items:
               - text: 'Exam 1 Retake'
@@ -1464,6 +1467,9 @@ weeks:
 
               - file: 'quizzes'
                 name: 'threads'
+
+              - file: participation
+                name: midterm_survey
 
               - file: homework
                 name: loggersetup

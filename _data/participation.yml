@@ -91,11 +91,11 @@ cs_event:
 
 
 
-# midterm_survey:
-#   <<: *default
-#   text: 'Midterm Survey'
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402539'
-#   date: 2022-03-25
+midterm_survey:
+  <<: *default
+  text: 'Midterm Survey'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409379'
+  date: 2022-10-28
 
 # # final_plan:
 # #   <<: *default
