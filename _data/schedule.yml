@@ -1421,20 +1421,24 @@ weeks:
               - text: Synchronization
                 icon: code
                 type: bump
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/Synchronization'
 
               - text: IndexedSet.java
                 icon: indented
                 type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/IndexedSet.java'
                 tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
 
               - text: SynchronizedSet.java
                 icon: indented
                 type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SynchronizedSet.java'
                 tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
 
               - text: LockDemo.java
                 icon: indented
                 type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/LockDemo.java'
 
               - file: slides
                 name: coordination
@@ -1484,15 +1488,18 @@ weeks:
               - text: Synchronization
                 icon: code
                 type: bump
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/Synchronization'
 
               - text: ConcurrentSet.java
                 icon: indented
                 type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/ConcurrentSet.java'
                 tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
 
               - text: SetDemo.java
                 icon: indented
                 type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SetDemo.java'
                 tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
           
           - <<: *assignments
