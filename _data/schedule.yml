@@ -1446,6 +1446,9 @@ weeks:
                 name: project3_tests
                 text: 'Project 3 Multithreading'
 
+              - file: quizzes
+                name: project3
+
           - <<: *deadlines
             items:
               - file: projects
@@ -1480,6 +1483,12 @@ weeks:
                 icon: indented
                 type: push
                 tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
+          
+          - <<: *assignments
+            items:
+              - file: quizzes
+                name: synchronization
+
 
       - date: 2022-10-28
         sections:
@@ -1597,6 +1606,11 @@ weeks:
                 icon: code
                 tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
+          - <<: *assignments
+            items:
+              - file: quizzes
+                name: workers
+
           - <<: *deadlines
             items:
               - file: projects
@@ -1657,6 +1671,13 @@ weeks:
             items:
               - file: homework
                 name: readwritelock
+
+              - file: quizzes
+                name: synchronization
+                type: bump
+
+              - file: quizzes
+                name: project3
 
               - text: 'Withdraw Deadline'
                 icon: 'date'
@@ -1726,6 +1747,10 @@ weeks:
             items:
               - file: homework
                 name: primefinder
+
+              - file: quizzes
+                name: workers
+                type: bump
 
   - week: 13
     days:

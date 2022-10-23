@@ -175,27 +175,27 @@ threads:
   tags: ['threads']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403925'
 
-# project3:
-#   <<: *default
-#   text: 'Project 3 Writeup'
-#   date: 2022-04-15
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402851'
-#   tags: ['none']
+project3:
+  <<: *default
+  text: 'Project 3 Writeup'
+  date: 2022-11-04
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409356'
+  tags: ['none']
 
-# synchronization:
-#   <<: *default
-#   text: 'Synchronization'
-#   date: 2022-04-01
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402849'
-#   tags: ['threads']
+synchronization:
+  <<: *default
+  text: 'Synchronization'
+  date: 2022-11-04
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409393'
+  tags: ['threads']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403924'
 
-# workers:
-#   <<: *default
-#   text: 'Work Queues'
-#   date: 2022-04-08
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402850'
-#   tags: ['threads']
+workers:
+  <<: *default
+  text: 'Work Queues'
+  date: 2022-11-11
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409392'
+  tags: ['threads']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403918'
 
 # http:
