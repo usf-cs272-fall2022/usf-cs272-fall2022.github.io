@@ -1579,15 +1579,23 @@ weeks:
             items:
               - text: Work Queues (Part 1)
                 icon: code
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/WorkQueues'
                 tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
               - text: SerialDirectoryListing.java
                 icon: indented
                 type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/SerialDirectoryListing.java'
               
               - text: BlockingDirectoryListing.java
                 icon: indented
                 type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/BlockingDirectoryListing.java'
+
+              - text: ThreadedDirectoryListing.java
+                icon: indented
+                type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ThreadedDirectoryListing.java'
 
               - file: slides
                 name: pools
@@ -1596,32 +1604,38 @@ weeks:
               - text: Work Queues (Part 2)
                 icon: code
                 type: bump
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/WorkQueues'
                 tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
               - text: WorkQueue.java
                 icon: indented
                 type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/WorkQueue.java
                 tube: https://drive.google.com/file/d/1IQIU3GxPRiF8YY4VS_lv_M0yfcLAMmnQ/view?usp=sharing
-
-              - text: ThreadedDirectoryListing.java
-                icon: indented
-                type: push
-              
+             
               - text: QueuedDirectoryListing.java
                 icon: indented
                 type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/QueuedDirectoryListing.java
+
+              - text: ListingBenchmark.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ListingBenchmark.java
 
           - <<: *content
             items:
               - file: slides
                 name: volatile
               
-              - text: ConcurrentDirectoryListing.java
+              - text: ConcurrentWorkQueue.java
                 icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java
                 tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
               - text: ExecutorDirectoryListing.java
                 icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java
                 tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
           - <<: *assignments
