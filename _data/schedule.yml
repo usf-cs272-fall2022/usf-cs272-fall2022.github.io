@@ -1462,9 +1462,20 @@ weeks:
                 name: coordination
                 text: 'Coordination Recap'
 
-              - text: BoundedBuffer.java
+              - text: Bounded Buffer
                 icon: code
+                type: bump
                 tube: 'https://drive.google.com/file/d/1e20Tr6fUSVmxRe6O4B_l7Ynx3uEBigXC/view?usp=sharing'
+
+              - text: BoundedBuffer.java
+                icon: indented
+                type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/BoundedBuffer.java'
+
+              - text: MirrorDriver.java
+                icon: indented
+                type: push
+                link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/MirrorDriver.java'
 
               - file: slides
                 name: locks
