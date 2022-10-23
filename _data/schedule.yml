@@ -1318,11 +1318,13 @@ weeks:
               - text: 'RandomArrayDemo.java'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/RandomArrayTotal.java'
                 icon: 'indented'
+                tube: 'https://drive.google.com/file/d/12aYTi2LQW3W-8GYG-G1A-Febu9Wlof7c/view?usp=sharing'
                 type: ['push']
 
               - text: 'ThreadStateDemo.java'
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/ThreadStateDemo.java'
                 icon: 'indented'
+                tube: 'https://drive.google.com/file/d/1ddBJ9YG-xYORgvGbVIKz3z0tj-89n1T6/view?usp=sharing'
                 type: ['push']
 
               - file: 'slides'
@@ -1404,7 +1406,39 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Synchronization'
+              - file: projects
+                name: project3_tests
+                text: 'Project 3 Multithreading'
+
+              - file: slides
+                name: lifecycle
+                text: 'Thread States Recap'
+                type: bump
+
+              - file: slides
+                name: synchronization
+
+              - text: Synchronization
+                icon: code
+                type: bump
+
+              - text: IndexedSet.java
+                icon: indented
+                type: push
+                tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
+
+              - text: SynchronizedSet.java
+                icon: indented
+                type: push
+                tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
+
+              - text: LockDemo.java
+                icon: indented
+                type: push
+
+              - file: slides
+                name: coordination
+                type: bump
 
           - <<: *assignments
             items:
@@ -1421,7 +1455,31 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Coordination'
+              - file: slides
+                name: coordination
+                text: 'Coordination Recap'
+
+              - text: BoundedBuffer.java
+                icon: code
+                tube: 'https://drive.google.com/file/d/1e20Tr6fUSVmxRe6O4B_l7Ynx3uEBigXC/view?usp=sharing'
+
+              - file: slides
+                name: locks
+                type: 'bump'
+
+              - text: Synchronization
+                icon: code
+                type: bump
+
+              - text: ConcurrentSet.java
+                icon: indented
+                type: push
+                tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
+
+              - text: SetDemo.java
+                icon: indented
+                type: push
+                tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
 
       - date: 2022-10-28
         sections:
@@ -1492,7 +1550,52 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Work Queues'
+              - text: Work Queues (Part 1)
+                icon: code
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
+              - text: SerialDirectoryListing.java
+                icon: indented
+                type: push
+              
+              - text: BlockingDirectoryListing.java
+                icon: indented
+                type: push
+
+              - file: slides
+                name: pools
+                type: bump
+              
+              - text: Work Queues (Part 2)
+                icon: code
+                type: bump
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
+              - text: WorkQueue.java
+                icon: indented
+                type: push
+                tube: https://drive.google.com/file/d/1IQIU3GxPRiF8YY4VS_lv_M0yfcLAMmnQ/view?usp=sharing
+
+              - text: ThreadedDirectoryListing.java
+                icon: indented
+                type: push
+              
+              - text: QueuedDirectoryListing.java
+                icon: indented
+                type: push
+
+          - <<: *content
+            items:
+              - file: slides
+                name: volatile
+              
+              - text: ConcurrentDirectoryListing.java
+                icon: code
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
+              - text: ExecutorDirectoryListing.java
+                icon: code
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
           - <<: *deadlines
             items:
