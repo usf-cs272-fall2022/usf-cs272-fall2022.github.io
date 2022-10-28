@@ -1501,7 +1501,14 @@ weeks:
                 type: push
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SetDemo.java'
                 tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
-          
+
+              - file: slides
+                name: volatile
+                type: bump
+
+              - file: slides
+                name: pools
+
           - <<: *assignments
             items:
               - file: quizzes
@@ -1596,10 +1603,6 @@ weeks:
                 icon: indented
                 type: push
                 link: 'https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ThreadedDirectoryListing.java'
-
-              - file: slides
-                name: pools
-                type: bump
               
               - text: Work Queues (Part 2)
                 icon: code
@@ -1625,9 +1628,6 @@ weeks:
 
           - <<: *content
             items:
-              - file: slides
-                name: volatile
-              
               - text: ConcurrentWorkQueue.java
                 icon: code
                 link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java
