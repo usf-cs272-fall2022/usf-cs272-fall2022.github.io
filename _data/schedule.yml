@@ -1626,6 +1626,18 @@ weeks:
                 type: ['push', 'del']
                 link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ListingBenchmark.java
 
+          - <<: *content
+            items:
+              - text: ConcurrentWorkQueue.java
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
+              - text: ExecutorDirectoryListing.java
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
           - <<: *assignments
             items:
               - file: quizzes
@@ -1670,15 +1682,18 @@ weeks:
               - text: Sockets
                 icon: code
                 type: bump
+                link: https://github.com/usf-cs272-fall2022/lectures/tree/main/Sockets
                 tube: https://drive.google.com/file/d/1V02GkA2pUAmoUtFgdXl12VGVMJkw2pMy/view?usp=sharing
 
               - text: SimpleServer.java
                 icon: indented
                 type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/SimpleServer.java
 
               - text: SimpleClient.java
                 icon: indented
                 type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/SimpleClient.java
               
               - file: slides
                 name: http
@@ -1686,23 +1701,15 @@ weeks:
 
               - text: UrlFetcher.java
                 icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/UrlFetcher.java
                 type: bump
               
               - text: HttpFetcher.java
                 icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/HttpsFetcher.java
 
           - <<: *content
             items:
-              - text: ConcurrentWorkQueue.java
-                icon: code
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java
-                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
-
-              - text: ExecutorDirectoryListing.java
-                icon: code
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java
-                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
-
               - file: slides
                 name: web
                 type: bump
