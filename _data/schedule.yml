@@ -1703,6 +1703,13 @@ weeks:
                 link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java
                 tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
+              - file: slides
+                name: web
+                type: bump
+
+              - file: slides
+                name: url
+
           - <<: *assignments
             items:
               - file: quizzes
