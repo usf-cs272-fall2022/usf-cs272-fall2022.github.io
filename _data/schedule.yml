@@ -1618,25 +1618,13 @@ weeks:
              
               - text: QueuedDirectoryListing.java
                 icon: indented
-                type: push
+                type: ['push', 'del']
                 link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/QueuedDirectoryListing.java
 
               - text: ListingBenchmark.java
                 icon: indented
-                type: push
+                type: ['push', 'del']
                 link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ListingBenchmark.java
-
-          - <<: *content
-            items:
-              - text: ConcurrentWorkQueue.java
-                icon: code
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java
-                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
-
-              - text: ExecutorDirectoryListing.java
-                icon: code
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java
-                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
 
           - <<: *assignments
             items:
@@ -1657,7 +1645,68 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Sockets'
+              - text: Work Queues (Part 2)
+                icon: code
+                type: bump
+                link: 'https://github.com/usf-cs272-fall2022/lectures/tree/main/WorkQueues'
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
+              - text: WorkQueue.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/WorkQueue.java
+                tube: https://drive.google.com/file/d/1IQIU3GxPRiF8YY4VS_lv_M0yfcLAMmnQ/view?usp=sharing
+             
+              - text: QueuedDirectoryListing.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/QueuedDirectoryListing.java
+
+              - text: ListingBenchmark.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ListingBenchmark.java
+
+              - text: Sockets
+                icon: code
+                type: bump
+                tube: https://drive.google.com/file/d/1V02GkA2pUAmoUtFgdXl12VGVMJkw2pMy/view?usp=sharing
+
+              - text: SimpleServer.java
+                icon: indented
+                type: push
+
+              - text: SimpleClient.java
+                icon: indented
+                type: push
+              
+              - file: slides
+                name: http
+                type: bump
+
+              - text: UrlFetcher.java
+                icon: code
+                type: bump
+              
+              - text: HttpFetcher.java
+                icon: code
+
+          - <<: *content
+            items:
+              - text: ConcurrentWorkQueue.java
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
+              - text: ExecutorDirectoryListing.java
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java
+                tube: https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing
+
+          - <<: *assignments
+            items:
+              - file: quizzes
+                name: http
 
       - date: 2022-11-04
         sections:
@@ -1784,6 +1833,9 @@ weeks:
                 name: workers
                 type: bump
 
+              - file: quizzes
+                name: http
+                
   - week: 13
     days:
       - date: 2022-11-15
