@@ -1785,7 +1785,54 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: HttpFetcher.java
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/HttpsFetcher.java
+
+              - file: slides
+                name: dynamic
+                type: bump
+              
+              - file: slides
+                name: jetty
+              
               - text: 'Servlet Basics'
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/tree/main/ServletBasics
+                type: bump
+
+              - text: TodayServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/TodayServer.java
+
+              - text: HelloServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/HelloServer.java
+
+              - text: VisitServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/VisitServer.java
+
+              - text: SimpleFileServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/SimpleFileServer.java
+                tube: https://drive.google.com/file/d/17AUSBRl0c_n7eJ56cSHIbd1al7P9YylG/view?usp=sharing
+
+              - text: GalleryServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/GalleryServer.java
+                tube: https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing
+
+              - text: ContextServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ContextServer.java
+                tube: https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing
 
           - <<: *assignments
             items:
