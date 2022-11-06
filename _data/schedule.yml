@@ -1787,6 +1787,11 @@ weeks:
             items:
               - text: 'Servlet Basics'
 
+          - <<: *assignments
+            items:
+              - file: quizzes
+                name: dynamic
+
           - <<: *deadlines
             items:
               - file: projects
@@ -1797,6 +1802,11 @@ weeks:
           - <<: *lectures
             items:
               - text: 'Servlet Configuration'
+
+          - <<: *assignments
+            items:
+              - file: quizzes
+                name: servlets
 
       - date: 2022-11-11
         sections:
@@ -1927,8 +1937,15 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: quizzes
+                name: dynamic
+
+              - file: quizzes
+                name: servlets
+
               - file: homework
                 name: htmlfetcher
+                type: bump
 
   - week: 14
     days:
