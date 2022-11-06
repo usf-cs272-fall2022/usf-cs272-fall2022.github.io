@@ -258,19 +258,19 @@ http:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSEzRZio0k4FRdSRlxeauT0i_D54JWhi6ZcEEaYFBJcXFu7o7SL81zhwsot_jxAWCeCOolg8sQsr13K/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1L-JTuRZKalismoydzJUaSe2szdobX-L1/view?usp=sharing'
 
-# dynamic:
-#   <<: *default
-#   tags: ['web']
-#   text: 'Static vs Dynamic Web'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSJ-2ju74POcizJNyqJsU_sTTVDmTa_kcIzIhUbCxTcsAmGM8veKPX4rocSFs9KGqvyTK7u3LEDnYjw/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1ix3i4i2eoHy-D9aTYgEkp9IPBBzgYxRw/view?usp=sharing'
+dynamic:
+  <<: *default
+  tags: ['web']
+  text: 'Static vs Dynamic Web'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vT73FZwlsGn2UvuXfv37r6iokph2P2k7ZRn6qMB97UevKkttkrs-RaKn4Og-ndwjC0cLRcU1PyN4Q94/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1ix3i4i2eoHy-D9aTYgEkp9IPBBzgYxRw/view?usp=sharing'
 
-# jetty:
-#   <<: *default
-#   tags: ['servlets']
-#   text: 'Jetty and Servlets'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vS1AOABH_j5s6nDi5d8XFA9BQC-ufUVbgPBM8QcrkfPaxev1kGzbckaMsKJ6vMlw-l9j5bjOHrvFYiX/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1OtvslLGJB1FOhoQRYv1yTFMLE6OCQCCN/view?usp=sharing'
+jetty:
+  <<: *default
+  tags: ['servlets']
+  text: 'Jetty and Servlets'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vT39ddllMZONA2_tbfEttwCvKAtUdKy5wiGZi9DM-3mCz7yL624y2SEEPsjHYFkQfLLsb4vUcv4FWhO/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1OtvslLGJB1FOhoQRYv1yTFMLE6OCQCCN/view?usp=sharing'
 
 # relational:
 #   <<: *default
