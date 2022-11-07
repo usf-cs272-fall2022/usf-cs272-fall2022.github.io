@@ -1838,6 +1838,9 @@ weeks:
             items:
               - file: quizzes
                 name: dynamic
+              
+              - file: participation
+                name: whatif
 
           - <<: *deadlines
             items:
@@ -1984,6 +1987,9 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: participation
+                name: whatif
+
               - file: quizzes
                 name: dynamic
 

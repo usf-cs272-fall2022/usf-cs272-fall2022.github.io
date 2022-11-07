@@ -79,37 +79,17 @@ cs_event:
   show: true
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409338'
 
-
-
-# # github_resource:
-# #   <<: *default
-# #   text: 'Git/GitHub Resource'
-# #   date: 2022-02-11
-
-
-
-
-
-
 midterm_survey:
   <<: *default
   text: 'Midterm Survey'
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409379'
   date: 2022-10-28
 
-# # final_plan:
-# #   <<: *default
-# #   text: 'Final Grade Plan'
-# #   link: 'https://usfca.instructure.com/courses/1602551/assignments/7145001'
-# #   date: 2021-12-09
-# #   show: true
-
-# whatif:
-#   <<: *default
-#   text: 'What-If Check'
-#   date: 2022-05-13
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2404155'
-#   show: true
+whatif:
+  <<: *default
+  text: 'What-If Check'
+  date: 2022-11-18
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409365'
 
 # final_survey:
 #   <<: *default
