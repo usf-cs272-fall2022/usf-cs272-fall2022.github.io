@@ -1824,13 +1824,13 @@ weeks:
 
               - text: GalleryServer.java
                 icon: indented
-                type: push
+                type: ['push', 'del']
                 link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/GalleryServer.java
                 tube: https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing
 
               - text: ContextServer.java
                 icon: indented
-                type: push
+                type: ['push', 'del']
                 link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ContextServer.java
                 tube: https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing
 
@@ -1851,7 +1851,46 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Servlet Configuration'
+              - text: GalleryServer.java
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/GalleryServer.java
+                tube: https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing
+
+              - text: 'Servlet Data'
+                icon: code
+                type: bump
+                link: https://github.com/usf-cs272-fall2022/lectures/tree/main/ServletData
+
+              - text: ReverseServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ReverseServer.java
+                tube: https://drive.google.com/file/d/17AUSBRl0c_n7eJ56cSHIbd1al7P9YylG/view?usp=sharing
+
+              - text: MessageServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/MessageServer.java
+                tube: https://drive.google.com/file/d/1AhKibA6CMpro8BI7IsmTnRPCmj_kkube/view?usp=share_link
+
+              - text: MessageServlet.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/MessageServlet.java
+                tube: https://drive.google.com/file/d/19NR1YdmY1MWH8OH3A0zRypiCSPnBSfCg/view?usp=sharing
+
+              - text: BulmaMessageServlet.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/BulmaMessageServlet.java
+                tube: https://drive.google.com/file/d/1Tg5XcUStSyEAuzaEQ1Da6C66ExpxA2Lc/view?usp=sharing
+
+          - <<: *content
+            items:
+              - text: ContextServer.java
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ContextServer.java
+                tube: https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing          
 
           - <<: *assignments
             items:
