@@ -2069,7 +2069,6 @@ weeks:
                 name: sqldemo
 
               - text: Exam Review
-                type: bump
                 link: /guides/exams/exam-2.html
                 icon: website
 
@@ -2086,10 +2085,10 @@ weeks:
               - file: quizzes
                 name: groups
 
-          - <<: *deadlines
-            items:
-              - file: projects
-                name: project3_review1
+          # - <<: *deadlines
+          #   items:
+          #     - file: projects
+          #       name: project3_review1
 
       - date: 2022-11-24
         sections:
@@ -2120,7 +2119,7 @@ weeks:
           - <<: *deadlines
             items:
               - file: projects
-                name: project3_review2
+                name: project3_review1
 
       - date: 2022-12-01
         sections:
@@ -2207,11 +2206,11 @@ weeks:
           - <<: *deadlines
             items:
               - file: projects
-                name: project3_design
-              
+                name: project3_review2
+
               - file: projects
                 name: project4_tests
-
+                
               - text: 'Classes End'
                 icon: 'date'
                 date: 2022-12-07
@@ -2238,6 +2237,10 @@ weeks:
             items:
               - file: 'participation'
                 name: 'cs_event'
+
+              - file: projects
+                name: project3_design
+                show: true
 
           - label: 'Upcoming Deadlines'
             dates: true
