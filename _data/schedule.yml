@@ -1976,8 +1976,11 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Databases'
-              - text: 'SQL Basics'
+              - file: slides
+                name: relational
+              
+              - file: slides
+                name: sql
 
       - date: 2022-11-18
         sections:
@@ -2094,7 +2097,11 @@ weeks:
         sections:
           - <<: *lectures
             items:
-            - text: 'JDBC'
+              - file: slides
+                name: jdbc
+
+              - text: Pending
+                type: bump
 
           - <<: *assignments
             items:
