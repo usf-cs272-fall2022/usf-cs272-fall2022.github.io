@@ -1964,6 +1964,9 @@ weeks:
                 name: project4_tests
                 text: 'Project 4 Web Crawler'
 
+              - file: quizzes
+                name: project4
+
           - <<: *deadlines
             items:
               - file: projects
@@ -2076,6 +2079,13 @@ weeks:
                 name: project4_review
                 text: 'Project 4 Search Engine'
 
+              - file: quizzes
+                name: joins
+                type: bump
+              
+              - file: quizzes
+                name: groups
+
           - <<: *deadlines
             items:
               - file: projects
@@ -2171,9 +2181,20 @@ weeks:
 
               - file: 'participation'
                 name: 'ask_anything'
+                type: bump
 
               - file: 'participation'
                 name: 'piazza_reply'
+
+              - file: quizzes
+                name: joins
+                type: bump
+              
+              - file: quizzes
+                name: groups
+
+              - file: quizzes
+                name: project4
 
   - week: 16
     days:

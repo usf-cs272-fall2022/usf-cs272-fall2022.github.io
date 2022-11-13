@@ -222,25 +222,25 @@ servlets:
   tags: ['servlets']
   # test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403920'
 
-# project4:
-#   <<: *default
-#   text: 'Project 4 Writeup'
-#   date: 2022-04-29
+project4:
+  <<: *default
+  text: 'Project 4 Writeup'
+  date: 2022-12-02
 #   link: 'https://usfca.instructure.com/courses/1605147/assignments/7195820'
 #   tags: ['none']
 
-# joins:
-#   <<: *default
-#   text: 'SQL Joins'
-#   date: 2022-05-06
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403556'
-#   tags: ['sql']
+joins:
+  <<: *default
+  text: 'SQL Joins'
+  date: 2022-12-02
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409387'
+  tags: ['sql']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403917'
 
-# groups:
-#   <<: *default
-#   text: 'SQL Groups'
-#   date: 2022-05-06
-#   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403557'
-#   tags: ['sql']
+groups:
+  <<: *default
+  text: 'SQL Groups'
+  date: 2022-12-02
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409377'
+  tags: ['sql']
 #   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403919'
