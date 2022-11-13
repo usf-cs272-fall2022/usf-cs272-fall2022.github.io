@@ -1978,9 +1978,23 @@ weeks:
             items:
               - file: slides
                 name: relational
-              
+
               - file: slides
                 name: sql
+
+              - file: slides
+                name: dbaccounts
+                type: bump
+
+              - file: slides
+                name: sqlintro1
+                type: bump
+
+              - file: slides
+                name: sqlintro2
+
+              - file: slides
+                name: sqlintro3
 
       - date: 2022-11-18
         sections:
@@ -2048,8 +2062,11 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'SQL Joins'
-              - text: 'Exam Review'
+              - file: slides
+                name: sqldemo
+
+              - text: Exam Review
+                type: bump
 
           - <<: *assignments
             items:

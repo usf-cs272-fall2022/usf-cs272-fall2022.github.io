@@ -288,6 +288,12 @@ sql:
   save: true
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vREjA4w_CDftw9Gcl6Uwsxb2YxPckK9r7_3GoxYLbSbJF0aNbXPyVaJGAjz6JEFYRiciIL0nH9Hc9to/pub?start=false&loop=false&delayms=3000'
 
+dbaccounts:
+  icon: 'website'
+  save: false
+  text: 'Database Accounts'
+  link: '/guides/sql/database-accounts.html'
+
 sqlintro1:
   icon: 'website'
   save: false
