@@ -28,10 +28,8 @@ See if you can re-create the following table with a `SELECT` statement:
 | Sophie Engle     | @sjengle         |
 | Alark Joshi      | @alark           |
 | Matthew Malensek | @MatthewMalensek |
-| Sami Rollins     | @samirollins     |
 | David Wolber     | @wolberd         |
 | Beste Yuksel     | @BesteFYuksel    |
-
 
 <details>
 <summary>See Answer.</summary>
@@ -53,12 +51,12 @@ Next, lets see if we can create a list of courses and who teaches them. It is ea
 | course | professors |
 |--------|------------|
 | CS 107 |          3 |
-| CS 110 |          4 |
-| CS 112 |          6 |
+| CS 110 |          5 |
+| CS 112 |          4 |
 | CS 220 |          1 |
 | CS 221 |          2 |
 | CS 245 |          3 |
-| CS 272 |          3 |
+| CS 272 |          2 |
 | CS 315 |          2 |
 | CS 326 |          2 |
 | CS 336 |          1 |
@@ -84,23 +82,23 @@ ORDER BY course, last;
 
 Now, we can move to the full table:
 
-| course | professors                                                                     |
-|--------|--------------------------------------------------------------------------------|
-| CS 107 | Jeffrey Johnson, David Wolber, Beste Yuksel                                    |
-| CS 110 | Jeffrey Johnson, Alark Joshi, David Wolber, Beste Yuksel                       |
-| CS 112 | Kristin Jones, Alark Joshi, EJ Jung, Olga Karpenko, Sami Rollins, David Wolber |
-| CS 220 | Matthew Malensek                                                               |
-| CS 221 | Phil Peterson, Vahab Pournaghshband                                            |
-| CS 245 | David Brizan, EJ Jung, Olga Karpenko                                           |
-| CS 272 | Sophie Engle, Olga Karpenko, Sami Rollins                                      |
-| CS 315 | Greg Benson, Phil Peterson                                                     |
-| CS 326 | Greg Benson, Matthew Malensek                                                  |
-| CS 336 | Vahab Pournaghshband                                                           |
-| CS 345 | Kristin Jones                                                                  |
-| CS 360 | Sophie Engle, Alark Joshi                                                      |
-| CS 462 | Christopher Brooks                                                             |
-| CS 463 | David Brizan                                                                   |
-| CS 490 | Jeffrey Johnson, Olga Karpenko, Beste Yuksel                                   |
+| course | professors                                                               |
+|--------|--------------------------------------------------------------------------|
+| CS 107 | Jeffrey Johnson, David Wolber, Beste Yuksel                              |
+| CS 110 | Jeffrey Johnson, Alark Joshi, Michael Kremer, David Wolber, Beste Yuksel |
+| CS 112 | Alark Joshi, EJ Jung, Olga Karpenko, David Wolber                        |
+| CS 220 | Matthew Malensek                                                         |
+| CS 221 | Phil Peterson, Vahab Pournaghshband                                      |
+| CS 245 | David Brizan, EJ Jung, Olga Karpenko                                     |
+| CS 272 | Sophie Engle, Olga Karpenko                                              |
+| CS 315 | Greg Benson, Phil Peterson                                               |
+| CS 326 | Greg Benson, Matthew Malensek                                            |
+| CS 336 | Vahab Pournaghshband                                                     |
+| CS 345 | Mehmet Emre                                                              |
+| CS 360 | Sophie Engle, Alark Joshi                                                |
+| CS 462 | Christopher Brooks                                                       |
+| CS 463 | David Brizan                                                             |
+| CS 490 | Jeffrey Johnson, Olga Karpenko, Beste Yuksel                             |
 
 <details>
 <summary>See Answer.</summary>
@@ -129,16 +127,16 @@ Next, we can try and combine everything together. As before, I suggest you first
 | Greg Benson          | benson@usfca.edu          |       1 |       2 |
 | David Guy Brizan     | dgbrizan@usfca.edu        |       1 |       2 |
 | Christopher Brooks   | cbrooks@usfca.edu         |       0 |       1 |
+| Mehmet Emre          | memre@usfca.edu           |       0 |       1 |
 | Sophie Engle         | sjengle@usfca.edu         |       1 |       2 |
 | Jeffrey Johnson      | jajohnson9@usfca.edu      |       0 |       3 |
-| Kristin Jones        | kjones12@usfca.edu        |       0 |       2 |
 | Alark Joshi          | apjoshi@usfca.edu         |       1 |       3 |
 | EJ Jung              | ejung2@usfca.edu          |       0 |       2 |
 | Olga Karpenko        | okarpenko@usfca.edu       |       0 |       4 |
+| Michael Kremer       | mkremer@usfca.edu         |       0 |       1 |
 | Matthew Malensek     | mmalensek@usfca.edu       |       1 |       2 |
 | Phil Peterson        | phpeterson@usfca.edu      |       0 |       2 |
 | Vahab Pournaghshband | vpournaghshband@usfca.edu |       0 |       2 |
-| Sami Rollins         | snrollins@usfca.edu       |       1 |       2 |
 | David Wolber         | wolberd@usfca.edu         |       1 |       3 |
 | Beste Yuksel         | byuksel@usfca.edu         |       1 |       3 |
 
@@ -166,16 +164,16 @@ Now, we can work on creating the final version of our output:
 | Greg Benson          | benson@usfca.edu          | @gregorydbenson  | CS 315, CS 326                 |
 | David Guy Brizan     | dgbrizan@usfca.edu        | @davidguybrizan  | CS 245, CS 463                 |
 | Christopher Brooks   | cbrooks@usfca.edu         |                  | CS 462                         |
+| Mehmet Emre          | memre@usfca.edu           |                  | CS 345                         |
 | Sophie Engle         | sjengle@usfca.edu         | @sjengle         | CS 272, CS 360                 |
 | Jeffrey Johnson      | jajohnson9@usfca.edu      |                  | CS 107, CS 110, CS 490         |
-| Kristin Jones        | kjones12@usfca.edu        |                  | CS 112, CS 345                 |
 | Alark Joshi          | apjoshi@usfca.edu         | @alark           | CS 110, CS 112, CS 360         |
 | EJ Jung              | ejung2@usfca.edu          |                  | CS 112, CS 245                 |
 | Olga Karpenko        | okarpenko@usfca.edu       |                  | CS 112, CS 245, CS 272, CS 490 |
+| Michael Kremer       | mkremer@usfca.edu         |                  | CS 110                         |
 | Matthew Malensek     | mmalensek@usfca.edu       | @MatthewMalensek | CS 220, CS 326                 |
 | Phil Peterson        | phpeterson@usfca.edu      |                  | CS 221, CS 315                 |
 | Vahab Pournaghshband | vpournaghshband@usfca.edu |                  | CS 221, CS 336                 |
-| Sami Rollins         | snrollins@usfca.edu       | @samirollins     | CS 112, CS 272                 |
 | David Wolber         | wolberd@usfca.edu         | @wolberd         | CS 107, CS 110, CS 112         |
 | Beste Yuksel         | byuksel@usfca.edu         | @BesteFYuksel    | CS 107, CS 110, CS 490         |
 

@@ -72,16 +72,16 @@ VALUES
 ('apjoshi',         'Alark',       NULL, 'Joshi'   ),
 ('benson',          'Greg',        NULL, 'Benson'  ),
 ('byuksel',         'Beste',       NULL, 'Yuksel'  ),
+('cbrooks',         'Christopher', NULL, 'Brooks'  ),
 ('dgbrizan',        'David',      'Guy', 'Brizan'  ),
 ('ejung2',          'EJ',          NULL, 'Jung'    ),
 ('jajohnson9',      'Jeffrey',     NULL, 'Johnson' ),
-('cbrooks',         'Christopher', NULL, 'Brooks'  ),
-('kjones12',        'Kristin',     NULL, 'Jones'   ),
+('memre',           'Mehmet',      NULL, 'Emre'    ),
+('mkremer',         'Michael',     NULL, 'Kremer'  ),
 ('mmalensek',       'Matthew',     NULL, 'Malensek'),
 ('okarpenko',       'Olga',        NULL, 'Karpenko'),
 ('phpeterson',      'Phil',        NULL, 'Peterson'),
 ('sjengle',         'Sophie',      NULL, 'Engle'   ),
-('snrollins',       'Sami',        NULL, 'Rollins' ),
 ('vpournaghshband', 'Vahab',       NULL, 'Pournaghshband'),
 ('wolberd',         'David',       NULL, 'Wolber'  );
 ```
@@ -121,13 +121,12 @@ Once you have the table created, you can insert values as follows:
 INSERT INTO faculty_twitter
 (usfid, twitterid)
 VALUES
-('benson',    'gregorydbenson'),
-('mmalensek', 'MatthewMalensek'),
-('sjengle',   'sjengle'),
 ('apjoshi',   'alark'),
-('snrollins', 'samirollins'),
+('benson',    'gregorydbenson'),
 ('byuksel',   'BesteFYuksel'),
 ('dgbrizan',  'davidguybrizan'),
+('mmalensek', 'MatthewMalensek'),
+('sjengle',   'sjengle'),
 ('wolberd',   'wolberd');
 ```
 
@@ -164,41 +163,39 @@ Once you have the table created, you can insert values as follows:
 INSERT INTO faculty_courses
 (usfid, course)
 VALUES
-('apjoshi',    'CS 360'),
-('apjoshi',    'CS 112'),
 ('apjoshi',    'CS 110'),
-('benson',     'CS 326'),
+('apjoshi',    'CS 112'),
+('apjoshi',    'CS 360'),
 ('benson',     'CS 315'),
-('byuksel',    'CS 490'),
-('byuksel',    'CS 110'),
+('benson',     'CS 326'),
 ('byuksel',    'CS 107'),
+('byuksel',    'CS 110'),
+('byuksel',    'CS 490'),
 ('cbrooks',    'CS 462'),
 ('dgbrizan',   'CS 245'),
 ('dgbrizan',   'CS 463'),
-('ejung2',     'CS 245'),
 ('ejung2',     'CS 112'),
+('ejung2',     'CS 245'),
 ('jajohnson9', 'CS 107'),
 ('jajohnson9', 'CS 110'),
 ('jajohnson9', 'CS 490'),
-('kjones12',   'CS 112'),
-('kjones12',   'CS 345'),
+('memre',      'CS 345'),
+('mkremer',    'CS 110'),
 ('mmalensek',  'CS 220'),
 ('mmalensek',  'CS 326'),
 ('okarpenko',  'CS 112'),
-('okarpenko',  'CS 272'),
 ('okarpenko',  'CS 245'),
+('okarpenko',  'CS 272'),
 ('okarpenko',  'CS 490'),
-('sjengle',    'CS 272'),
-('sjengle',    'CS 360'),
-('snrollins',  'CS 272'),
-('snrollins',  'CS 112'),
 ('phpeterson', 'CS 221'),
 ('phpeterson', 'CS 315'),
+('sjengle',    'CS 272'),
+('sjengle',    'CS 360'),
+('vpournaghshband', 'CS 221'),
+('vpournaghshband', 'CS 336'),
 ('wolberd',    'CS 107'),
 ('wolberd',    'CS 110'),
-('wolberd',    'CS 112'),
-('vpournaghshband', 'CS 336'),
-('vpournaghshband', 'CS 221');
+('wolberd',    'CS 112');
 ```
 
 <a href="sql-demo-selecting.html" class="button is-primary"><span>Next: Selecting Data</span>&nbsp;<i class="fas fa-arrow-alt-right"></i></a>
