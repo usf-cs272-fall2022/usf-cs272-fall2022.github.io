@@ -13,14 +13,13 @@ topics:
     tags: 'debugging'
     code: ['Logging']
 
-  - text: 'Regular Expressions'
-    tags: 'regexes'
-    code: ['RegularExpressions']
+  # - text: 'Regular Expressions'
+  #   tags: 'regexes'
+  #   code: ['RegularExpressions']
 
 #  - text: 'Software Testing'
 #    tags: 'testing'
 #    code: ['UnitTesting']
-
 
   - text: 'Multithreading'
     tags: 'threads'
@@ -28,7 +27,8 @@ topics:
 
   - text: 'Web and Sockets'
     tags: 'web'
-    code: ['HyperText', 'Sockets']
+    # code: ['HyperText', 'Sockets']
+    code: ['Sockets']
 
   - text: 'Jetty and Servlets'
     tags: 'servlets'
@@ -72,7 +72,7 @@ See below for resources and additional details.
 
 In addition to the general [exam logistics](exam-logistics.html), you want to consider the following:
 
-  - You should bookmark your favorite regular expression, <!--JUnit,--> Log4j2, HTTP, Jetty, and SQL resources. The README files of the lecture code have several recommendations for each topic.
+  - You should bookmark your favorite <!--regular expression, JUnit,--> Log4j2, HTTP, Jetty, and SQL resources. The README files of the lecture code have several recommendations for each topic.
 
   - Make sure you can access the on-campus database. You will be able to `SOURCE` the tables from the exam and test out your SQL queries there.
 
@@ -150,7 +150,7 @@ See the [Schedule](/schedule.html) for links to the many videos and recordings m
 
 The following are some example topics that you may want to make sure you understand. This is a non-comprehensive list. Some of these topics may not appear on the exam and some topics not covered here may appear on the exam.
 
-- You should understand how to use the `Pattern` and `Matcher` classes in Java to handle regular expressions, and the difference between the `find()` versus `matches()` methods.
+<!--- You should understand how to use the `Pattern` and `Matcher` classes in Java to handle regular expressions, and the difference between the `find()` versus `matches()` methods.
 
 - You should understand how to create **character classes**, such as `[a-z]` and `[^0-9]`, in regular expressions.
 
@@ -168,7 +168,7 @@ The following are some example topics that you may want to make sure you underst
 
 - You should understand the different ways to use the **`?` character** in a regular expression. For example: `(?i)` to turn on the `i` flag, `(?:i)` to create a non-capturing group that matches the `i` character, `[?!]` to create a character class that matches the `?` and `!` characters, `i?` to match the `i` character 0 or 1 times (greedy), and `i+?` to match the `i` character 1 or more times (reluctant).
 
-<!-- - You should understand how to interpret JUnit test classes, and create your own basic JUnit tests. This includes understanding the `@Test`, `@Nested`, `@BeforeEach`, `@AfterEach`, and `@ParameterizedTest` annotations and the methods in the `org.junit.jupiter.api.Assertions` package.-->
+ - You should understand how to interpret JUnit test classes, and create your own basic JUnit tests. This includes understanding the `@Test`, `@Nested`, `@BeforeEach`, `@AfterEach`, and `@ParameterizedTest` annotations and the methods in the `org.junit.jupiter.api.Assertions` package.-->
 
 - You should understand how to use **assertions** in Java using the `assert` keyword, and where it is (or is not) appropriate to use.
 
