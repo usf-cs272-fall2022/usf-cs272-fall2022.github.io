@@ -7,9 +7,9 @@ bump: false
 
 project: 3
 
-tags:
- - text: 'New'
-   type: 'is-primary'
+# tags:
+#  - text: 'New'
+#    type: 'is-primary'
 
 subsections:
   - text: 'Requirements'

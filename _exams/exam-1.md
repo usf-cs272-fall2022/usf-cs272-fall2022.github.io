@@ -6,8 +6,8 @@ key: 1.1
 bump: true
 
 tags:
- - text: 'New'
-   type: 'is-primary'
+#  - text: 'New'
+#    type: 'is-primary'
 
 topics:
   - text: 'Exception Handling'
