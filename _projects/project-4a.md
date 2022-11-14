@@ -11,14 +11,56 @@ tags:
   #   type: 'is-primary'
  - text: 'Pending'
    type: 'is-muted'
-   
-# assignments:
-#   - text: 'Project 4 Tests'
-#     link: 'https://usfca.instructure.com/courses/1605147/assignments/7166809'
+
+subsections:
+  - text: 'Requirements'
+    link: '#requirements'
+
+  - text: 'Grading'
+    link: '#grading'
+
+  - text: 'Getting Started'
+    link: '#getting-started'
+
+tests: 'project4_tests'
+review1: 'project4_review'
+
+review0: 'project3_review1'
+design0: 'project3_design'
 
 ---
 
 Pending
+
+## Requirements
+{: .page-header }
+
+Pending
+
+## Grading
+{: .page-header }
+
+This project grade is split into the following assignments:
+
+| Assignment | Points | Deadline | Release | Prerequisites |
+|:-----------|-------:|---------:|:-------:|:--------------|
+| [{{ site.data.projects[page.tests].text }}]({{ site.data.projects[page.tests].canvas }}) | {{ site.data.projects[page.tests].points }} | {{ site.data.projects[page.tests].date | date: "%b %d, %Y" }} | `v{{ page.project }}.0.Z` | `Project{{ page.project }}Test.java`, [{{ site.data.projects[page.review0].text }}]({{ site.data.projects[page.review1].canvas }}), [Test Checks](grading.html#project-tests) |
+| [{{ site.data.projects[page.review1].text }}]({{ site.data.projects[page.review1].canvas }}) (30 min) | {{ site.data.projects[page.review1].points }} | {{ site.data.projects[page.review1].date | date: "%b %d, %Y" }} | `v{{ page.project }}.1.Z` | [{{ site.data.projects[page.design0].text }}]({{ site.data.projects[page.design0].canvas }}), [{{ site.data.projects[page.tests].text }}]({{ site.data.projects[page.tests].canvas }}), [Review Checks](grading.html#project-reviews) |
+{: .table .is-auto .is-hoverable :}
+
+See the [Project 4](project4.html) guide for details on how this project is graded. 
+
+## Getting Started
+{: .page-header }
+
+The following sections may be useful for getting started on this project.
+
+### Related Homework
+
+The following homework assignments may be useful for this project:
+
+Pending
+
 
 {% comment %}
 For this project, you will extend your [previous project](project-{{ page.project | minus: 1 }}.html) to create a multithreaded web crawler using a work queue that builds the inverted index from a seed URL.

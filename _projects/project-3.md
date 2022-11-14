@@ -27,6 +27,7 @@ review2: 'project3_review2'
 design: 'project3_design'
 
 review0: 'project2_review1'
+design0: 'project2_design'
 
 ---
 
@@ -127,7 +128,7 @@ This project grade is split into the following assignments:
 | Assignment | Points | Deadline | Release | Prerequisites |
 |:-----------|-------:|---------:|:-------:|:--------------|
 | [{{ site.data.projects[page.tests].text }}]({{ site.data.projects[page.tests].canvas }}) | {{ site.data.projects[page.tests].points }} | {{ site.data.projects[page.tests].date | date: "%b %d, %Y" }} | `v{{ page.project }}.0.Z` | `Project{{ page.project }}aTest.java`, [{{ site.data.projects[page.review0].text }}]({{ site.data.projects[page.review1].canvas }}), [Test Checks](grading.html#project-tests) |
-| [{{ site.data.projects[page.review1].text }}]({{ site.data.projects[page.review1].canvas }}) (30 min) | {{ site.data.projects[page.review1].points }} | {{ site.data.projects[page.review1].date | date: "%b %d, %Y" }} | `v{{ page.project }}.1.Z` | `Project{{ page.project }}aTest.java`, [{{ site.data.projects[page.tests].text }}]({{ site.data.projects[page.tests].canvas }}), [Review Checks](grading.html#project-reviews) |
+| [{{ site.data.projects[page.review1].text }}]({{ site.data.projects[page.review1].canvas }}) (30 min) | {{ site.data.projects[page.review1].points }} | {{ site.data.projects[page.review1].date | date: "%b %d, %Y" }} | `v{{ page.project }}.1.Z` | `Project{{ page.project }}aTest.java`, [{{ site.data.projects[page.design0].text }}]({{ site.data.projects[page.design0].canvas }}), [{{ site.data.projects[page.tests].text }}]({{ site.data.projects[page.tests].canvas }}), [Review Checks](grading.html#project-reviews) |
 | [{{ site.data.projects[page.review2].text }}]({{ site.data.projects[page.review2].canvas }}) (15 min)<sup>1</sup> | {{ site.data.projects[page.review2].points }} | <span style="white-space: nowrap;">{{ site.data.projects[page.review2].date | date: "%b %d, %Y" }}</span> | `v{{ page.project }}.2.Z` | `Project{{ page.project }}aTest.java`, `Project{{ page.project }}bTest.java`, 1.1x Speedup, [{{ site.data.projects[page.review1].text }}]({{ site.data.projects[page.review1].canvas }}), [Review Checks](grading.html#project-reviews) |
 | <span style="white-space: nowrap;">Project {{ page.project }} Review Y (15 min)<sup>2</sup></span> | 0 | <span style="white-space: nowrap;">{{ site.data.projects[page.design].date | date: "%b %d, %Y" }}</span> | `v{{ page.project }}.Y.Z` | `Project{{ page.project }}aTest.java`, `Project{{ page.project }}bTest.java`, 1.1x Speedup, [{{ site.data.projects[page.review2].text }}]({{ site.data.projects[page.review2].canvas }}), [Review Checks](grading.html#project-reviews) |
 | [{{ site.data.projects[page.design].text }}]({{ site.data.projects[page.design].canvas }}) | {{ site.data.projects[page.design].points }} | {{ site.data.projects[page.design].date | date: "%b %d, %Y" }} | `v{{ page.project }}.Y.Z` | `Project{{ page.project }}aTest.java`, `Project{{ page.project }}bTest.java`, 1.5x Speedup, [{{ site.data.projects[page.review2].text }}]({{ site.data.projects[page.review2].canvas }}), [Review Checks](grading.html#project-reviews), Passing Pull Request |
