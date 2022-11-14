@@ -113,22 +113,24 @@ project3_design:
 project4a:
   <<: *default
   text: 'Project 4 Web Crawler'
-  # link: '/guides/projects/project-4a.html'
+  link: '/guides/projects/project-4a.html'
 
 project4b:
   <<: *default
   text: 'Project 4 Search Engine'
-  # link: '/guides/projects/project-4b.html'
+  link: '/guides/projects/project-4b.html'
 
 project4_tests:
   <<: *default
   text: 'Project 4 Tests'
-  # link: '/guides/projects/project-4a.html'
+  link: '/guides/projects/project-4a.html'
   date: 2022-12-06
+  points: 100
 
 project4_review: 
   <<: *default
   text: 'Project 4 Review'
-  # link: '/guides/projects/project-4b.html'
+  link: '/guides/projects/project-4b.html'
   date: 2022-12-12
   icon: 'review'
+  points: 100

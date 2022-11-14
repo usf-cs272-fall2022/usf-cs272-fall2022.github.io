@@ -7,15 +7,20 @@ bump: false
 project: 4
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
-
-assignments:
-  - text: 'Project 4 Tests'
-    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166809'
+  # - text: 'New'
+  #   type: 'is-primary'
+ - text: 'Pending'
+   type: 'is-muted'
+   
+# assignments:
+#   - text: 'Project 4 Tests'
+#     link: 'https://usfca.instructure.com/courses/1605147/assignments/7166809'
 
 ---
 
+Pending
+
+{% comment %}
 For this project, you will extend your [previous project](project-{{ page.project | minus: 1 }}.html) to create a multithreaded web crawler using a work queue that builds the inverted index from a seed URL.
 
 **This writeup is for the web crawler functionality only.** See the general [Project 4 Final Project](project-4.html) guide for more details.
@@ -199,3 +204,4 @@ It is important to **get started early** so you have plenty of time to think abo
 
 <i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
+{% endcomment %}

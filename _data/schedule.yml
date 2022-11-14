@@ -2242,6 +2242,13 @@ weeks:
                 name: project3_design
                 show: true
 
+              - text: 'Code Review Cutoff'
+                date: 2022-12-09
+                icon: project
+                type: ['has-text-usf-plum']
+                link: /guides/projects/final-review.html
+                show: true
+
           - label: 'Upcoming Deadlines'
             dates: true
             items:
@@ -2255,11 +2262,33 @@ weeks:
     days:
       - date: ''
         sections:
-          - label: 'Mon 12/12 to Thu 12/15'
+          - label: 'Tue 12/13 to Thu 12/15'
             dates: false
             items:
               - text: 'Final Code Reviews'
                 icon: 'project'
+                link: /guides/projects/final-review.html
+
+      - date: ''
+        sections:
+          - label: 'Tue 12/13 to Thu 12/15'
+            dates: false
+            items:
+              - text: 'Final Code Reviews'
+                icon: 'project'
+                link: /guides/projects/final-review.html
+
+      - date: ''
+        sections:
+          - label: 'Fri 12/16 Deadlines'
+            dates: false
+            items:
+              - text: 'Late Work Cutoff'
+                date: 2022-12-16
+                icon: date
+                type: ['has-text-danger']
+                link: /guides/projects/final-review.html
+                show: true
 
 rows:
   - false # top row (usually lecture items)
