@@ -71,7 +71,7 @@ Crawling the web can be done recursively. The process starts with a seed URL, an
 
 All of the above should happen within a worker thread; i.e. a worker thread will download, process, stem, and add one URL to the index at a time. 
 
-When crawling, **download the content only once** from the web server and only if necessary.
+For efficiency (and to avoid being blocked or rate-limited by the web server), **download the content only once** from the web server and only if necessary when crawling web pages. Specifically:
 
   - Do not fetch the web page content more than once. For example, do not fetch the entire web page content once to check the headers and again to process the HTML.
 
