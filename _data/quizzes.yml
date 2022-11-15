@@ -226,7 +226,7 @@ project4:
   <<: *default
   text: 'Project 4 Writeup'
   date: 2022-12-02
-#   link: 'https://usfca.instructure.com/courses/1605147/assignments/7195820'
+  link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409355'
 #   tags: ['none']
 
 joins:
