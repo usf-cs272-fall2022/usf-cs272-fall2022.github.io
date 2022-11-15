@@ -51,6 +51,7 @@ project2_tests:
   link: '/guides/projects/project-2.html'
   date: 2022-10-25
   points: 100
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223911'
 
 project2_review1: 
   <<: *default
@@ -59,6 +60,7 @@ project2_review1:
   date: 2022-11-01
   icon: 'review'
   points: 30
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223909'
 
 project2_review2: 
   <<: *default
@@ -67,6 +69,7 @@ project2_review2:
   date: 2022-11-08
   icon: 'review'
   points: 20
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223910'
 
 project2_design: 
   <<: *default
@@ -74,6 +77,7 @@ project2_design:
   link: '/guides/projects/project-2.html'
   date: 2022-11-15
   points: 50
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223908'
 
 project3:
   <<: *default
@@ -86,6 +90,7 @@ project3_tests:
   link: '/guides/projects/project-3.html'
   date: 2022-11-15
   points: 100
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223915'
 
 project3_review1: 
   <<: *default
@@ -94,6 +99,7 @@ project3_review1:
   date: 2022-11-29
   icon: 'review'
   points: 30
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223913'
 
 project3_review2:
   <<: *default
@@ -102,6 +108,7 @@ project3_review2:
   date: 2022-12-06
   icon: 'review'
   points: 20
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223914'
 
 project3_design: 
   <<: *default
@@ -109,6 +116,7 @@ project3_design:
   link: '/guides/projects/project-3.html'
   date: 2022-12-09
   points: 50
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223912'
 
 project4a:
   <<: *default
@@ -126,6 +134,7 @@ project4_tests:
   link: '/guides/projects/project-4a.html'
   date: 2022-12-06
   points: 100
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223917'
 
 project4_review: 
   <<: *default
@@ -134,3 +143,4 @@ project4_review:
   date: 2022-12-12
   icon: 'review'
   points: 100
+  canvas: 'https://usfca.instructure.com/courses/1608197/assignments/7223916'
