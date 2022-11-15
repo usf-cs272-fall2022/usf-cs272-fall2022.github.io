@@ -1955,57 +1955,73 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'HTTP Cookies'
-                icon: code
-                link: https://github.com/usf-cs272-fall2022/lectures/tree/main/Sessions
-                type: bump
+              - text: 'CLASS CANCELED'
+                icon: 'warning'
+                type: ['has-text-danger', 'has-text-weight-bold']
+              
+              - text: 'Instead of in-person lecture, please watch one of the linked lecture recordings from previous semesters.'
+                icon: 'nothing'
+                type: ['em', 'has-text-grey']
 
-              - text: CookieServer.java
-                icon: indented
-                type: push
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieServer.java
-
-              - text: CookieLandingServlet.java
-                icon: indented
-                type: push
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieLandingServlet.java
-
-              - text: CookieVisitServlet.java
-                icon: indented
-                type: push
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieVisitServlet.java
-
-              - text: 'Adventure Game using Sessions'
-                icon: code
-                link: https://github.com/usf-cs272-fall2022/lectures/tree/main/Sessions
-                tube: https://drive.google.com/file/d/1b5TwbM5J1Y1hBmh7ErV72E8WGcmyMu-L/view?usp=sharing
-                type: bump
-
-              - text: AdventureRoom.java
-                icon: indented
-                type: push
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureRoom.java
-                tube: https://drive.google.com/file/d/1ousizKV83c3vlSEObTdwuiyPcga2AhH4/view?usp=sharing
-
-              - text: AdventureServlet.java
-                icon: indented
-                type: push
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureServlet.java
-                tube: https://drive.google.com/file/d/1VUXAIoeiG6Qkya1OkkbyutjKktyRkKEo/view?usp=sharing
-
-              - text: AdventureServer.java
-                icon: indented
-                type: push
-                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureServer.java
-
-          - <<: *assignments
+          - label: 'Lecture Alternatives'
+            dates: ''
             items:
-              - file: projects
-                name: project4_tests
-                text: 'Project 4 Web Crawler'
+              - text: 'Spring 2022 Recording'
+                icon: 'video'
+                link: 'https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06eb786d-2a32-4c7b-bf54-af4e0110b9a7'
+                more: '(In Person)'
 
-              - file: quizzes
-                name: project4
+              - text: 'Spring 2021 Recording'
+                icon: 'video'
+                link: 'https://drive.google.com/file/d/16Iyn-p1Z8kOO1PullbnkBVRZHBMu7OfI/view?usp=share_link'
+                more: '(Remote)'
+
+          - label: 'Lecture Code'
+            dates: ''
+            items:
+              - text: 'Sessions'
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/tree/main/Sessions
+ 
+              #   type: bump
+
+              # - text: CookieServer.java
+              #   icon: indented
+              #   type: push
+              #   link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieServer.java
+
+              # - text: CookieLandingServlet.java
+              #   icon: indented
+              #   type: push
+              #   link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieLandingServlet.java
+
+              # - text: CookieVisitServlet.java
+              #   icon: indented
+              #   type: push
+              #   link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/CookieVisitServlet.java
+
+              # - text: 'Adventure Game using Sessions'
+              #   icon: code
+              #   link: https://github.com/usf-cs272-fall2022/lectures/tree/main/Sessions
+              #   tube: https://drive.google.com/file/d/1b5TwbM5J1Y1hBmh7ErV72E8WGcmyMu-L/view?usp=sharing
+              #   type: bump
+
+              # - text: AdventureRoom.java
+              #   icon: indented
+              #   type: push
+              #   link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureRoom.java
+              #   tube: https://drive.google.com/file/d/1ousizKV83c3vlSEObTdwuiyPcga2AhH4/view?usp=sharing
+
+              # - text: AdventureServlet.java
+              #   icon: indented
+              #   type: push
+              #   link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureServlet.java
+              #   tube: https://drive.google.com/file/d/1VUXAIoeiG6Qkya1OkkbyutjKktyRkKEo/view?usp=sharing
+
+              # - text: AdventureServer.java
+              #   icon: indented
+              #   type: push
+              #   link: https://github.com/usf-cs272-fall2022/lectures/blob/main/Sessions/src/main/java/edu/usfca/cs272/AdventureServer.java
 
           - <<: *deadlines
             items:
@@ -2038,6 +2054,15 @@ weeks:
 
               - file: slides
                 name: sqlintro3
+
+          - <<: *assignments
+            items:
+              - file: projects
+                name: project4_tests
+                text: 'Project 4 Web Crawler'
+
+              - file: quizzes
+                name: project4
 
       - date: 2022-11-18
         sections:
