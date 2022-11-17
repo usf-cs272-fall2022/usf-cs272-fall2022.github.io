@@ -157,7 +157,7 @@ asserts:
   date: 2022-10-28
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409381'
   tags: ['debugging']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402546'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415037'
 
 logging:
   <<: *default
@@ -165,7 +165,7 @@ logging:
   date: 2022-10-28
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409374'
   tags: ['debugging']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402547'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415039'
 
 threads:
   <<: *default
@@ -173,7 +173,7 @@ threads:
   date: 2022-10-28
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409351'
   tags: ['threads']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403925'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415033'
 
 project3:
   <<: *default
@@ -188,7 +188,7 @@ synchronization:
   date: 2022-11-04
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409393'
   tags: ['threads']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403924'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415035'
 
 workers:
   <<: *default
@@ -196,7 +196,7 @@ workers:
   date: 2022-11-11
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409392'
   tags: ['threads']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403918'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415036'
 
 http:
   <<: *default
@@ -204,7 +204,7 @@ http:
   date: 2022-11-11
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409386'
   tags: ['web']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403916'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415034'
 
 dynamic:
   <<: *default
@@ -212,7 +212,7 @@ dynamic:
   date: 2022-11-18
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409370'
   tags: ['servlets']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403922'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415042'
 
 servlets:
   <<: *default
@@ -220,7 +220,7 @@ servlets:
   date: 2022-11-18
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409340'
   tags: ['servlets']
-  # test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403920'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415041'
 
 project4:
   <<: *default
@@ -235,7 +235,7 @@ joins:
   date: 2022-12-02
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409387'
   tags: ['sql']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403917'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415040'
 
 groups:
   <<: *default
@@ -243,4 +243,4 @@ groups:
   date: 2022-12-02
   link: 'https://usfca.instructure.com/courses/1608197/quizzes/2409377'
   tags: ['sql']
-#   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2403919'
+  test: 'https://usfca.instructure.com/courses/1608197/quizzes/2415038'
