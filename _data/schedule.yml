@@ -2076,10 +2076,10 @@ weeks:
                 icon: indented
                 type: ['push']
 
-              - file: homework
-                name: headerfetcher
-                icon: indented
-                type: ['push']
+              # - file: homework
+              #   name: headerfetcher
+              #   icon: indented
+              #   type: ['push']
 
               - text: 'Project Help'
                 icon: 'assistants'
@@ -2104,10 +2104,10 @@ weeks:
                 icon: 'review'
                 type: ['bump']
 
-          - <<: *assignments
-            items:
-              - file: homework
-                name: headerfetcher
+          # - <<: *assignments
+          #   items:
+          #     - file: homework
+          #       name: headerfetcher
 
           - <<: *deadlines
             items:
@@ -2212,10 +2212,10 @@ weeks:
               - text: 'Homework Help'
                 icon: 'assistants'
 
-              - file: homework
-                name: headerfetcher
-                icon: indented
-                type: ['push']
+              # - file: homework
+              #   name: headerfetcher
+              #   icon: indented
+              #   type: ['push']
 
               - text: 'Project Help'
                 icon: 'assistants'
@@ -2242,8 +2242,8 @@ weeks:
 
           - <<: *deadlines
             items:
-              - file: homework
-                name: headerfetcher
+              # - file: homework
+              #   name: headerfetcher
 
               - file: 'participation'
                 name: 'ask_anything'
