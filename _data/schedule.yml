@@ -2139,13 +2139,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - file: projects
-                name: project4_review
-                text: 'Project 4 Search Engine'
-
               - file: quizzes
                 name: joins
-                type: bump
               
               - file: quizzes
                 name: groups
@@ -2221,6 +2216,10 @@ weeks:
                 link: 'https://usfca.instructure.com/courses/1608197/quizzes/2415208'
                 date: 2022-12-08
                 type: ['has-text-danger']
+
+              - file: projects
+                name: project4_review
+                text: 'Project 4 Search Engine'
 
       - date: 2022-12-02
         sections:
