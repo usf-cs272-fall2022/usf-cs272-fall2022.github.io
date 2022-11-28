@@ -2194,8 +2194,25 @@ weeks:
               - file: slides
                 name: jdbc
 
-              - text: Pending
+              - text: JDBC
                 type: bump
+                icon: code
+                link: https://github.com/usf-cs272-fall2022/lectures/tree/main/JDBC
+
+              - text: DatabaseConnector.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/DatabaseConnector.java
+
+              - text: FacultyServer.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/FacultyServer.java
+
+              - text: FacultyServlet.java
+                icon: indented
+                type: push
+                link: https://github.com/usf-cs272-fall2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/FacultyServlet.java
 
           - <<: *assignments
             items:
