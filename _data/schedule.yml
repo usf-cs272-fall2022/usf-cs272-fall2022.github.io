@@ -2217,6 +2217,9 @@ weeks:
                 date: 2022-12-08
                 type: ['has-text-danger']
 
+              - file: 'participation'
+                name: 'final_survey'
+
               - file: projects
                 name: project4_review
                 text: 'Project 4 Search Engine'
@@ -2321,6 +2324,9 @@ weeks:
             items:
               - file: 'participation'
                 name: 'cs_event'
+
+              - file: 'participation'
+                name: 'final_survey'
 
               - file: projects
                 name: project3_design
