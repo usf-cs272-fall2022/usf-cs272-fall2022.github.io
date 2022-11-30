@@ -331,3 +331,8 @@ jdbc:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQSTQGh8TMFe3Jn8oShnlC3mnWcyAixqbc9bZ-417tqPcvay0WFRactomEqoQLW-x2RHcA_8iSVHf2O/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1bgEAcSx7OhRRziOo8MsiP_DjcrOrhClG/view?usp=sharing'
   tags: ['jdbc']
+
+recap:
+  <<: *default
+  text: 'Course Recap'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRWVK3jB5Ec0QJYLNd__v-6oz9FvnOMqTXGTCBPk0dE0k6bsqtqoEUIHXaUWwqKlkIuAshjf8IcXOdF/pub?start=false&loop=false&delayms=3000'

@@ -2287,7 +2287,11 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Conclusion'
+              - text: Search Engine Demo
+                icon: code
+
+              - file: slides
+                name: recap
 
           - <<: *deadlines
             items:
