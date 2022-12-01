@@ -24,23 +24,23 @@ For example, suppose you completed the assignments for project 1 on time, assign
 ## Options
 {: .page-header }
 
-Below are some extra credit options. Each option is worth 5 points of extra credit.
+Below are some extra credit options. Each option is worth between 5 to 20 points of extra credit.
 
-  - **Javadoc:** Update and polish all of your Java documentation, then use the `javadoc` tool to generate a documentation website. Place the generated html in a [docs](https://github.blog/2016-08-22-publish-your-project-documentation-with-github-pages/) subfolder in your `main` branch. Ask the instructor or TA to enable GitHub Pages for your repository so that your documentation is viewable as a website.
+  - **Javadoc (15 points):** Update and polish all of your Java documentation, then use the `javadoc` tool to generate a documentation website. Place the generated html in a [docs](https://github.blog/2016-08-22-publish-your-project-documentation-with-github-pages/) subfolder in your `main` branch. Ask the instructor or TA to enable GitHub Pages for your repository so that your documentation is viewable as a website.
 
-  - **Driver Logic:** Reduce the duplicate logic in your `Driver` class for outputting data to a JSON file using lambda expressions (but not stream pipelines).
+  - **Driver Logic (5 points):** Reduce the duplicate logic in your `Driver` class for outputting data to a JSON file using lambda expressions (but not stream pipelines).
 
-  - **JSON Logic:** Reduce the duplicate logic in your JSON writing and stemming classes using lambda expressions (but not stream pipelines).
+  - **JSON Logic (10 points):** Reduce the duplicate logic in your JSON writing and stemming classes using lambda expressions (but not stream pipelines).
 
-  - **Stemming Logic:** Reduce the duplicate logic in your stemming classes using lambda expressions (but not stream pipelines).
+  - **Stemming Logic (10 points):** Reduce the duplicate logic in your stemming classes using lambda expressions (but not stream pipelines).
 
-  - **Index Empty Tests:** Create custom JUnit tests for your inverted index data structure. There should be 1 test per public method that use an **empty** index.
+  - **Index Empty Tests (20 points):** Create custom JUnit tests for your inverted index data structure. There should be 1 test per public method that use an **empty** index.
 
-  - **Index Non-Empty Tests:** Create custom JUnit tests for your inverted index data structure. There should be 1 test per public method that use a **non-empty** index.
+  - **Index Non-Empty Tests (20 points):** Create custom JUnit tests for your inverted index data structure. There should be 1 test per public method that use a **non-empty** index.
 
-  - **Custom Sorting**: Create a `Comparator` that will sort your custom search result object by score, total number of words in the file (instead of the number of matches), and then the path. Create test code to demonstrate this `Comparator` works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
+  - **Custom Sorting (5 points)**: Create a `Comparator` that will sort your custom search result object by score, total number of words in the file (instead of the number of matches), and then the path. Create test code to demonstrate this `Comparator` works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
 
-  - **Verbose Flag**: Add a flag, `-verbose`, that enables logging `DEBUG` messages and above to the console. Add `DEBUG` messages before and after any file is read or written in the code, in every constructor call, and any time a thread is about to terminate. Create test code to demonstrate this feature works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
+  - **Verbose Flag  (10 points)**: Add a flag, `-verbose`, that enables logging `DEBUG` messages and above to the console. Add `DEBUG` messages before and after any file is read or written in the code, in every constructor call, and any time a thread is about to terminate. Create test code to demonstrate this feature works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
 
 You are encouraged to ask for clarification on any of these you are interested in completing in a **public** anonymous post. You are also welcome to propose other extra credit options  in a **public** anonymous post.
 
@@ -52,5 +52,3 @@ You must first have an [approved extension](final-review.html#extensions) to sub
 To submit your extra credit, make a single private post with *all* of the extra credit features you completed by the deadline. You should make only one post; do not post until all of the features you planned to implement are complete. In your post, make sure to include your name and the total amount of extra credit you are requesting. For each extra credit option, you should also include (1) the name of the option and (2) a link to the exact branch, file(s), and line(s) of code with your implementation.
 
 **Be prepared to answer followup questions in a timely manner.** If I cannot find and verify your implementation(s), you will have one opportunity to clarify where to look. However, you will *not* have an opportunity to fix any issues with your implementation(s).
-
-
