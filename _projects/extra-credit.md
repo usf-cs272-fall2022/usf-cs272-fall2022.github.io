@@ -26,21 +26,24 @@ For example, suppose you completed the assignments for project 1 on time, assign
 
 Below are some extra credit options. Each option is worth between 5 to 20 points of extra credit.
 
-  - **Javadoc (15 points):** Update and polish all of your Java documentation, then use the `javadoc` tool to generate a documentation website. Place the generated html in a [docs](https://github.blog/2016-08-22-publish-your-project-documentation-with-github-pages/) subfolder in your `main` branch. Ask the instructor or TA to enable GitHub Pages for your repository so that your documentation is viewable as a website.
-
   - **Driver Logic (5 points):** Reduce the duplicate logic in your `Driver` class for outputting data to a JSON file using lambda expressions (but not stream pipelines).
+
+  - **Custom Sorting (5 points)**: Create a `Comparator` that will sort your custom search result object by score, total number of words in the file (instead of the number of matches), and then the path. Create test code to demonstrate this `Comparator` works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
 
   - **JSON Logic (10 points):** Reduce the duplicate logic in your JSON writing and stemming classes using lambda expressions (but not stream pipelines).
 
   - **Stemming Logic (10 points):** Reduce the duplicate logic in your stemming classes using lambda expressions (but not stream pipelines).
 
+  - **Verbose Flag  (10 points)**: Add a flag, `-verbose`, that enables logging `DEBUG` messages and above to the console. Add `DEBUG` messages before and after any file is read or written in the code, in every constructor call, and any time a thread is about to terminate. Create test code to demonstrate this feature works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
+
+  - **Load JSON (15 Points):** Add a flag `-load [path]` to load an inverted index from a JSON file. For example, `-load index.json` should read the JSON file at path `index.json` and load it into the inverted index being used for search. Use the [`org.json`](https://github.com/stleary/JSON-java) package to parse the JSON text. You can decide how you want to handle updating the word counts when loading the inverted index from JSON. Create test code to demonstrate this feature works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
+
+  - **Javadoc (15 points):** Update and polish all of your Java documentation, then use the `javadoc` tool to generate a documentation website. Place the generated html in a [docs](https://github.blog/2016-08-22-publish-your-project-documentation-with-github-pages/) subfolder in your `main` branch. Ask the instructor or TA to enable GitHub Pages for your repository so that your documentation is viewable as a website.
+
   - **Index Empty Tests (20 points):** Create custom JUnit tests for your inverted index data structure. There should be 1 test per public method that use an **empty** index.
 
   - **Index Non-Empty Tests (20 points):** Create custom JUnit tests for your inverted index data structure. There should be 1 test per public method that use a **non-empty** index.
 
-  - **Custom Sorting (5 points)**: Create a `Comparator` that will sort your custom search result object by score, total number of words in the file (instead of the number of matches), and then the path. Create test code to demonstrate this `Comparator` works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
-
-  - **Verbose Flag  (10 points)**: Add a flag, `-verbose`, that enables logging `DEBUG` messages and above to the console. Add `DEBUG` messages before and after any file is read or written in the code, in every constructor call, and any time a thread is about to terminate. Create test code to demonstrate this feature works. This test code can be a simple class with hard-coded arguments and console output; it does not need to be a unit test using JUnit.
 
 You are encouraged to ask for clarification on any of these you are interested in completing in a **public** anonymous post. You are also welcome to propose other extra credit options  in a **public** anonymous post.
 
