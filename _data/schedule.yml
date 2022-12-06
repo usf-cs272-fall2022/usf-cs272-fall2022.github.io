@@ -2214,7 +2214,7 @@ weeks:
               - text: 'Exam 2 Retake'
                 icon: 'exam'
                 link: 'https://usfca.instructure.com/courses/1608197/quizzes/2415208'
-                date: 2022-12-08
+                date: 2022-12-16
                 type: ['has-text-danger']
 
               - file: 'participation'
@@ -2314,14 +2314,6 @@ weeks:
                 icon: 'date'
                 type: [*pending]
 
-          - <<: *deadlines
-            items:
-              - text: 'Exam 2 Retake'
-                icon: 'exam'
-                date: 2022-12-08
-                link: 'https://usfca.instructure.com/courses/1608197/quizzes/2415208'
-                type: ['has-text-danger']
-
       - date: 2022-12-09
         sections:
           - label: 'Deadlines'
@@ -2377,6 +2369,13 @@ weeks:
           - label: 'Fri 12/16 Deadlines'
             dates: false
             items:
+              - text: 'Exam 2 Retake'
+                icon: 'exam'
+                date: 2022-12-16
+                link: 'https://usfca.instructure.com/courses/1608197/quizzes/2415208'
+                type: ['has-text-danger']
+                show: true
+
               - text: 'Late Work Cutoff'
                 date: 2022-12-16
                 icon: date
